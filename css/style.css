@@ -1,0 +1,418 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none !important;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url("../font/inter/Inter-VariableFont_slnt\,wght.ttf");
+  src: url("../font/inter/Inter-VariableFont_slnt\,wght.ttf"), format("ttf"),
+    url("../font/inter/Inter-VariableFont_slnt\,wght.ttf"), format("truetype");
+}
+
+:root {
+  --warna1: #f58b54;
+  --warna2: #fff;
+  --warna3: #000;
+  --warna4: #333;
+  --warna5: #555;
+  --title: 0.85rem;
+}
+
+/* Header */
+header .input-group input::placeholder,
+header .input-group input::-ms-input-placeholder,
+header .input-group input:-ms-input-placeholder {
+  font-size: 0.2rem;
+  color: #adb5bd;
+}
+
+header .input-group input[type="text"] {
+  border: 1px solid var(--warna1);
+  font-size: var(--title);
+}
+
+header .input-group input[type="text"]:focus {
+  box-shadow: none;
+}
+
+header .input-group button {
+  background-color: var(--warna1);
+  color: var(--warna2);
+  text-shadow: 0 0 5px var(--warna2);
+}
+
+header .header-title span {
+  font-size: var(--title);
+  font-weight: 600;
+}
+
+header .header-title .garis-lurus {
+  background-color: var(--warna3);
+  width: 0.01rem;
+  height: 1rem;
+}
+
+header nav ul li {
+  padding: 0 1rem;
+}
+
+header nav ul li a {
+  color: rgb(238, 233, 233);
+  font-size: var(--title);
+  font-weight: 600;
+}
+
+/* Carousel Bootstrap */
+.slider .container {
+  height: 80vh;
+}
+
+.slider .carousel .carousel-inner {
+  height: 75vh;
+}
+
+.slider .carousel .carousel-inner img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.slider .left-side-slider .card {
+  height: 75vh;
+}
+
+.slider .left-side-slider .card img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.slider .left-side-slider .card .card-img-overlay .discount {
+  width: max-content;
+  text-align: center;
+  margin: 12rem auto;
+  color: var(--warna3);
+  background-color: var(--warna2);
+}
+
+/* Card own-slider 1 */
+/* Highlight News */
+.owncar1 .own1 .title1 button {
+  padding: 0 0.5rem;
+  background-color: var(--warna1);
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.owncar1 .own1 .title1 button i {
+  color: var(--warna2);
+  text-shadow: 0 0 5px var(--warna2);
+}
+
+.owncar1 .own1 .card {
+  height: 14rem;
+}
+
+.owncar1 .own1 .card:before {
+  content: "";
+  background-image: linear-gradient(to bottom, transparent, var(--warna3));
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.owncar1 .own1 .card img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.owncar1 .own1 .card .carousel-caption {
+  padding-bottom: 0;
+  font-size: 1.3rem;
+  right: 5%;
+  left: 5%;
+}
+
+.owncar1 .own1 .card .carousel-caption button {
+  background-color: var(--warna1);
+  color: var(--warna2);
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0;
+}
+
+.owncar1 .own1 .card .carousel-caption p {
+  color: var(--warna2);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 2.5rem;
+  line-height: normal;
+  overflow: hidden;
+}
+
+/* Card -own-slider 2 */
+.owncar2 .own2 .title1 button {
+  padding: 0 0.5rem;
+  background-color: var(--warna1);
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.owncar2 .own2 .title1 button i {
+  color: var(--warna2);
+  text-shadow: 0 0 5px var(--warna2);
+}
+
+.owncar2 .own2 .card {
+  height: 30rem;
+}
+
+.owncar2 .own2 .card img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* News */
+
+/* Card Utama */
+.news .card-image-utama .card .card-title h6 {
+  color: var(--warna1);
+}
+
+.news .card-image-utama .card .card-title span {
+  color: var(--warna5);
+}
+
+.news .card-image-utama .card .card-text p {
+  color: var(--warna4);
+}
+
+/* Card Lists */
+.news .card-image-lists .card {
+  margin-bottom: 0.7rem;
+  border: none;
+}
+
+.news .card-image-lists .card .card-body .card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--warna1);
+}
+
+.news .card-image-lists .card .card-body .card-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2rem;
+  color: var(--warna5);
+}
+
+.news .card-image-lists .card .card-body .text-muted {
+  font-size: 0.8rem;
+}
+
+.news .card-image-lists .card img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  max-height: 10rem;
+}
+
+/* Card -own-slider 3 */
+.owncar3 .own3 .title1 button {
+  padding: 0 0.5rem;
+  background-color: var(--warna1);
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.owncar3 .own3 .title1 button i {
+  color: var(--warna2);
+  text-shadow: 0 0 5px var(--warna2);
+}
+
+.owncar3 .own3 .card {
+  max-height: 24rem;
+}
+
+.owncar3 .own3 .card:before {
+  content: "";
+  background-image: linear-gradient(to bottom, transparent 40%, var(--warna3));
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.owncar3 .own3 .card .carousel-caption {
+  padding-bottom: 0;
+  font-size: 0.9rem;
+}
+
+/* .owncar3 .own3 .card .carousel-caption p {
+    border: 1px solid var(--warna1);
+    background-color: var(--warna1);
+    border-radius: 9999px;
+    width: max-content;
+    margin: 0 auto .3rem auto;
+    padding: 0 .5rem;
+  } */
+
+.owncar3 .own3 .card .carousel-caption a {
+  background-color: var(--warna1);
+  color: var(--warna2);
+  font-size: 0.75rem;
+  margin-bottom: 0.2rem;
+  /*border-radius: 9999px;*/
+  font-weight: 500;
+  padding: 0 0.5rem;
+}
+
+.owncar3 .own3 .card img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Footer */
+footer {
+  background-color: var(--warna4);
+}
+
+footer .container .row span.sign-up {
+  color: var(--warna2);
+  margin-bottom: 0.2rem;
+  margin-left: 0.55rem;
+}
+/* For Icons */
+footer .container {
+  padding: 2rem 0;
+}
+
+/* For subscribe form */
+footer .input-group input::placeholder,
+footer .input-group input::-ms-input-placeholder,
+footer .input-group input:-ms-input-placeholder {
+  font-size: 0.2rem;
+  color: #adb5bd;
+}
+
+footer .input-group input[type="text"] {
+  border: 1px solid var(--warna1);
+  font-size: var(--title);
+  /*    border-top-right-radius: 0;
+      border-bottom-right-radius: 0;*/
+}
+
+footer .input-group input[type="text"]:focus {
+  box-shadow: none;
+}
+
+footer .input-group button {
+  background-color: var(--warna1);
+  color: var(--warna2);
+  text-shadow: 0 0 5px var(--warna2);
+}
+
+/* Media Social */
+footer .container .icon ul {
+  margin-top: 0.4rem;
+  padding-left: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+footer .container .icon ul li {
+  margin: 0 0.5rem;
+}
+
+footer .container .icon ul li span.follow {
+  color: var(--warna2);
+}
+
+footer .container .icon ul li a i {
+  font-size: 1rem;
+}
+
+footer .container .icon ul li a i.bi-facebook {
+  color: #1877f2;
+}
+
+footer .container .icon ul li a i.bi-instagram {
+  color: #e4405f;
+}
+
+footer .container .icon ul li a i.bi-twitter {
+  color: #1da1f2;
+}
+
+footer .container .icon ul li a i.bi-youtube {
+  color: #cd201f;
+}
+
+footer .container .icon ul li a i.bi-tiktok {
+  color: #ee1d51;
+}
+
+/* For powered */
+footer .container .icon .powered span {
+  color: var(--warna2);
+  margin-left: 0.5rem;
+}
+
+footer .container .icon .powered span img {
+  filter: drop-shadow(0 0 1px var(--warna2));
+  margin-left: 4px;
+}
+
+/* For Explore */
+footer .container .explore {
+  color: var(--warna2);
+}
+
+footer .container .contact {
+  color: var(--warna2);
+}
+
+/* For Pembayaran */
+footer .container .pembayaran ul li img {
+  filter: drop-shadow(0 0 0.1px var(--warna2));
+}
+
+/* For Copyright */
+.copyright {
+  background-color: var(--warna1);
+  color: var(--warna3);
+}
+
+@media (max-width: 576px) {
+  .news .card-image-lists .card img {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height: 15vh;
+    min-width: 30vw;
+  }
+}
