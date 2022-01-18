@@ -22,9 +22,15 @@
   --warna4: #333;
   --warna5: #555;
   --title: 0.85rem;
+  --lengkung: 1rem;
+  --lengkungO: 9999px;
 }
 
 /* Header */
+header {
+  background-color: var(--warna2);
+}
+
 header .input-group input::placeholder,
 header .input-group input::-ms-input-placeholder,
 header .input-group input:-ms-input-placeholder {
@@ -62,15 +68,28 @@ header nav ul li {
   padding: 0 1rem;
 }
 
+header nav ul li:focus {
+  background-color: var(--warna1);
+}
+
 header nav ul li a {
   color: rgb(238, 233, 233);
   font-size: var(--title);
   font-weight: 600;
 }
 
+header nav ul li a i.bi {
+  font-size: 1rem;
+}
+
 /* Carousel Bootstrap */
+.slider {
+  margin-top: 9rem;
+}
+
 .slider .container {
   height: 80vh;
+  /*border-radius: 10%;*/
 }
 
 .slider .carousel .carousel-inner {
@@ -81,7 +100,8 @@ header nav ul li a {
   object-fit: cover;
   object-position: center;
   overflow: hidden;
-  height: 100vh;
+  height: 70vh;
+  border-radius: var(--lengkung);
 }
 
 .slider .left-side-slider .card {
@@ -109,7 +129,7 @@ header nav ul li a {
   padding: 0 0.5rem;
   background-color: var(--warna1);
   border: none;
-  border-radius: 0.2rem;
+  border-radius: var(--lengkungO);
 }
 
 .owncar1 .own1 .title1 button i {
@@ -121,29 +141,32 @@ header nav ul li a {
   height: 14rem;
 }
 
-.owncar1 .own1 .card:before {
-  content: "";
-  background-image: linear-gradient(to bottom, transparent, var(--warna3));
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-}
-
 .owncar1 .own1 .card img {
   object-fit: cover;
   object-position: center;
   overflow: hidden;
   height: 100vh;
+  border-radius: var(--lengkung);
 }
 
 .owncar1 .own1 .card .carousel-caption {
   padding-bottom: 0;
   font-size: 1.3rem;
+  z-index: 1;
   right: 5%;
   left: 5%;
 }
+
+ .owncar1 .own1 .card .carousel-caption:before {
+  content: "";
+  background-image: linear-gradient(to bottom, transparent, var(--warna3));
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+} 
 
 .owncar1 .own1 .card .carousel-caption button {
   background-color: var(--warna1);
@@ -151,13 +174,13 @@ header nav ul li a {
   font-weight: 700;
   padding: 0.5rem 1rem;
   border: none;
-  border-radius: 0;
+  border-radius: .5rem;
 }
 
 .owncar1 .own1 .card .carousel-caption p {
   color: var(--warna2);
   font-weight: 500;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   font-size: 1.1rem;
   text-overflow: ellipsis;
   display: -webkit-box !important;
@@ -169,11 +192,12 @@ header nav ul li a {
 }
 
 /* Card -own-slider 2 */
+/* Free Templates */
 .owncar2 .own2 .title1 button {
   padding: 0 0.5rem;
   background-color: var(--warna1);
   border: none;
-  border-radius: 0.2rem;
+  border-radius: var(--lengkungO);
 }
 
 .owncar2 .own2 .title1 button i {
@@ -183,6 +207,7 @@ header nav ul li a {
 
 .owncar2 .own2 .card {
   height: 30rem;
+  border-radius: var(--lengkung);
 }
 
 .owncar2 .own2 .card img {
@@ -190,6 +215,7 @@ header nav ul li a {
   object-position: center;
   overflow: hidden;
   height: 100vh;
+  border-radius: var(--lengkung);
 }
 
 /* News */
@@ -208,6 +234,10 @@ header nav ul li a {
 }
 
 /* Card Lists */
+.news .card-image-utama .card img {
+  border-radius: var(--lengkung);
+}
+
 .news .card-image-lists .card {
   margin-bottom: 0.7rem;
   border: none;
@@ -235,14 +265,16 @@ header nav ul li a {
   object-position: center;
   overflow: hidden;
   max-height: 10rem;
+  border-radius: var(--lengkung);
 }
 
 /* Card -own-slider 3 */
+/* Documentations */
 .owncar3 .own3 .title1 button {
   padding: 0 0.5rem;
   background-color: var(--warna1);
   border: none;
-  border-radius: 0.2rem;
+  border-radius: var(--lengkungO);
 }
 
 .owncar3 .own3 .title1 button i {
@@ -252,31 +284,25 @@ header nav ul li a {
 
 .owncar3 .own3 .card {
   max-height: 24rem;
-}
-
-.owncar3 .own3 .card:before {
-  content: "";
-  background-image: linear-gradient(to bottom, transparent 40%, var(--warna3));
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
+  border-radius: 1rem;
 }
 
 .owncar3 .own3 .card .carousel-caption {
   padding-bottom: 0;
   font-size: 0.9rem;
+  z-index: 1;
 }
 
-/* .owncar3 .own3 .card .carousel-caption p {
-    border: 1px solid var(--warna1);
-    background-color: var(--warna1);
-    border-radius: 9999px;
-    width: max-content;
-    margin: 0 auto .3rem auto;
-    padding: 0 .5rem;
-  } */
+.owncar3 .own3 .card img:before {
+  content: "";
+  background-image: linear-gradient(to bottom, transparent, var(--warna3));
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 
 .owncar3 .own3 .card .carousel-caption a {
   background-color: var(--warna1);
@@ -293,6 +319,7 @@ header nav ul li a {
   object-position: center;
   overflow: hidden;
   height: 100vh;
+  border-radius: 1rem;
 }
 
 /* Footer */

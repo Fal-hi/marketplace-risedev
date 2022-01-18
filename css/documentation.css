@@ -91,61 +91,54 @@ header nav ul li a {
   color: var(--warna2);
 }
 
+.pencarian-news .container .input-group select:focus {
+  box-shadow: none;
+}
+
 .pencarian-news .container .input-group select {
-  padding: 0 .5rem;
-  outline: none;
   border: 1px solid var(--warna1);
-  font-size: var(--title);
 }
 /* End Search */
 
-
 /* Daftar Blog */
-.daftar-blog .card-utama .card{
-  border-radius: .5rem;
+.daftar-blog .card {
+  max-height: 24rem;
   border: none;
 }
 
-.daftar-blog .card-utama .card img {
-  border-top-left-radius: .5rem;
-  border-top-right-radius: .5rem;
+.daftar-blog .card .carousel-caption {
+  padding-bottom: 0;
+  font-size: 0.9rem;
 }
 
-.daftar-blog .card-daftar .card {
-  border-radius: .5rem;
-  border: none;
-  transition: .5s;
+.daftar-blog .card img:before {
+  content: "";
+  background-image: linear-gradient(to bottom, transparent, var(--warna3));
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.daftar-blog .card-daftar .card:hover {
-  filter: drop-shadow(0 10px 5px var(--warna1));
-  transform: translateY(-10px);
-  transition: .5s;
+.daftar-blog .card .carousel-caption a {
+  background-color: var(--warna1);
+  color: var(--warna2);
+  font-size: 0.75rem;
+  margin-bottom: 0.2rem;
+  /*border-radius: 9999px;*/
+  font-weight: 500;
+  padding: 0 0.5rem;
 }
 
-.daftar-blog .card-daftar .card img {
-  border-top-left-radius: .5rem;
-  border-top-right-radius: .5rem;
-}
-
-.daftar-blog .ads {
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
-}
-
-.daftar-blog .ads .card {
-  max-height: 25rem;
-}
-
-.daftar-blog .ads .card img {
+.daftar-blog .card img {
   object-fit: cover;
   object-position: center;
   overflow: hidden;
   height: 100vh;
+  border-radius: 1rem;
 }
-/* End Daftar  */
+/* End Daftar Blog */
 
 /* Footer */
 footer {
@@ -259,9 +252,3 @@ footer .container .pembayaran ul li img {
   background-color: var(--warna1);
   color: var(--warna3);
 }
-
-@media (max-width: 576px) {
-  .daftar-blog .container .ads {
-    display: none;
-  }
- }

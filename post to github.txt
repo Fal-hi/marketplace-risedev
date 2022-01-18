@@ -1,0 +1,5 @@
+untuk deploy aplikasi ke git
+1. git status
+2. git add .
+3. git commit -m "apa yg baru di buat"
+4. git push origin master
