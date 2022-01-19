@@ -15,14 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".own2").ownCarousel({
-    itemPerRow: 2,
-    itemWidth: 49.3,
+    itemPerRow: 4,
     // autoplay: 10000,
     nav: true,
     responsive: {
-      1000: [2, 49.3],
-      800: [2, 49],
-      600: [1, 100],
+      1000: [4, 24],
+      800: [3, 32.5],
+      600: [2, 49],
       400: [1, 100],
     },
   });
@@ -43,3 +42,23 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   responsive();
 });
+
+//Get the button
+const upButton = document.getElementById("upButton");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    upButton.style.display = "block";
+  } else {
+    upButton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

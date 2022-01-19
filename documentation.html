@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="css/documentation.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link
@@ -19,18 +20,30 @@
     <title>Wedding | Documentations</title>
   </head>
   <body>
+    <!-- Chat -->
+    <a href="https://api.whatsapp.com/send?phone=6289514640148&text=Hallo%20kak%20Saya%20ingin%20memesan%20Template" target="__blank" id="chatButton">
+      <i class="bi bi-chat-right-text"></i>
+       &nbsp; Chat dengan Lara
+    </a>
+    <!-- End Chat -->
+
+    <!-- Up button -->
+    <a href="#" onclick="topFunction()" id="upButton" title="Go to the top"> <i class="bi bi-arrow-up-circle-fill"></i> </a>
+    <!-- End up button -->
+
     <!-- Header -->
-    <header>
-      <div class="container py-3 border-bottom">
+    <header class="fixed-top bg-white">
+      <div class="container py-3 border-bottom d-none d-lg-block">
         <div class="col-lg-12">
           <div class="row justify-content-center align-items-center">
-            <div class="col-md-2">
+
+            <div class="logo col-md-2">
               <img
                 src="img/logo.png"
                 width="40"
                 class="d-inline-block align-text-middle"
               />
-              <span class="logo-name">RiseDev</span>
+              <span class="nama-logo">RiseDev</span>
             </div>
 
             <div class="col-md-6">
@@ -58,14 +71,19 @@
                 <span class="vendor">Are You a Vendor?</span>
               </div>
             </div>
+
           </div>
         </div>
       </div>
 
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
+          <a class="navbar-brand d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none" href="#">
+            <img src="img/logo.png" class="d-inline-block align-text-middle" alt="RiseDev logo" width="30px" height="auto">
+            <span class="logo-name">RiseDev</span>
+          </a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler me-2"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -77,30 +95,56 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <div class="siav d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none" href="#">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-box-arrow-in-right"></i> Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-person-circle"></i> Vendor</a>
+                </li>
+              </div>
+              <hr>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Home</a
+                <a class="nav-link" aria-current="page" href="index.html"
+                  ><i class="bi bi-house"></i> Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Free Wedding Templates</a>
+                <a class="nav-link" href="#">
+                  <i class="bi bi-tags"></i> Free Wedding Templates</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Wedding Invitation</a>
+                <a class="nav-link" href="#">
+                  <i class="bi bi-calendar2-event"></i> Wedding Invitation</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Our Documentations</a>
+                <a class="nav-link" href="documentation.html">
+                  <i class="bi bi-camera2"></i> Our Documentations</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="blog.html">Our News</a>
+                <a class="nav-link" href="blog.html">
+                  <i class="bi bi-newspaper"></i> Our News</a>
               </li>
             </ul>
+            <form class="d-flex d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none">
+              <div class="input-group me-2">
+                  <input
+                    type="text"
+                    class="form-control rounded-1"
+                    placeholder="Temukan Pernikahan Impianmu"
+                  />
+                  <button class="btn" type="button">
+                    <i class="bi bi-search"></i>
+                  </button>
+              </div>
+          </form>
           </div>
         </div>
       </nav>
     </header>
     <!-- End Header -->
-
     <!-- Search News -->
     <section class="pencarian-news">
       <div class="container h-25 mb-5 mt-2">
