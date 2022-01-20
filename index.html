@@ -64,7 +64,7 @@
 
             <div class="col-md-4 header-title">
               <div
-                class="d-flex justify-content-evenly align-items-center pt-2"
+                class="d-flex justify-content-evenly align-items-center"
               >
                 <span>Join Member?</span>
                 <span><a href="#">Sign In</a></span>
@@ -112,10 +112,10 @@
                   ><i class="bi bi-house"></i> Home</a
                 >
               </li>
-              <li class="nav-item">
+<!--               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <i class="bi bi-tags"></i> Free Wedding Templates</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <i class="bi bi-calendar2-event"></i> Wedding Invitation</a>
@@ -134,7 +134,7 @@
                   <input
                     type="text"
                     class="form-control rounded-1"
-                    placeholder="Temukan Pernikahan Impianmu"
+                    placeholder="Temukan Pernikahan Impianmu..."
                   />
                   <button class="btn" type="button">
                     <i class="bi bi-search"></i>
@@ -182,14 +182,10 @@
         <div class="own-carousel__container own1 mb-3">
           <div class="title1 mb-2">
             <div class="d-flex justify-content-between align-items-center">
-              <h1>Highlight News</h1>
-              <div class="own-carousel__control">
-                <button type="button" class="control__prev">
-                  <i class="bi bi-arrow-left" style="font-size: 1.5rem"></i>
-                </button>
-                <button type="button" class="control__next">
-                  <i class="bi bi-arrow-right" style="font-size: 1.5rem"></i>
-                </button>
+              <h3>Highlight News</h3>
+              <div class="tombol-arah own-carousel__control">
+                <i class="btn bi bi-arrow-left-square-fill control__prev"></i>
+                <i class="btn bi bi-arrow-right-square-fill control__next"></i>
               </div>
             </div>
           </div>
@@ -274,14 +270,10 @@
         <div class="own-carousel__container own2 mb-3">
           <div class="title1 mb-2">
             <div class="d-flex justify-content-between align-items-center">
-              <h1>Free Templates</h1>
-              <div class="own-carousel__control">
-                <button type="button" class="control__prev">
-                  <i class="bi bi-arrow-left" style="font-size: 1.5rem"></i>
-                </button>
-                <button type="button" class="control__next">
-                  <i class="bi bi-arrow-right" style="font-size: 1.5rem"></i>
-                </button>
+              <h3>Free Wedding Templates</h3>
+              <div class="tombol-arah own-carousel__control">
+                <i class="btn bi bi-arrow-left-square-fill control__prev"></i>
+                <i class="btn bi bi-arrow-right-square-fill control__next"></i>
               </div>
             </div>
           </div>
@@ -289,17 +281,50 @@
             <div class="own-carousel">
               <div class="own-carousel__item">
                 <div class="card">
+                  <div class="kategori">
+                    <span>Free</span>
+                  </div>
                   <img src="img/cwi1.jpg" class="img-fluid" alt="..." />
+                  <div class="pemesanan carousel-caption my-0 d-md-block">
+                    <a href="#" class="btn">
+                      <i class="bi bi-cart-plus"></i> Pesan
+                    </a>
+                    <a href="#" class="btn">
+                      <i class="bi bi-eye"></i> Preview
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="own-carousel__item">
                 <div class="card">
+                  <div class="kategori">
+                    <span>Premium</span>
+                  </div>
                   <img src="img/cwi2.jpg" class="img-fluid" alt="..." />
+                  <div class="pemesanan carousel-caption my-0 d-md-block">
+                    <a href="#" class="btn">
+                      <i class="bi bi-cart-plus"></i> Pesan
+                    </a>
+                    <a href="#" class="btn">
+                      <i class="bi bi-eye"></i> Preview
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="own-carousel__item">
                 <div class="card">
+                  <div class="kategori">
+                    <span>Premium</span>
+                  </div>
                   <img src="img/cwi3.jpg" class="img-fluid" alt="..." />
+                  <div class="pemesanan carousel-caption my-0 d-md-block">
+                    <a href="#" class="btn">
+                      <i class="bi bi-cart-plus"></i> Pesan
+                    </a>
+                    <a href="#" class="btn">
+                      <i class="bi bi-eye"></i> Preview
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -326,7 +351,7 @@
     <!-- News -->
     <section class="news mb-3">
       <div class="container">
-        <h1>Our News</h1>
+        <h3>Our News</h3>
         <div class="row">
           <!-- Card Utama -->
           <div class="col-lg-6 card-image-utama">
@@ -350,8 +375,8 @@
                       atque!
                     </p>
                   </div>
-                  <p class="card-text">
-                    <small class="text-muted">31 Desember 2021</small>
+                  <p class="card-waktu">
+                    31 Desember 2021 oleh Elon Musk
                   </p>
                 </div>
               </div>
@@ -373,7 +398,9 @@
                       Quas rerum fuga maxime amet molestias at tempora beatae
                       sequi voluptates alias?
                     </p>
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                    <p class="card-waktu">
+                      31 Desember 2021 oleh Elon Musk
+                    </p>
                   </div>
                 </div>
               </div>
@@ -390,7 +417,9 @@
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Quasi soluta culpa.
                     </p>
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                    <p class="card-waktu">
+                      31 Desember 2021 oleh Elon Musk
+                    </p>
                   </div>
                 </div>
               </div>
@@ -407,7 +436,9 @@
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Molestias, sapiente.
                     </p>
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                    <p class="card-waktu">
+                      31 Desember 2021 oleh Elon Musk
+                    </p>
                   </div>
                 </div>
               </div>
@@ -424,7 +455,9 @@
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Officiis aut cumque dolorem ullam, cupiditate corrupti.
                     </p>
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                    <p class="card-waktu">
+                      31 Desember 2021 oleh Elon Musk
+                    </p>
                   </div>
                 </div>
               </div>
@@ -441,14 +474,10 @@
         <div class="own-carousel__container own3 mb-3">
           <div class="title1 mb-2">
             <div class="d-flex justify-content-between align-items-center">
-              <h1>Our Documentations</h1>
-              <div class="own-carousel__control">
-                <button type="button" class="control__prev">
-                  <i class="bi bi-arrow-left" style="font-size: 1.5rem"></i>
-                </button>
-                <button type="button" class="control__next">
-                  <i class="bi bi-arrow-right" style="font-size: 1.5rem"></i>
-                </button>
+              <h3>Our Documentations</h3>
+              <div class="tombol-arah own-carousel__control">
+                <i class="btn bi bi-arrow-left-square-fill control__prev"></i>
+                <i class="btn bi bi-arrow-right-square-fill control__next"></i>
               </div>
             </div>
           </div>
@@ -610,7 +639,7 @@
 
     <div class="copyright container-fluid text-center p-2">
       <span>
-        &copy; Copyright by RiseDev
+        &copy; Copyright by <b>RiseDev</b>
         <script type="text/javascript">
           document.write(new Date().getFullYear());
         </script>

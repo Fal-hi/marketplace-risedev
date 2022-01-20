@@ -63,7 +63,7 @@
 
             <div class="col-md-4 header-title">
               <div
-                class="d-flex justify-content-evenly align-items-center pt-2"
+                class="d-flex justify-content-evenly align-items-center"
               >
                 <span>Join Member?</span>
                 <span><a href="#">Sign In</a></span>
@@ -95,6 +95,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <!-- Hidden when > md -->
               <div class="siav d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none" href="#">
                 <li class="nav-item">
                   <a class="nav-link" href="#">
@@ -105,16 +106,17 @@
                     <i class="bi bi-person-circle"></i> Vendor</a>
                 </li>
               </div>
+              <!-- End Hidden when > md -->
               <hr>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="index.html"
                   ><i class="bi bi-house"></i> Home</a
                 >
               </li>
-              <li class="nav-item">
+<!--               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <i class="bi bi-tags"></i> Free Wedding Templates</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <i class="bi bi-calendar2-event"></i> Wedding Invitation</a>
@@ -128,6 +130,7 @@
                   <i class="bi bi-newspaper"></i> Our News</a>
               </li>
             </ul>
+            <!-- Hidden when > md -->
             <form class="d-flex d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none">
               <div class="input-group me-2">
                   <input
@@ -140,16 +143,18 @@
                   </button>
               </div>
           </form>
+          <!-- End Hidden when > md -->
           </div>
         </div>
       </nav>
     </header>
     <!-- End Header -->
+
     <!-- Search News -->
     <section class="pencarian-news">
-      <div class="container h-25 mb-5 mt-2">
+      <div class="container h-25 mb-4 mt-2">
         <h1 class="text-center mb-4">Our Documentations</h1>
-        <div class="d-flex justify-content-center align-items-center">
+        <div class="seleksi mb-3 d-flex justify-content-center align-items-center">
 
           <div class="col-lg-2">
             <div class="input-group">
@@ -173,21 +178,29 @@
             </div>
           </div>
 
-          <div class="col-lg-4">
-            <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control rounded-1"
-                    placeholder="Search for..."
-                  />
-                  <button class="btn" type="button">
-                    <i class="bi bi-search"></i>
-                  </button>
-                </div>
-              </form>
+          <div class="tombol-pencarian col-lg-1">
+            <button type="submit" class="btn">
+              Search
+            </button>
           </div>          
 
         </div>
+
+        <div class="pencarian-lain me-3 d-flex justify-content-center align-items-center">
+          <form class="col-md-5">
+              <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control rounded-1"
+                    placeholder="Search in Documentations..."
+                  />
+                  <button class="btn" type="submit">
+                    <i class="bi bi-search"></i>
+                  </button>
+              </div>
+          </form>
+        </div>
+
       </div>
     </section>
     <!-- End Search News -->
@@ -196,10 +209,11 @@
       <div class="container">
         <!-- Blog -->
         <div class="blog col-lg-12">
+
           <!-- First Row Card News -->
           <div class="row">
 
-            <div class="col-md-3">
+            <div class="col-md-4 col-lg-3">
               <div class="card">
                   <img src="img/wi4.jpg" class="card-img-top" alt="..." />
                   <div class="carousel-caption my-0 d-md-block">
@@ -210,7 +224,7 @@
               </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-4 col-lg-3">
               <div class="card">
                   <img src="img/wi5.jpg" class="card-img-top" alt="..." />
                   <div class="carousel-caption my-0 d-md-block">
@@ -221,7 +235,7 @@
               </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-4 col-lg-3">
               <div class="card">
                   <img src="img/wi9.jpg" class="card-img-top" alt="..." />
                   <div class="carousel-caption my-0 d-md-block">
@@ -232,9 +246,9 @@
               </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-lg-3">
               <div class="card">
-                  <img src="img/wi7.jpg" class="card-img-top" alt="..." />
+                  <img src="img/wi12.jpg" class="card-img-top" alt="..." />
                   <div class="carousel-caption my-0 d-md-block">
                     <a href="#" class="btn"> Editor's Collection </a>
                     <h5>Me & You</h5>
@@ -247,11 +261,11 @@
           <!-- End First Card News -->
 
           <!-- Second Row Card News -->
-          <div class="row my-3">
+          <div class="row my-1">
 
-            <div class="col-md-3">
+            <div class="col-md-4 col-lg-3">
               <div class="card">
-                  <img src="img/wi4.jpg" class="card-img-top" alt="..." />
+                  <img src="img/wi11.jpg" class="card-img-top" alt="..." />
                   <div class="carousel-caption my-0 d-md-block">
                     <a href="#" class="btn"> Editor's Collection </a>
                     <h5>Me & You</h5>
@@ -260,9 +274,9 @@
               </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-4 col-lg-3">
               <div class="card">
-                  <img src="img/wi5.jpg" class="card-img-top" alt="..." />
+                  <img src="img/wi6.jpg" class="card-img-top" alt="..." />
                   <div class="carousel-caption my-0 d-md-block">
                     <a href="#" class="btn"> Editor's Collection </a>
                     <h5>Me & You</h5>
@@ -271,18 +285,7 @@
               </div>
             </div>
 
-            <div class="col-md-3">
-              <div class="card">
-                  <img src="img/wi9.jpg" class="card-img-top" alt="..." />
-                  <div class="carousel-caption my-0 d-md-block">
-                    <a href="#" class="btn"> Editor's Collection </a>
-                    <h5>Me & You</h5>
-                    <span>Aula STMIK Indonesia Padang - Padang</span>
-                  </div>
-              </div>
-            </div>
-
-            <div class="col-md-3">
+            <div class="col-md-4 col-lg-3">
               <div class="card">
                   <img src="img/wi7.jpg" class="card-img-top" alt="..." />
                   <div class="carousel-caption my-0 d-md-block">
@@ -292,6 +295,18 @@
                   </div>
               </div>
             </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                  <img src="img/wi13.jpg" class="card-img-top" alt="..." />
+                  <div class="carousel-caption my-0 d-md-block">
+                    <a href="#" class="btn"> Editor's Collection </a>
+                    <h5>Me & You</h5>
+                    <span>Aula STMIK Indonesia Padang - Padang</span>
+                  </div>
+              </div>
+            </div>
+
 
           </div>
           <!-- End Second Card News -->
@@ -418,7 +433,7 @@
 
     <div class="copyright container-fluid text-center p-2">
       <span>
-        &copy; Copyright by RiseDev
+        &copy; Copyright by <b>RiseDev</b>
         <script type="text/javascript">
           document.write(new Date().getFullYear());
         </script>

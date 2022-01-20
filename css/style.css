@@ -1,3 +1,16 @@
+/* Tombol arah */
+div.tombol-arah {
+  border: none;
+}
+
+div.tombol-arah i.btn {
+  color: var(--warna1);
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0;
+}
+/* End Tombol Arah */
+
 /* Carousel Bootstrap */
 .slider {
   margin-top: 9rem;
@@ -40,18 +53,6 @@
 
 /* Card own-slider 1 */
 /* Highlight News */
-.owncar1 .own1 .title1 button {
-  padding: 0 0.5rem;
-  background-color: var(--warna1);
-  border: none;
-  border-radius: var(--lengkungO);
-}
-
-.owncar1 .own1 .title1 button i {
-  color: var(--warna2);
-  text-shadow: 0 0 5px var(--warna2);
-}
-
 .owncar1 .own1 .card {
   max-height: 24rem;
 }
@@ -72,16 +73,17 @@
   left: 5%;
 }
 
- .owncar1 .own1 .card .carousel-caption:before {
+.owncar1 .own1 .card:before {
   content: "";
-  background-image: linear-gradient(to bottom, transparent, var(--warna3));
+  background-image: linear-gradient(to bottom, transparent 40%, rgba(0, 0, 0, 0.6));
   display: block;
   position: absolute;
   top: 0;
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-} 
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
 
 .owncar1 .own1 .card .carousel-caption button {
   background-color: var(--warna1);
@@ -110,24 +112,56 @@
 
 /* Card -own-slider 2 */
 /* Free Templates */
-.owncar2 .own2 .title1 button {
-  padding: 0 0.5rem;
-  background-color: var(--warna1);
-  border: none;
-  border-radius: var(--lengkungO);
-}
-
-.owncar2 .own2 .title1 button i {
-  color: var(--warna2);
-  text-shadow: 0 0 5px var(--warna2);
-}
-
 .owncar2 .own2 .card {
   max-height: 24rem;
   border: none;
   transition: .5s;
   border-radius: var(--lengkung);
 }
+
+.owncar2 .own2 .card .kategori {
+  position: absolute;
+  z-index: 1;
+  top: 25px;
+  right: 30px;
+}
+
+.owncar2 .own2 .card .kategori span {
+  padding: 6.7px 15px 10px 15px;
+  font-weight: bold;
+  background-color: var(--warna1);
+  border-radius: var(--lengkungO);
+  color: var(--warna2);
+}
+
+.owncar2 .own2 .card .pemesanan {
+  opacity: 0.5;
+  right: 0;
+  left: 0;
+  bottom: 40%;
+  transition: .5s;
+}
+
+.owncar2 .own2 .card .pemesanan:hover {
+  right: 0;
+  left: 0;
+  bottom: 40%;
+  opacity: 1;
+  transition: .5s;
+  background-color: var(--warna1);
+ }
+
+ .owncar2 .own2 .card .pemesanan a {
+  color: var(--warna2);
+  border-radius: 9999px;
+ }
+
+.owncar2 .own2 .card .pemesanan a:hover {
+  color: var(--warna3);
+  font-weight: bold;
+  background-color: var(--warna2);
+  border-radius: 9999px;
+ }
 
 .owncar2 .own2 .card img {
   object-fit: cover;
@@ -138,7 +172,6 @@
 }
 
 /* News */
-
 /* Card Utama */
 .news .card-image-utama .card .card-title h6 {
   color: var(--warna1);
@@ -149,7 +182,12 @@
 }
 
 .news .card-image-utama .card .card-text p {
-  color: var(--warna4);
+  color: var(--warna3);
+}
+
+.news .card-image-utama .card .card-body p.card-waktu {
+  font-size: .85rem;
+  color: #aaa;
 }
 
 /* Card Lists */
@@ -168,15 +206,16 @@
   color: var(--warna1);
 }
 
-.news .card-image-lists .card .card-body .card-text {
+.news .card-image-lists .card .card-body p.card-text {
   font-size: 0.95rem;
   font-weight: 600;
   line-height: 1.2rem;
-  color: var(--warna5);
+  color: var(--warna3);
 }
 
-.news .card-image-lists .card .card-body .text-muted {
-  font-size: 0.8rem;
+.news .card-image-lists .card .card-body p.card-waktu {
+  font-size: .7rem;
+  color: #aaa;
 }
 
 .news .card-image-lists .card img {
@@ -189,18 +228,6 @@
 
 /* Card -own-slider 3 */
 /* Documentations */
-.owncar3 .own3 .title1 button {
-  padding: 0 0.5rem;
-  background-color: var(--warna1);
-  border: none;
-  border-radius: var(--lengkungO);
-}
-
-.owncar3 .own3 .title1 button i {
-  color: var(--warna2);
-  text-shadow: 0 0 5px var(--warna2);
-}
-
 .owncar3 .own3 .card {
   max-height: 24rem;
   border-radius: var(--lengkung);
@@ -212,15 +239,15 @@
   z-index: 1;
 }
 
-.owncar3 .own3 .card img:before {
+.owncar3 .own3 .card:before {
   content: "";
-  background-image: linear-gradient(to bottom, transparent, var(--warna3));
+  background-image: linear-gradient(to bottom, transparent 40%, rgba(0, 0, 0, 0.6));
   display: block;
   position: absolute;
   top: 0;
+  border-radius: 1rem;
   width: 100%;
   height: 100%;
-  z-index: -1;
 }
 
 .owncar3 .own3 .card .carousel-caption a {

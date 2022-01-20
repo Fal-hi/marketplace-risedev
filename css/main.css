@@ -31,6 +31,11 @@ h1 {
   color: var(--warna6);
 }
 
+div.input-group select.form-select {
+  font-size: var(--title);padding-top: .2rem;
+  color: var(--warna6);
+}
+
 /* Chat */
 a#chatButton {
   color: var(--warna2);
@@ -80,17 +85,22 @@ header div.logo span.nama-logo {
   font-weight: bolder;
 }
 
-header .input-group input::placeholder,
-header .input-group input::-ms-input-placeholder,
-header .input-group input:-ms-input-placeholder {
-  font-size: 0.2rem;
-  color: var(--warna-font) !important;
-}
-
 header .input-group input[type="text"] {
   border: 1px solid var(--warna1);
-  font-size: var(--title);
+  font-size: .8rem;
 }
+
+header .input-group input[type="text"]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #aaa;
+  opacity: 1; /* Firefox */
+}
+header .input-group input[type="text"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #aaa;
+}
+header .input-group input[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
+  color: #aaa;
+}
+
 
 header .input-group input[type="text"]:focus {
   box-shadow: none;
@@ -152,6 +162,7 @@ footer .container .row span.sign-up {
 /* For Icons */
 footer .container {
   padding: 2rem 0;
+  font-weight: lighter;
 }
 
 /* For subscribe form */
@@ -220,6 +231,18 @@ footer .container .icon ul li a i.bi-tiktok {
   color: #ee1d51;
 }
 
+footer .container .contact ul li p i.bi-whatsapp {
+  color: #43d854;
+}
+
+footer .container .contact ul li p i.bi-envelope {
+  color: #ea4335;
+}
+
+footer .container .contact ul li p i.bi-geo-alt {
+  color: #dd4b3e;
+}
+
 /* For powered */
 footer .container .icon .powered span {
   color: var(--warna2);
@@ -247,10 +270,17 @@ footer .container .pembayaran ul li img {
 /* End Footer */
 
 /* For Copyright */
-.copyright {
+div.copyright {
   background-color: var(--warna1);
-  color: var(--warna3);
 }
+
+div.copyright span {
+  color: var(--warna2);
+  font-size: 1rem;
+  font-weight: lighter;
+
+}
+
 /* End Footer */
 
 @media (max-width: 576px) {
