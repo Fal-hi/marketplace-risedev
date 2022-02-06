@@ -12,10 +12,6 @@ div.tombol-arah i.btn {
 /* End Tombol Arah */
 
 /* Carousel Bootstrap */
-.slider {
-  margin-top: 9rem;
-}
-
 .slider .container {
   height: 60vh;
 }

@@ -1,0 +1,230 @@
+/* Harga Undangan */
+section.harga-undangan {
+    margin: 1rem auto;
+}
+
+section.harga-undangan .card {
+    border: 2px solid var(--warna1);
+    margin-bottom: 1rem;
+    border-radius: var(--lengkung);
+    -webkit-border-radius: var(--lengkung);
+    -moz-border-radius: var(--lengkung);
+    -ms-border-radius: var(--lengkung);
+    -o-border-radius: var(--lengkung);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+section.harga-undangan .card:hover {
+    box-shadow: 0 10px 5px var(--warna1);
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+section.harga-undangan .card .card-header {
+    background: var(--warna1);
+    color: var(--warna2);
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+}
+
+section.harga-undangan .card .card-footer {
+    background: var(--warna7);
+    background: linear-gradient(313deg, var(--warna7) 30%, var(--warna1)100%);
+    color: var(--warna2);
+    border-radius: var(--lengkung);
+    -webkit-border-radius: var(--lengkung);
+    -moz-border-radius: var(--lengkung);
+    -ms-border-radius: var(--lengkung);
+    -o-border-radius: var(--lengkung);
+}
+
+section.harga-undangan .card ul li {
+    display: flex;
+    align-items: flex-start;
+}
+
+section.harga-undangan .card ul li i {
+    color: var(--warna1);
+    margin-right: .5rem;
+}
+
+section.harga-undangan .card ul li p {
+    margin-bottom: 0;
+    font-size: .95rem;
+    font-weight: 600;
+}
+
+section.harga-undangan .undangan-gratis .card .card-body ul {
+    margin-bottom: 3.85rem;
+}
+/* End Harga Undangan */
+
+/* Keuntungan */
+section.keuntungan {
+    padding: 0 1rem;
+}
+
+section.keuntungan h3 {
+    margin-bottom: 3rem;
+}
+
+section.keuntungan .card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    z-index: 1;
+    background: var(--warna7);
+    background: linear-gradient(313deg, var(--warna7) 30%, var(--warna1)100%);
+    border-radius: var(--lengkung);
+    -webkit-border-radius: var(--lengkung);
+    -moz-border-radius: var(--lengkung);
+    -ms-border-radius: var(--lengkung);
+    -o-border-radius: var(--lengkung);
+}
+
+section.keuntungan .card p {
+    color: var(--warna2);
+    font-weight: 500;  
+}
+
+section.keuntungan .card span {
+    background: var(--warna7);
+    background: linear-gradient(313deg, var(--warna7) 30%, var(--warna1)100%);
+    z-index: 2;
+    color: var(--warna2);
+    padding: .5rem 1.5rem .5rem 1rem;
+    border: 3px solid var(--warna2);
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 10%;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+
+section.keuntungan .card h5 {
+    background-color: var(--warna2);
+    color: var(--warna6);
+    font-weight: bold;
+    width: fit-content;
+    padding: .3rem;
+    border-radius: .4rem;
+    -webkit-border-radius: .4rem;
+    -moz-border-radius: .4rem;
+    -ms-border-radius: .4rem;
+    -o-border-radius: .4rem;
+}
+/* End Keuntungan */
+
+/* Isi Data Undangan */
+section.isi-data-undangan {
+    margin: 3rem auto;
+}
+
+section.isi-data-undangan .img-du .card {
+    margin-top: 1.4rem;
+    border: none;
+}
+
+section.isi-data-undangan .img-du .card img {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    margin-bottom: 1rem;
+    z-index: 1;
+}
+
+section.isi-data-undangan .img-du .card .card-img-overlay {
+    top: 37%;
+    z-index: 2;
+}
+
+section.isi-data-undangan .img-du .card .card-img-overlay span {
+    font-size: 1.7rem;
+    color: var(--warna2);
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: var(--lengkung);
+    -webkit-border-radius: var(--lengkung);
+    -moz-border-radius: var(--lengkung);
+    -ms-border-radius: var(--lengkung);
+    -o-border-radius: var(--lengkung);
+}
+
+section.isi-data-undangan .accordion-flush .accordion-item {
+    border: none;
+}
+
+section.isi-data-undangan .accordion-flush .accordion-item p{
+    border: none;
+}
+
+section.isi-data-undangan .accordion-flush .accordion-item .accordion-button {
+    background-color: var(--warna2);
+    border: 3px solid var(--warna1);
+    border-radius: var(--lengkung);
+    -webkit-border-radius: var(--lengkung);
+    -moz-border-radius: var(--lengkung);
+    -ms-border-radius: var(--lengkung);
+    -o-border-radius: var(--lengkung);
+}
+
+section.isi-data-undangan .accordion-button:focus{
+    border-color: var(--warna1) !important;
+    box-shadow: none !important;
+}
+
+section.isi-data-undangan .accordion-button:not(.collapsed) {
+    background-color: var(--warna2);
+    border: 2px solid var(--warna1);
+}
+
+section.isi-data-undangan .accordion-item button {
+    color: var(--warna1);
+}
+
+section.isi-data-undangan .accordion-item button p {
+    margin-bottom: 0;
+    color: var(--warna6);
+}
+
+section.isi-data-undangan .accordion-item button p i {
+    color: var(--warna1);
+}
+
+section.isi-data-undangan .accordion-body {
+    color: var(--warna6);
+    border: 3px solid var(--warna1);
+    border-top: none;
+    border-radius: var(--lengkung);
+    -webkit-border-radius: var(--lengkung);
+    -moz-border-radius: var(--lengkung);
+    -ms-border-radius: var(--lengkung);
+    -o-border-radius: var(--lengkung);
+}
+/* End Isi Data Undangan */
+
+@media (max-width: 576px) {
+    section.isi-data-undangan .img-du .card .card-img-overlay span {
+        font-size: 1rem;
+    }
+  
+  }

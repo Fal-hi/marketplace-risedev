@@ -1,8 +1,4 @@
 /* Search */
-.pencarian-news {
-  margin-top: 8.2rem;
-}
-
 .pencarian-news .container .input-group input::placeholder,
 .pencarian-news .container .input-group input::-ms-input-placeholder,
 .pencarian-news .container .input-group input:-ms-input-placeholder {
