@@ -1,10 +1,17 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400&display=swap'); */
+/* @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"); */
 
-@font-face {
+/* @font-face {
 	font-family: 'Noto Sans Display';
 	src: url('../font/static/NotoSansDisplay/NotoSansDisplay-Regular.ttf');
 	src: url('../font/static/NotoSansDisplay/NotoSansDisplay-Regular.ttf') format('ttf'),
 	url('../font/static/NotoSansDisplay/NotoSansDisplay-Regular.ttf') format('truetype');
+} */
+
+@font-face {
+	font-family: 'Rubik';
+	src: url('../font/Rubik/static/Rubik-Regular.ttf');
+	src: url('../font/Rubik/static/Rubik-Regular.ttf') format('ttf'),
+	url('../font/Rubik/static/Rubik-Regular.ttf') format('truetype');
 }
 
 * {
@@ -14,13 +21,14 @@
   text-decoration: none !important;
   padding: 0;
   margin: 0;
-  font-family: 'Noto Sans Display', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  /* font-family: 'Noto Sans Display', sans-serif; */
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
 :root {
   --warna1: #f58b54;
-  --warna10: #eeb868;
   --warna2: #fff;
   --warna3: #000;
   --warna4: #333;
@@ -53,10 +61,8 @@ a#chatButton {
   padding: 0.5rem 1rem;
   border-radius: 50px 0px 0px 50px;
   position: fixed;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
   top: 50%;
-  right: -147px;
+  right: -148px;
   font-size: 1rem;
   background-color: var(--warna1);
   -webkit-transition: 0.3s;
@@ -66,6 +72,8 @@ a#chatButton {
   -moz-border-radius: 50px 0px 0px 50px;
   -ms-border-radius: 50px 0px 0px 50px;
   -o-border-radius: 50px 0px 0px 50px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
@@ -126,7 +134,6 @@ header .input-group input[type="text"]::-ms-input-placeholder { /* Microsoft Edg
   color: #aaa;
 }
 
-
 header .input-group input[type="text"]:focus {
   box-shadow: none;
 }
@@ -140,7 +147,7 @@ header .input-group button {
 header .header-title span {
   font-size: var(--title);
   font-weight: 600;
-  color: var(--warna-font);
+  color: var(--warna6);
 }
 
 header .header-title .garis-lurus {
@@ -160,7 +167,7 @@ header nav ul hr {
 }
 
 header nav ul li a {
-  color: var(--warna-font) !important;
+  color: var(--warna6) !important;
   font-size: var(--title);
   font-weight: 600;
   transition: .01s;
@@ -181,7 +188,7 @@ header nav ul li a i.bi {
 
 /* Footer */
 footer {
-  background-color: var(--warna4);
+  background-color: var(--warna6);
 }
 
 footer .container .row span.sign-up {

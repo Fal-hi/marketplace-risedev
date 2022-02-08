@@ -4,7 +4,7 @@ section.harga-undangan {
 }
 
 section.harga-undangan .card {
-    border: 2px solid var(--warna1);
+    background-color: var(--warna6);
     margin-bottom: 1rem;
     border-radius: var(--lengkung);
     -webkit-border-radius: var(--lengkung);
@@ -32,14 +32,19 @@ section.harga-undangan .card:hover {
     -o-transition: .5s;
 }
 
-section.harga-undangan .card .card-header {
-    background: var(--warna1);
+section.harga-undangan .card .card-body hr {
+    height: 1px;
+    color: var(--warna1);
+    opacity: 1;
+}
+
+section.harga-undangan .card .kategori-paket {
+    color: var(--warna1);
+}
+
+section.harga-undangan .card .harga-paket {
     color: var(--warna2);
-    border-radius: .3rem;
-    -webkit-border-radius: .3rem;
-    -moz-border-radius: .3rem;
-    -ms-border-radius: .3rem;
-    -o-border-radius: .3rem;
+    text-align: center;
 }
 
 section.harga-undangan .card .card-footer {
@@ -61,170 +66,124 @@ section.harga-undangan .card ul li {
 section.harga-undangan .card ul li i {
     color: var(--warna1);
     margin-right: .5rem;
+    font-weight: bold;
 }
 
 section.harga-undangan .card ul li p {
+    color: var(--warna2);
     margin-bottom: 0;
     font-size: .95rem;
-    font-weight: 600;
-}
-
-section.harga-undangan .undangan-gratis .card .card-body ul {
-    margin-bottom: 3.85rem;
 }
 /* End Harga Undangan */
 
-/* Keuntungan */
-section.keuntungan {
-    padding: 0 1rem;
+/* Benefit */
+section.section-benefit {
+    padding: 50px 0;
 }
 
-section.keuntungan h3 {
-    margin-bottom: 3rem;
+section.section-benefit .title-section span {
+    color: var(--warna1);
+}
+ 
+section.section-benefit .benefit {
+    padding-left: 20px;
+    position: relative;
 }
 
-section.keuntungan .card {
-    padding: 1rem;
-    margin-bottom: 1rem;
-    z-index: 1;
-    background: var(--warna7);
-    background: linear-gradient(313deg, var(--warna7) 30%, var(--warna1)100%);
-    border-radius: var(--lengkung);
-    -webkit-border-radius: var(--lengkung);
-    -moz-border-radius: var(--lengkung);
-    -ms-border-radius: var(--lengkung);
-    -o-border-radius: var(--lengkung);
+section.section-benefit .benefit:not(:nth-child(4)) {
+    border-left: 2px solid var(--warna1);
+    padding-bottom: 20px;
 }
 
-section.keuntungan .card p {
-    color: var(--warna2);
-    font-weight: 500;  
+section.section-benefit .benefit h3 {
+    font-size: 18px;
+    color: var(--warna6);
 }
 
-section.keuntungan .card span {
-    background: var(--warna7);
-    background: linear-gradient(313deg, var(--warna7) 30%, var(--warna1)100%);
-    z-index: 2;
-    color: var(--warna2);
-    padding: .5rem 1.5rem .5rem 1rem;
-    border: 3px solid var(--warna2);
-    font-weight: bold;
-    text-align: center;
+section.section-benefit .benefit h3::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
     position: absolute;
-    top: -20px;
-    right: -20px;
-    width: 10%;
-    border-radius: 999px;
-    -webkit-border-radius: 999px;
-    -moz-border-radius: 999px;
-    -ms-border-radius: 999px;
-    -o-border-radius: 999px;
+    background-color: var(--warna1);
+    border-radius: 100%;
+    top: 0px;
+    left: -13px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
 
-section.keuntungan .card h5 {
+section.section-benefit .benefit h3::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
     background-color: var(--warna2);
-    color: var(--warna6);
-    font-weight: bold;
-    width: fit-content;
-    padding: .3rem;
-    border-radius: .4rem;
-    -webkit-border-radius: .4rem;
-    -moz-border-radius: .4rem;
-    -ms-border-radius: .4rem;
-    -o-border-radius: .4rem;
-}
-/* End Keuntungan */
-
-/* Isi Data Undangan */
-section.isi-data-undangan {
-    margin: 3rem auto;
+    border-radius: 100%;
+    top: 5px;
+    left: -8px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
 
-section.isi-data-undangan .img-du .card {
-    margin-top: 1.4rem;
-    border: none;
+section.section-benefit .benefit p {
+    font-size: 16px;
+    color: #737988;
 }
 
-section.isi-data-undangan .img-du .card img {
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
-    margin-bottom: 1rem;
-    z-index: 1;
+section.section-benefit .image-mobbile {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-section.isi-data-undangan .img-du .card .card-img-overlay {
-    top: 37%;
-    z-index: 2;
+section.section-benefit .image-mobbile::before {
+    background: var(--warna7);
+    background: linear-gradient(313deg, var(--warna7) 30%, var(--warna1)100%);
+    content: "";
+    display: block;
+    width: 100%; 
+    height: 350px; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -90; -webkit-border-radius: 30px 30px 0px 30px; -moz-border-radius: 30px 30px 0px 30px; -ms-border-radius: 30px 30px 0px 30px; -o-border-radius: 30px 30px 0px 30px;
+    border-radius: 30px 30px 0px 30px;
 }
 
-section.isi-data-undangan .img-du .card .card-img-overlay span {
-    font-size: 1.7rem;
-    color: var(--warna2);
-    font-weight: bold;
-    padding: 1rem;
-    border-radius: var(--lengkung);
-    -webkit-border-radius: var(--lengkung);
-    -moz-border-radius: var(--lengkung);
-    -ms-border-radius: var(--lengkung);
-    -o-border-radius: var(--lengkung);
+section.section-benefit .image-mobbile img.image-hand {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
 }
 
-section.isi-data-undangan .accordion-flush .accordion-item {
-    border: none;
+section.section-benefit .image-mobbile .img-iner {
+    position: absolute;
+    width: 220px;
+    height: auto;
+    background-color: #f58b54;
+    top: 51px;
+    z-index: -10;
+    left: 110px;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
-section.isi-data-undangan .accordion-flush .accordion-item p{
-    border: none;
+section.section-benefit .image-mobbile .img-iner .slider-item {
+    width: 225px;
+    height: 465px;
+    background-position: center;
+    background-size: cover;
 }
-
-section.isi-data-undangan .accordion-flush .accordion-item .accordion-button {
-    background-color: var(--warna2);
-    border: 3px solid var(--warna1);
-    border-radius: var(--lengkung);
-    -webkit-border-radius: var(--lengkung);
-    -moz-border-radius: var(--lengkung);
-    -ms-border-radius: var(--lengkung);
-    -o-border-radius: var(--lengkung);
-}
-
-section.isi-data-undangan .accordion-button:focus{
-    border-color: var(--warna1) !important;
-    box-shadow: none !important;
-}
-
-section.isi-data-undangan .accordion-button:not(.collapsed) {
-    background-color: var(--warna2);
-    border: 2px solid var(--warna1);
-}
-
-section.isi-data-undangan .accordion-item button {
-    color: var(--warna1);
-}
-
-section.isi-data-undangan .accordion-item button p {
-    margin-bottom: 0;
-    color: var(--warna6);
-}
-
-section.isi-data-undangan .accordion-item button p i {
-    color: var(--warna1);
-}
-
-section.isi-data-undangan .accordion-body {
-    color: var(--warna6);
-    border: 3px solid var(--warna1);
-    border-top: none;
-    border-radius: var(--lengkung);
-    -webkit-border-radius: var(--lengkung);
-    -moz-border-radius: var(--lengkung);
-    -ms-border-radius: var(--lengkung);
-    -o-border-radius: var(--lengkung);
-}
-/* End Isi Data Undangan */
-
-@media (max-width: 576px) {
-    section.isi-data-undangan .img-du .card .card-img-overlay span {
-        font-size: 1rem;
-    }
-  
-  }
+/* End Benefit */
