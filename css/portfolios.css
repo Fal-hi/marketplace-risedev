@@ -1,5 +1,5 @@
 /* Search */
-.pencarian-news .container .input-group input::placeholder,
+/* .pencarian-news .container .input-group input::placeholder,
 .pencarian-news .container .input-group input::-ms-input-placeholder,
 .pencarian-news .container .input-group input:-ms-input-placeholder {
   font-size: 0.2rem;
@@ -7,7 +7,7 @@
 }
 
 .pencarian-news .container .input-group input[type="text"] {
-  border: 1px solid var(--warna1);
+  border: 2px solid var(--warna1);
   font-size: var(--title);
 }
 
@@ -15,16 +15,22 @@
   box-shadow: none;
 }
 
-.pencarian-news .container .input-group input[type="text"]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.pencarian-news .container .input-group input[type="text"]::placeholder {
   color: #aaa;
-  opacity: 1; /* Firefox */
+  opacity: 1;
 }
-.pencarian-news .container .input-group input[type="text"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+.pencarian-news
+  .container
+  .input-group
+  input[type="text"]:-ms-input-placeholder {
   color: #aaa;
 }
-.pencarian-news .container .input-group input[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
+.pencarian-news
+  .container
+  .input-group
+  input[type="text"]::-ms-input-placeholder {
   color: #aaa;
-}
+} */
 
 .pencarian-news .container .input-group button {
   background-color: var(--warna1);
@@ -36,7 +42,12 @@
 }
 
 .pencarian-news .container .input-group select {
-  border: 1px solid var(--warna1);
+  border: 2px solid var(--warna1);
+  color: var(--warna6);
+}
+
+.pencarian-news .container .input-group select {
+  font-weight: bold;
   color: var(--warna6);
 }
 
@@ -51,13 +62,13 @@
   max-height: 24rem;
   border: none;
   margin-bottom: 1rem;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .daftar-blog .card:hover {
   filter: drop-shadow(0 10px 5px var(--warna1));
   transform: translateY(-10px);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .daftar-blog .card .carousel-caption {
@@ -67,7 +78,11 @@
 
 .daftar-blog .card:before {
   content: "";
-  background-image: linear-gradient(to bottom, transparent 40%, rgba(0, 0, 0, 0.6));
+  background-image: linear-gradient(
+    to bottom,
+    transparent 40%,
+    rgba(0, 0, 0, 0.6)
+  );
   display: block;
   position: absolute;
   top: 0;
@@ -76,36 +91,39 @@
   height: 100%;
 }
 
-.daftar-blog .card .carousel-caption a {
+.daftar-blog .card .carousel-caption span.editor {
   background-color: var(--warna1);
   color: var(--warna2);
   font-size: 0.75rem;
-  margin-bottom: 0.2rem;
-  /*border-radius: 9999px;*/
+  margin-bottom: 0.5rem;
   font-weight: 500;
-  padding: 0 0.5rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--lengkungO);
+  -webkit-border-radius: var(--lengkungO);
+  -moz-border-radius: var(--lengkungO);
+  -ms-border-radius: var(--lengkungO);
+  -o-border-radius: var(--lengkungO);
 }
 
 .daftar-blog .card img {
   object-fit: cover;
   object-position: center;
   overflow: hidden;
-  height: 100vh;
+  height: 24rem;
+  max-height: 24rem;
   border-radius: 1rem;
 }
 /* End Daftar Blog */
 
 /* Media Breakpoints */
 @media (max-width: 768px) {
-    .pencarian-news {
-      margin-top: 1rem;
-    }
-
+  .pencarian-news {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 992px) {
-    .pencarian-news {
-      margin-top: 4rem;
-    }
-
+  .pencarian-news {
+    margin-top: 0;
+  }
 }

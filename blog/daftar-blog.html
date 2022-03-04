@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" href="css/portfolios.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/daftar-blog.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="css/own-carousel.min.css" />
-    <script src="js/bootstrap.min.js" defer></script>
-    <script src="js/popper.min.js" defer></script>
-    <script src="js/script.js" defer></script>
-    <script src="js/own-carousel.min.js" defer></script>
-    <title>Wedding | Documentations</title>
+    <link rel="stylesheet" href="../css/own-carousel.min.css" />
+    <script src="../js/bootstrap.min.js" defer></script>
+    <script src="../js/popper.min.js" defer></script>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/own-carousel.min.js" defer></script>
+    <title>Wedding | Blog</title>
   </head>
   <body>
     <!-- Chat -->
@@ -43,7 +43,7 @@
           <div class="row justify-content-center align-items-center">
             <div class="logo col-md-3">
               <img
-                src="img/logo.png"
+                src="../img/logo.png"
                 width="40"
                 class="d-inline-block align-text-middle"
               />
@@ -66,7 +66,7 @@
             </div>
 
             <div class="col-md-3 header-title">
-              <a href="index-signin.html" class="btn float-end">Sign In</a>
+              <a href="../index-signin.html" class="btn float-end">Sign In</a>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@
             href="#"
           >
             <img
-              src="img/logo.png"
+              src="../img/logo.png"
               class="d-inline-block align-text-middle"
               alt="RiseDev logo"
               width="30px"
@@ -111,22 +111,22 @@
                 </li>
               </div>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
+                <a class="nav-link" aria-current="page" href="../index.html"
                   ><i class="bi bi-house"></i> Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="undangan.html">
+                <a class="nav-link" href="../undangan.html">
                   <i class="bi bi-calendar2-event"></i> Wedding Invitation</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolios.html">
+                <a class="nav-link" href="../portfolios.html">
                   <i class="bi bi-journal-richtext"></i> Our Portfolios</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="blog/daftar-blog.html">
+                <a class="nav-link" href="daftar-blog.html">
                   <i class="bi bi-newspaper"></i> Our News</a
                 >
               </li>
@@ -153,84 +153,159 @@
 
     <!-- Search News -->
     <section class="pencarian-news">
-      <div class="container h-25 mb-4 mt-2">
-        <h3 class="text-center mb-4">Our Portfolios</h3>
-        <div
-          class="seleksi mb-3 d-flex justify-content-center align-items-center"
-        >
-          <div class="col-lg-3 me-2">
+      <div class="container h-25 mb-4">
+        <h3 class="text-center mb-4">Our News</h3>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="col-lg-6">
             <div class="input-group">
-              <select class="form-select py-2" id="inputGroupSelect">
-                <option selected>Menus</option>
-                <option value="Templates">Templates</option>
-                <option value="Videos">Videos</option>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Temukan berita baru..."
+                aria-label="Text input with dropdown button"
+              />
+              <select
+                id="inputGroupSelect"
+                aria-label="Example select with button addon"
+              >
+                <option selected>Categories</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
               </select>
+              <button class="btn" type="button">Search</button>
             </div>
-          </div>
-
-          <div class="tombol-pencarian col-lg-1">
-            <button type="submit" class="btn">
-              Search
-            </button>
           </div>
         </div>
       </div>
     </section>
     <!-- End Search News -->
 
-    <section class="daftar-blog mb-3">
+    <section class="daftar-blog">
       <div class="container">
         <!-- Blog -->
-        <div class="blog col-lg-12">
+        <div class="col-lg-12">
+          <div class="row mb-2">
+            <!-- Card Utama -->
+            <div class="card-utama col-md-9">
+              <a href="blog.html">
+                <div class="card">
+                  <img
+                    src="../img/wi5.jpg"
+                    class="card-img-top"
+                    alt="card utama"
+                  />
+                  <div class="card-body">
+                    <div class="card-kategori">
+                      <h6>Card title</h6>
+                    </div>
+                    <div class="card-title">
+                      <h5>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo, consequatur.
+                      </h5>
+                      <div class="card-text">
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Qui cumque minus deserunt esse veniam possimus,
+                          reprehenderit temporibus tempore consectetur voluptate
+                          vel adipisci quibusdam nobis fugit, amet soluta, nihil
+                          non atque!
+                        </p>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="card-waktu">
+                          31 Desember 2021 oleh Elon Musk
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- End Card Utama -->
+
+            <!-- Ads -->
+            <div class="ads col-md-3">
+              <a href="#">
+                <div class="card">
+                  <img src="../img/ads1.jpg" class="card-img-top" alt="Ads 1" />
+                </div>
+              </a>
+              <a href="#">
+                <div class="card my-2">
+                  <img src="../img/ads2.jpg" class="card-img-top" alt="Ads 2" />
+                </div>
+              </a>
+            </div>
+            <!-- End Ads -->
+          </div>
+
           <!-- First Row Card News -->
-          <div class="row">
-            <div class="col-md-4 col-lg-3">
+          <div class="card-daftar row mb-3">
+            <div class="col-md-3">
               <a href="#">
                 <div class="card">
-                  <img src="img/wi4.jpg" class="card-img-top" alt="..." />
-                  <div class="carousel-caption my-0 d-md-block">
-                    <span class="editor">Editor's Collection</span>
-                    <h5>Me & You</h5>
-                    <span>Aula STMIK Indonesia Padang - Padang</span>
+                  <img src="../img/wi6.jpg" class="card-img-top" alt="card 1" />
+                  <div class="card-body">
+                    <div class="card-kategori">
+                      <h6>Card title</h6>
+                    </div>
+                    <div class="card-title">
+                      <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo, consequatur.
+                      </span>
+                      <p class="card-waktu">
+                        31 Desember 2021 oleh Elon Musk
+                      </p>
+                    </div>
                   </div>
                 </div>
               </a>
             </div>
-
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-3">
               <a href="#">
                 <div class="card">
-                  <img src="img/wi5.jpg" class="card-img-top" alt="..." />
-                  <div class="carousel-caption my-0 d-md-block">
-                    <span class="editor">Editor's Collection</span>
-                    <h5>Me & You</h5>
-                    <span>Aula STMIK Indonesia Padang - Padang</span>
+                  <img src="../img/wi7.jpg" class="card-img-top" alt="card 1" />
+                  <div class="card-body">
+                    <div class="card-kategori">
+                      <h6>Card title</h6>
+                    </div>
+                    <div class="card-title">
+                      <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo, consequatur.
+                      </span>
+                      <p class="card-waktu">
+                        31 Desember 2021 oleh Elon Musk
+                      </p>
+                    </div>
                   </div>
                 </div>
               </a>
             </div>
-
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-3">
               <a href="#">
                 <div class="card">
-                  <img src="img/wi9.jpg" class="card-img-top" alt="..." />
-                  <div class="carousel-caption my-0 d-md-block">
-                    <span class="editor">Editor's Collection</span>
-                    <h5>Me & You</h5>
-                    <span>Aula STMIK Indonesia Padang - Padang</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-lg-3">
-              <a href="#">
-                <div class="card">
-                  <img src="img/wi12.jpg" class="card-img-top" alt="..." />
-                  <div class="carousel-caption my-0 d-md-block">
-                    <span class="editor">Editor's Collection</span>
-                    <h5>Me & You</h5>
-                    <span>Aula STMIK Indonesia Padang - Padang</span>
+                  <img src="../img/wi8.jpg" class="card-img-top" alt="card 1" />
+                  <div class="card-body">
+                    <div class="card-kategori">
+                      <h6>Card title</h6>
+                    </div>
+                    <div class="card-title">
+                      <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo, consequatur.
+                      </span>
+                      <p class="card-waktu">
+                        31 Desember 2021 oleh Elon Musk
+                      </p>
+                    </div>
                   </div>
                 </div>
               </a>
@@ -239,54 +314,74 @@
           <!-- End First Card News -->
 
           <!-- Second Row Card News -->
-          <div class="row my-1">
-            <div class="col-md-4 col-lg-3">
+          <div class="card-daftar row mb-3">
+            <div class="col-md-3">
               <a href="#">
                 <div class="card">
-                  <img src="img/wi11.jpg" class="card-img-top" alt="..." />
-                  <div class="carousel-caption my-0 d-md-block">
-                    <span class="editor">Editor's Collection</span>
-                    <h5>Me & You</h5>
-                    <span>Aula STMIK Indonesia Padang - Padang</span>
+                  <img src="../img/wi9.jpg" class="card-img-top" alt="card 1" />
+                  <div class="card-body">
+                    <div class="card-kategori">
+                      <h6>Card title</h6>
+                    </div>
+                    <div class="card-title">
+                      <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo, consequatur.
+                      </span>
+                      <p class="card-waktu">
+                        31 Desember 2021 oleh Elon Musk
+                      </p>
+                    </div>
                   </div>
                 </div>
               </a>
             </div>
-
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-3">
               <a href="#">
                 <div class="card">
-                  <img src="img/wi6.jpg" class="card-img-top" alt="..." />
-                  <div class="carousel-caption my-0 d-md-block">
-                    <span class="editor">Editor's Collection</span>
-                    <h5>Me & You</h5>
-                    <span>Aula STMIK Indonesia Padang - Padang</span>
+                  <img
+                    src="../img/wi10.jpg"
+                    class="card-img-top"
+                    alt="card 1"
+                  />
+                  <div class="card-body">
+                    <div class="card-kategori">
+                      <h6>Card title</h6>
+                    </div>
+                    <div class="card-title">
+                      <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo, consequatur.
+                      </span>
+                      <p class="card-waktu">
+                        31 Desember 2021 oleh Elon Musk
+                      </p>
+                    </div>
                   </div>
                 </div>
               </a>
             </div>
-
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-3">
               <a href="#">
                 <div class="card">
-                  <img src="img/wi7.jpg" class="card-img-top" alt="..." />
-                  <div class="carousel-caption my-0 d-md-block">
-                    <span class="editor">Editor's Collection</span>
-                    <h5>Me & You</h5>
-                    <span>Aula STMIK Indonesia Padang - Padang</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-lg-3">
-              <a href="#">
-                <div class="card">
-                  <img src="img/wi13.jpg" class="card-img-top" alt="..." />
-                  <div class="carousel-caption my-0 d-md-block">
-                    <span class="editor">Editor's Collection</span>
-                    <h5>Me & You</h5>
-                    <span>Aula STMIK Indonesia Padang - Padang</span>
+                  <img
+                    src="../img/wi11.jpg"
+                    class="card-img-top"
+                    alt="card 1"
+                  />
+                  <div class="card-body">
+                    <div class="card-kategori">
+                      <h6>Card title</h6>
+                    </div>
+                    <div class="card-title">
+                      <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo, consequatur.
+                      </span>
+                      <p class="card-waktu">
+                        31 Desember 2021 oleh Elon Musk
+                      </p>
+                    </div>
                   </div>
                 </div>
               </a>
@@ -352,7 +447,7 @@
             <div class="powered">
               <span>
                 POWERED BY
-                <img src="img/logo.png" />
+                <img src="../img/logo.png" />
               </span>
             </div>
           </div>
@@ -401,13 +496,13 @@
               class="list-style-none d-flex justify-content-evenly align-items-center mb-0"
             >
               <li>
-                <img src="img/ic-bank1.png" />
+                <img src="../img/ic-bank1.png" />
               </li>
               <li>
-                <img src="img/ic-bank2.png" />
+                <img src="../img/ic-bank2.png" />
               </li>
               <li>
-                <img src="img/ic-bank3.png" />
+                <img src="../img/ic-bank3.png" />
               </li>
             </ul>
           </div>

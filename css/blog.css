@@ -1,17 +1,26 @@
 /* Search */
 .pencarian-news .container .input-group input[type="text"] {
   border: 1px solid var(--warna1);
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
-.pencarian-news .container .input-group input[type="text"]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.pencarian-news .container .input-group input[type="text"]::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #aaa;
   opacity: 1; /* Firefox */
 }
-.pencarian-news .container .input-group input[type="text"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+.pencarian-news
+  .container
+  .input-group
+  input[type="text"]:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: #aaa;
 }
-.pencarian-news .container .input-group input[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
+.pencarian-news
+  .container
+  .input-group
+  input[type="text"]::-ms-input-placeholder {
+  /* Microsoft Edge */
   color: #aaa;
 }
 
@@ -25,72 +34,59 @@
 }
 
 .pencarian-news .container .input-group select {
-  padding: 0 .5rem .13rem .5rem;
+  padding: 0 0.5rem 0.13rem 0.5rem;
   outline: none;
   border: 1px solid var(--warna1);
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: var(--warna6);
 }
 /* End Search */
 
 /* Daftar Blog */
-.daftar-blog .card-utama .card{
-  border-radius: .5rem;
+.blog .card-utama .card {
   border: none;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
 }
 
-.daftar-blog .card-utama .card img {
-  border-top-left-radius: .5rem;
-  border-top-right-radius: .5rem;
+.blog .card-utama .card img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
-.daftar-blog .card-daftar .card {
-  border-radius: .5rem;
-  border: none;
-  transition: .5s;
+.blog .card-utama .card .card-body .kdw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.daftar-blog .card-daftar .card:hover {
-  filter: drop-shadow(0 10px 5px var(--warna1));
-  transform: translateY(-10px);
-  transition: .5s;
-}
-
-.daftar-blog .card-daftar .card img {
-  border-top-left-radius: .5rem;
-  border-top-right-radius: .5rem;
-}
-
-.daftar-blog .card-daftar .card-body .card-kategori h6,
-.daftar-blog .card-utama .card-body .card-kategori h6{
-  font-weight: bold;
+.blog .card-utama .card .card-body .kdw h6 {
   color: var(--warna1);
-}
-
-.daftar-blog .card-daftar .card-body .card-title span,
-.daftar-blog .card-utama .card-body .card-title h5 {
   font-weight: bold;
 }
 
-.daftar-blog .card-daftar .card-body .card-title p {
-  margin-top: .5rem;
+.blog .card-utama .card-body .card-title h5 {
+  font-weight: bold;
+  color: var(--warna6);
 }
 
-.daftar-blog .card-utama .card .card-body p.card-waktu {
-  font-size: .85rem;
+.blog .card-utama .card-body .card-text p {
+  color: var(--warna6);
+}
+
+.blog .card-utama .card .card-body p.card-waktu {
+  font-size: 0.85rem;
   color: #aaa;
 }
 
-.daftar-blog .card-daftar .card .card-body p.card-waktu {
-  font-size: .7rem;
-  color: #aaa;
-}
-
-.daftar-blog .ads .card {
+.blog .ads .card {
   max-height: 20rem;
 }
 
-.daftar-blog .ads .card img {
+.blog .ads .card img {
   object-fit: cover;
   object-position: center;
   overflow: hidden;
@@ -100,34 +96,31 @@
 
 /* Media Breakpoints */
 @media (max-width: 576px) {
-  .daftar-blog .container .ads {
+  .blog .container .ads {
     display: none;
   }
 
   .pencarian-news {
-      margin-top: 4rem;
-    }
-
- }
+    margin-top: 4rem;
+  }
+}
 
 @media (max-width: 768px) {
-    .pencarian-news {
-      margin-top: 4rem;
-    }
+  .pencarian-news {
+    margin-top: 4rem;
+  }
 
-    .daftar-blog .ads .card {
-      max-height: 18rem;
-    }
-
+  .blog .ads .card {
+    max-height: 18rem;
+  }
 }
 
 @media (max-width: 992px) {
-    .pencarian-news {
-      margin-top: 4rem;
-    }
+  .pencarian-news {
+    margin-top: 4rem;
+  }
 
-    .daftar-blog .ads .card {
-      max-height: 18rem;
-    }
-
+  .blog .ads .card {
+    max-height: 18rem;
+  }
 }
