@@ -5,8 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
     nav: true,
     responsive: {
       1000: [4, 24],
+      900: [3, 32.5],
       800: [3, 32.5],
+      700: [2, 49],
       600: [2, 49],
+      500: [1, 100],
       400: [1, 100],
     },
   });
@@ -20,8 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
     nav: true,
     responsive: {
       1000: [4, 24],
+      900: [3, 32.5],
       800: [3, 32.5],
+      700: [2, 49],
       600: [2, 49],
+      500: [1, 100],
       400: [1, 100],
     },
   });
@@ -35,8 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
     nav: true,
     responsive: {
       1000: [4, 24],
+      900: [3, 32.5],
       800: [3, 32.5],
+      700: [2, 49],
       600: [2, 49],
+      500: [1, 100],
       400: [1, 100],
     },
   });

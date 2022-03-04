@@ -1,3 +1,106 @@
+/* * User Sign In */
+/* Undangan */
+section.undangan .card {
+  padding: 0.5rem;
+  /* max-height: 52vh; */
+  background: var(--warna7);
+  background: linear-gradient(313deg, var(--warna7) 30%, var(--warna1) 100%);
+  border-radius: var(--lengkung);
+  -webkit-border-radius: var(--lengkung);
+  -moz-border-radius: var(--lengkung);
+  -ms-border-radius: var(--lengkung);
+  -o-border-radius: var(--lengkung);
+}
+
+section.undangan .gambar img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  width: 100%;
+  max-height: 52vh;
+  border-top-left-radius: var(--lengkung);
+  border-bottom-left-radius: var(--lengkung);
+}
+
+section.undangan .isi {
+  padding: 1rem 1rem 0 1rem;
+}
+
+section.undangan .isi p {
+  color: var(--warna2);
+}
+
+section.undangan .isi h4.pengantin {
+  font-weight: bold;
+}
+
+section.undangan .isi a.link-web {
+  color: var(--warna2);
+}
+
+section.undangan .isi p.kategori {
+  background-color: var(--warna2);
+  color: var(--warna1);
+  width: fit-content;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: var(--lengkung);
+  -webkit-border-radius: var(--lengkung);
+  -moz-border-radius: var(--lengkung);
+  -ms-border-radius: var(--lengkung);
+  -o-border-radius: var(--lengkung);
+}
+
+section.undangan .isi .pas {
+  display: block;
+}
+
+section.undangan .isi .pas button.preview {
+  border: 1px solid var(--warna2);
+  color: var(--warna2);
+  font-weight: bold;
+}
+
+section.undangan .isi .pas button.sunting {
+  border: 1px solid var(--warna2);
+  color: var(--warna2);
+  font-weight: bold;
+}
+
+section.undangan .isi .pas button:hover {
+  background-color: var(--warna1);
+  color: var(--warna2);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+section.undangan .isi .bagikan p a {
+  border: 1px solid var(--warna2);
+  padding: 0.5rem 0.6rem;
+  border-radius: var(--lengkungO);
+  -webkit-border-radius: var(--lengkungO);
+  -moz-border-radius: var(--lengkungO);
+  -ms-border-radius: var(--lengkungO);
+  -o-border-radius: var(--lengkungO);
+}
+
+section.undangan .isi .bagikan p a:hover {
+  background-color: var(--warna1);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+section.undangan .isi .bagikan p a i {
+  color: var(--warna2);
+}
+/* * End User Sign In */
+
 /* Tombol arah */
 div.tombol-arah {
   border: none;
@@ -11,40 +114,18 @@ div.tombol-arah i.btn {
 }
 /* End Tombol Arah */
 
-/* Carousel Bootstrap */
-.slider .container {
-  height: 60vh;
-}
-
-.slider .carousel .carousel-inner {
-  height: 60vh;
-}
-
-.slider .carousel .carousel-inner img {
+/* Boostrap Slider */
+section.slider .carousel-inner .carousel-item img {
   object-fit: cover;
   object-position: center;
   overflow: hidden;
-  height: 60vh;
+  height: 65vh;
+  max-height: 65vh;
   border-radius: var(--lengkung);
-}
-
-.slider .left-side-slider .card {
-  height: 75vh;
-}
-
-.slider .left-side-slider .card img {
-  object-fit: cover;
-  object-position: center;
-  overflow: hidden;
-  height: 100vh;
-}
-
-.slider .left-side-slider .card .card-img-overlay .discount {
-  width: max-content;
-  text-align: center;
-  margin: 12rem auto;
-  color: var(--warna3);
-  background-color: var(--warna2);
+  -webkit-border-radius: var(--lengkung);
+  -moz-border-radius: var(--lengkung);
+  -ms-border-radius: var(--lengkung);
+  -o-border-radius: var(--lengkung);
 }
 
 /* Card own-slider 1 */
@@ -59,6 +140,10 @@ div.tombol-arah i.btn {
   overflow: hidden;
   height: 100vh;
   border-radius: var(--lengkung);
+  -webkit-border-radius: var(--lengkung);
+  -moz-border-radius: var(--lengkung);
+  -ms-border-radius: var(--lengkung);
+  -o-border-radius: var(--lengkung);
 }
 
 .owncar1 .own1 .card .carousel-caption {
@@ -71,7 +156,11 @@ div.tombol-arah i.btn {
 
 .owncar1 .own1 .card:before {
   content: "";
-  background-image: linear-gradient(to bottom, transparent 40%, rgba(0, 0, 0, 0.6));
+  background-image: linear-gradient(
+    to bottom,
+    transparent 40%,
+    rgba(0, 0, 0, 0.6)
+  );
   display: block;
   position: absolute;
   top: 0;
@@ -80,15 +169,14 @@ div.tombol-arah i.btn {
   height: 100%;
 }
 
-
 .owncar1 .own1 .card .carousel-caption button {
   background-color: var(--warna1);
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: var(--warna2);
   font-weight: 700;
   padding: 0.5rem;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .owncar1 .own1 .card .carousel-caption p {
@@ -96,7 +184,7 @@ div.tombol-arah i.btn {
   font-weight: 500;
   margin-top: 1rem;
   margin-bottom: 0;
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-overflow: ellipsis;
   display: -webkit-box !important;
   -webkit-line-clamp: 2;
@@ -111,8 +199,12 @@ div.tombol-arah i.btn {
 .owncar2 .own2 .card {
   max-height: 24rem;
   border: none;
-  transition: .5s;
+  transition: 0.5s;
   border-radius: var(--lengkung);
+  -webkit-border-radius: var(--lengkung);
+  -moz-border-radius: var(--lengkung);
+  -ms-border-radius: var(--lengkung);
+  -o-border-radius: var(--lengkung);
 }
 
 .owncar2 .own2 .card .kategori {
@@ -128,6 +220,10 @@ div.tombol-arah i.btn {
   background-color: var(--warna1);
   border-radius: var(--lengkungO);
   color: var(--warna2);
+  -webkit-border-radius: var(--lengkungO);
+  -moz-border-radius: var(--lengkungO);
+  -ms-border-radius: var(--lengkungO);
+  -o-border-radius: var(--lengkungO);
 }
 
 .owncar2 .own2 .card .pemesanan {
@@ -135,7 +231,7 @@ div.tombol-arah i.btn {
   right: 0;
   left: 0;
   bottom: 40%;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .owncar2 .own2 .card .pemesanan:hover {
@@ -143,21 +239,21 @@ div.tombol-arah i.btn {
   left: 0;
   bottom: 40%;
   opacity: 1;
-  transition: .5s;
+  transition: 0.5s;
   background-color: var(--warna1);
- }
+}
 
- .owncar2 .own2 .card .pemesanan a {
+.owncar2 .own2 .card .pemesanan a {
   color: var(--warna2);
   border-radius: 9999px;
- }
+}
 
 .owncar2 .own2 .card .pemesanan a:hover {
   color: var(--warna3);
   font-weight: bold;
   background-color: var(--warna2);
   border-radius: 9999px;
- }
+}
 
 .owncar2 .own2 .card img {
   object-fit: cover;
@@ -165,6 +261,10 @@ div.tombol-arah i.btn {
   overflow: hidden;
   height: 100vh;
   border-radius: var(--lengkung);
+  -webkit-border-radius: var(--lengkung);
+  -moz-border-radius: var(--lengkung);
+  -ms-border-radius: var(--lengkung);
+  -o-border-radius: var(--lengkung);
 }
 
 /* News */
@@ -182,13 +282,17 @@ div.tombol-arah i.btn {
 }
 
 .news .card-image-utama .card .card-body p.card-waktu {
-  font-size: .85rem;
+  font-size: 0.85rem;
   color: #aaa;
 }
 
 /* Card Lists */
 .news .card-image-utama .card img {
   border-radius: var(--lengkung);
+  -webkit-border-radius: var(--lengkung);
+  -moz-border-radius: var(--lengkung);
+  -ms-border-radius: var(--lengkung);
+  -o-border-radius: var(--lengkung);
 }
 
 .news .card-image-lists .card {
@@ -210,7 +314,7 @@ div.tombol-arah i.btn {
 }
 
 .news .card-image-lists .card .card-body p.card-waktu {
-  font-size: .7rem;
+  font-size: 0.7rem;
   color: #aaa;
 }
 
@@ -220,13 +324,21 @@ div.tombol-arah i.btn {
   overflow: hidden;
   max-height: 10rem;
   border-radius: var(--lengkung);
+  -webkit-border-radius: var(--lengkung);
+  -moz-border-radius: var(--lengkung);
+  -ms-border-radius: var(--lengkung);
+  -o-border-radius: var(--lengkung);
 }
-
 /* Card -own-slider 3 */
+
 /* Documentations */
 .owncar3 .own3 .card {
   max-height: 24rem;
   border-radius: var(--lengkung);
+  -webkit-border-radius: var(--lengkung);
+  -moz-border-radius: var(--lengkung);
+  -ms-border-radius: var(--lengkung);
+  -o-border-radius: var(--lengkung);
 }
 
 .owncar3 .own3 .card .carousel-caption {
@@ -237,7 +349,11 @@ div.tombol-arah i.btn {
 
 .owncar3 .own3 .card:before {
   content: "";
-  background-image: linear-gradient(to bottom, transparent 40%, rgba(0, 0, 0, 0.6));
+  background-image: linear-gradient(
+    to bottom,
+    transparent 40%,
+    rgba(0, 0, 0, 0.6)
+  );
   display: block;
   position: absolute;
   top: 0;
@@ -262,6 +378,10 @@ div.tombol-arah i.btn {
   overflow: hidden;
   height: 100vh;
   border-radius: var(--lengkung);
+  -webkit-border-radius: var(--lengkung);
+  -moz-border-radius: var(--lengkung);
+  -ms-border-radius: var(--lengkung);
+  -o-border-radius: var(--lengkung);
 }
 
 /* Media Breakpoints */
@@ -275,21 +395,18 @@ div.tombol-arah i.btn {
   }
 
   .slider {
-    margin-top: 4rem;
-}
-
+    margin-top: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
   .slider {
     margin-top: 4rem;
-}
-
+  }
 }
 
 @media (max-width: 992px) {
   .slider {
-    margin-top: 4rem;
-}
-
+    margin-top: 1rem;
+  }
 }
