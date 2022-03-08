@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/undangan.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/own-carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
+    <script src="../js/bootstrap.min.js" defer></script>
+    <script src="../js/popper.min.js" defer></script>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/own-carousel.min.js" defer></script>
+    <title>Wedding | Wedding Invitation</title>
+  </head>
+  <body>
+    <!-- Chat -->
+    <a
+      href="https://api.whatsapp.com/send?phone=6289514640148&text=Hallo%20kak%20Saya%20ingin%20memesan%20Template"
+      target="__blank"
+      id="chatButton"
+    >
+      <i class="bi bi-chat-right-text"></i>
+      &nbsp; Chat dengan Lara
+    </a>
+    <!-- End Chat -->
+
+    <!-- Up button -->
+    <a href="#" onclick="topFunction()" id="upButton" title="Go to the top">
+      <i class="bi bi-arrow-up-circle-fill"></i>
+    </a>
+    <!-- End up button -->
+
+    <!-- Header -->
+    <header class="sticky-lg-top bg-white">
+      <div class="container py-3 border-bottom d-none d-lg-block">
+        <div class="col-lg-12">
+          <div class="row justify-content-center align-items-center">
+            <div class="logo col-md-3">
+              <img
+                src="../img/logo.png"
+                width="40"
+                class="d-inline-block align-text-middle"
+              />
+              <span class="nama-logo">RiseDev</span>
+            </div>
+
+            <div class="col-md-6">
+              <form>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control rounded-1"
+                    placeholder="Temukan Pernikahan Impianmu"
+                  />
+                  <button class="btn" type="button">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-md-3 header-title">
+              <a href="../signin/signin.html" class="btn float-end">Sign In</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a
+            class="navbar-brand d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none"
+            href="#"
+          >
+            <img
+              src="../img/logo.png"
+              class="d-inline-block align-text-middle"
+              alt="RiseDev logo"
+              width="30px"
+              height="auto"
+            />
+            <span class="logo-name">RiseDev</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <div
+                class="siav d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none"
+                href="#"
+              >
+                <li class="nav-item">
+                  <a class="nav-link signin" href="../signin/signin.html">
+                    Sign In
+                  </a>
+                </li>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../../index.html"
+                  ><i class="bi bi-house"></i> Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="undangan.html">
+                  <i class="bi bi-calendar2-event"></i> Wedding Templates</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../video/video.html">
+                  <i class="bi bi-camera-reels"></i> Wedding Videos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../portfolio/portfolio.html">
+                  <i class="bi bi-journal-richtext"></i> Portfolios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../news/daftar-news.html">
+                  <i class="bi bi-newspaper"></i> News</a
+                >
+              </li>
+            </ul>
+            <form
+              class="d-flex d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none"
+            >
+              <div class="input-group me-2">
+                <input
+                  type="text"
+                  class="form-control rounded-1"
+                  placeholder="Temukan Pernikahan Impianmu..."
+                />
+                <button class="btn" type="button">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Card's Price -->
+    <section class="harga-undangan">
+      <div class="container">
+        <h3>Harga Undangan</h3>
+        <div class="row">
+          <div class="undangan-gratis col-lg-4 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="kategori-paket">Paket Free</h5>
+                <h3 class="harga-paket">Rp0</h3>
+                <hr />
+                <ul class="list-style-none mt-2">
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Preset/Design standar
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Quotes
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Detail Info Acara
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Profil Pasangan
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Protokol Kesehatan
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Navigasi Lokasi
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Ucapan dan Doa
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Love Stories
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Tampilan Gallery (Max 10)
+                    </p>
+                  </li>
+                </ul>
+                <a
+                  href="paket/paket-free.html"
+                  class="btn text-center w-100 fw-bold"
+                >
+                  Lihat
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="undangan-premium col-lg-4 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="kategori-paket">Paket Premium</h5>
+                <h3 class="harga-paket">Rp199.000</h3>
+                <hr />
+                <ul class="list-style-none mt-2">
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Semua yang ada di Paket Free
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Tampilkan Gallery (Max 20)
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Tampilkan tombol Live sreaming
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Share Personal - Nama Tamu (Unlimited)
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Background Music List Custom
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Costum Text
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Tampilkan Rekening Amplop Digital
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Bebas Memilih Tema Premium
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Protokol Kesehatan
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Masa aktif 1 tahun
+                    </p>
+                  </li>
+                </ul>
+                <a
+                  href="paket/paket-free.html"
+                  class="btn text-center w-100 fw-bold"
+                >
+                  Lihat
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="undangan-spesial col-lg-4 col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="kategori-paket">Paket Spesial</h5>
+                <h3 class="harga-paket">Rp279.000</h3>
+                <hr />
+                <ul class="list-style-none mt-2">
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Semua yang ada di Paket Premium
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Pilih Tema Khusus Kategori Spesial dan Bebas Request
+                      Custom
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Tambahkan RSVP ke Email & What's App
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Amplop Digital Full Channel Pembayaran
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Protokol Kesehatan
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      QR Scanner Untuk Buku Tamu di Lokasi
+                    </p>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-lg"></i>
+                    <p>
+                      Kisah Cinta Berupa Timeline
+                    </p>
+                  </li>
+                </ul>
+                <a
+                  href="paket/paket-free.html"
+                  class="btn text-center w-100 fw-bold"
+                >
+                  Lihat
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Card's Price -->
+
+    <!-- Benefit Cards -->
+    <section class="section-benefit">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 title-section mb-0">
+            <h2><span>Benefit</span> Yang Kamu Dapatkan</h2>
+            <p>Yuk segera Lihat undangan digital impian kamu dari sekarang</p>
+          </div>
+
+          <div class="col-sm-12 col-lg-6 align-self-center">
+            <div class="benefit">
+              <h3>Biaya yang murah</h3>
+              <p>
+                Hanya dengan membeli satu undangan anda bisa menyebar ke banyak
+                teman
+              </p>
+            </div>
+            <div class="benefit">
+              <h3>Ramah Lingkungan</h3>
+              <p>
+                Dengan menggunakan Undangan digital anda telah meminimalisir
+                penggunaan kertas
+              </p>
+            </div>
+            <div class="benefit">
+              <h3>Mudah diperbaiki</h3>
+              <p>
+                Jika terdapat kesalahan data maka akan mudah untuk memperbaiki
+                data.
+              </p>
+            </div>
+            <div class="benefit">
+              <h3>Tidak ada batasan</h3>
+              <p>
+                Anda bisa mengirimkan undangan digital ke mana saja dan kapan
+                saja.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6 d-none d-md-block align-self-center">
+            <div class="image-mobbile">
+              <img
+                class="image-hand"
+                src="../img/mobile.png"
+                alt="mobile image"
+              />
+              <!--  -->
+              <div class="img-iner">
+                <div class="mobile-carousel">
+                  <div
+                    class="slider-item"
+                    style="background-image: url(../img/slider-mobile-2.png);"
+                  ></div>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Benefit Cards -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 icon">
+            <span class="sign-up pb-2">SIGN UP & GET 10% OFF</span>
+            <form class="col-md-11 mx-2">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control rounded-1"
+                  placeholder="Email"
+                />
+                <button class="btn" type="button">Sign</button>
+              </div>
+            </form>
+            <small class="text-muted mx-2">
+              *New Customer only. Offer last 30 days. <a href="#">See terms.</a>
+            </small>
+
+            <ul class="list-style-none">
+              <li>
+                <span class="follow">FOLLOW US ON</span>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-tiktok"></i>
+                </a>
+              </li>
+            </ul>
+
+            <div class="powered">
+              <span>
+                POWERED BY
+                <img src="../img/logo.png" />
+              </span>
+            </div>
+          </div>
+
+          <div class="col-lg-4 explore">
+            <ul class="list-style-none">
+              <li class="pb-4">
+                <span>EXPLORE</span>
+              </li>
+              <li><p>Tentang Kami</p></li>
+              <li><p>Cara Bayar</p></li>
+              <li><p>Pricelist</p></li>
+              <li><p>Custom Template</p></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 contact">
+            <ul class="list-style-none">
+              <li class="pb-4">
+                <span>CONTACT US</span>
+              </li>
+              <li>
+                <i class="bi bi-whatsapp"></i>
+                <p>
+                  08100200300
+                </p>
+              </li>
+              <li>
+                <i class="bi bi-envelope"></i>
+                <p>
+                  risedev@gmail.com
+                </p>
+              </li>
+              <li>
+                <i class="bi bi-geo-alt"></i>
+                <p>
+                  Jl. Belanti 1, Khatib Sulaiman, Padang, Sumatera Barat.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <span class="text-center text-white">Pilih Pembayaran</span>
+          <div class="pembayaran w-50 mx-auto">
+            <ul
+              class="list-style-none d-flex justify-content-evenly align-items-center mb-0"
+            >
+              <li>
+                <img src="../img/ic-bank1.png" />
+              </li>
+              <li>
+                <img src="../img/ic-bank2.png" />
+              </li>
+              <li>
+                <img src="../img/ic-bank3.png" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright container-fluid text-center p-2">
+      <span>
+        &copy; Copyright by <b>RiseDev</b>
+        <script type="text/javascript">
+          document.write(new Date().getFullYear());
+        </script>
+        . All Right Reserved.
+      </span>
+    </div>
+    <!-- End Footer -->
+  </body>
+</html>

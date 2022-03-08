@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="public/css/main.css" />
-    <link rel="stylesheet" href="public/css/style.css" />
-    <link rel="stylesheet" href="public/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="public/css/own-carousel.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/signin.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/own-carousel.min.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
     />
-    <script src="public/js/bootstrap.min.js" defer></script>
-    <script src="public/js/popper.min.js" defer></script>
-    <script src="public/js/script.js" defer></script>
-    <script src="public/js/own-carousel.min.js" defer></script>
+    <script src="../js/bootstrap.min.js" defer></script>
+    <script src="../js/popper.min.js" defer></script>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/own-carousel.min.js" defer></script>
     <title>Wedding | Homepage</title>
   </head>
 
@@ -39,12 +39,13 @@
 
     <!-- Header -->
     <header class="sticky-lg-top bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light py-0">
       <div class="container py-3 border-bottom d-none d-lg-block">
         <div class="col-lg-12">
           <div class="row justify-content-center align-items-center">
             <div class="logo col-md-3">
               <img
-                src="public/img/logo.png"
+                src="../img/logo.png"
                 width="40"
                 class="d-inline-block align-text-middle"
               />
@@ -66,14 +67,23 @@
               </form>
             </div>
 
-            <div class="col-md-3 header-title">
-              <a href="public/signin/signin.html" class="btn float-end"
-                >Sign In</a
-              >
+            <div class="col-md-3 user">
+              <img src="../img/spongebob__imagination.png" class="img-fluid" alt="User Login">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Yoga Tri Wahyudi
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="signin.html">Sign Out</a>
+                  </li>
+                </ul>
+              </li>
             </div>
           </div>
         </div>
       </div>
+      </nav>
 
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
@@ -82,7 +92,7 @@
             href="#"
           >
             <img
-              src="public/img/logo.png"
+              src="../img/logo.png"
               class="d-inline-block align-text-middle"
               alt="RiseDev logo"
               width="30px"
@@ -107,36 +117,45 @@
                 class="siav d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none"
                 href="#"
               >
-                <li class="nav-item">
-                  <a class="nav-link signin" href="public/signin/signin.html">
-                    Sign In
+              <div class="user justify-content-start">
+                <img src="../img/spongebob__imagination.png" class="img-fluid" alt="User Login">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Yoga Tri Wahyudi
                   </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="signin.html">Sign Out</a>
+                    </li>
+                  </ul>
                 </li>
               </div>
+              </div>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
+                <a class="nav-link" aria-current="page" href="../../index.html"
                   ><i class="bi bi-house"></i> Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="public/undangan/undangan.html">
+                <a class="nav-link" href="#">
                   <i class="bi bi-calendar2-event"></i> Wedding Templates</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="public/video/video.html">
+                <a class="nav-link" href="#">
                   <i class="bi bi-camera-reels"></i> Wedding Videos</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="public/portfolios/portfolios.html">
+                <a class="nav-link" href="#">
                   <i class="bi bi-journal-richtext"></i> Portfolios</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="public/blog/daftar-blog.html">
+                <a class="nav-link" href="#">
                   <i class="bi bi-newspaper"></i> News</a
                 >
+              </li>
               </li>
             </ul>
             <form
@@ -159,87 +178,44 @@
     </header>
     <!-- End Header -->
 
-    <!-- Slider Bootstrap -->
-    <!-- <section class="slider mb-3">
+    <!-- Undangan -->
+    <section class="undangan mb-3">
       <div class="container">
-        <div class="pb-2">
-          <div
-            id="carouselFade"
-            class="carousel slide carousel-fade"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="public/img/wi10.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img src="public/img/wi1.jpg" class="d-block w-100" alt="..." />
-              </div>
-              <div class="carousel-item">
-                <img src="public/img/wi3.jpg" class="d-block w-100" alt="..." />
-              </div>
+        <div class="card">
+          <div class="row">
+            <div class="col-lg-8 gambar">
+              <img
+                src="../img/wi2.jpg"
+                class="img-fluid"
+                alt="Template Undangan"
+              />
             </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End Slider -->
-
-    <!-- Videos -->
-    <section class="video" id="video">
-      <div class="container mb-3">
-        <a
-          href="public/video/video.html"
-          class="text-decoration-none text-black"
-          ><h3>Wedding Videos</h3></a
-        >
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card">
-              <div class="ratio ratio-16x9">
-                <iframe
-                  src="https://www.youtube.com/embed/Vq2uDHYXdN8"
-                  title="YouTube video"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
+            <div class="col-lg-4 isi">
+              <p class="mb-4">Selamat Datang,</p>
+              <h4 class="pengantin my-4">
+                Romeo Widodo & Juliet Soekarno Putri
+              </h4>
+              <a href="" class="link-web">https://www.weddingku.com/</a>
+              <br />
+              <p class="kategori">Kategori : <b>Spesial</b></p>
+              <div class="pas">
+                <button class="btn preview">Preview</button>
+                <button class="btn sunting">Sunting</button>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <div class="ratio ratio-16x9">
-                <iframe
-                  src="https://www.youtube.com/embed/Vq2uDHYXdN8"
-                  title="YouTube video"
-                  frameborder="0"
-                  allowfullscreen
-                >
-                </iframe>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <div class="ratio ratio-16x9">
-                <iframe
-                  src="https://www.youtube.com/embed/Vq2uDHYXdN8"
-                  title="YouTube video"
-                  frameborder="0"
-                  allowfullscreen
-                >
-                </iframe>
+              <div class="bagikan mt-4">
+                <p>
+                  Bagikan :
+                  <a href="#">
+                    <i class="bi bi-whatsapp"></i>
+                  </a>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Videos -->
+    <!-- End Undangan -->
 
     <!-- Own-Carousel 1 -->
     <section class="highlight-news owncar1 mb-5">
@@ -258,11 +234,7 @@
             <div class="own-carousel">
               <div class="own-carousel__item">
                 <div class="card border-0">
-                  <img
-                    src="public/img/wi3.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
+                  <img src="../img/wi3.jpg" class="card-img-top" alt="..." />
                   <div class="carousel-caption d-md-block">
                     <button class="btn">
                       More Detail
@@ -277,11 +249,7 @@
               </div>
               <div class="own-carousel__item">
                 <div class="card border-0">
-                  <img
-                    src="public/img/wi6.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
+                  <img src="../img/wi6.jpg" class="card-img-top" alt="..." />
                   <div class="carousel-caption d-md-block">
                     <button class="btn">
                       More Detail
@@ -295,11 +263,7 @@
               </div>
               <div class="own-carousel__item">
                 <div class="card border-0">
-                  <img
-                    src="public/img/wi8.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
+                  <img src="../img/wi8.jpg" class="card-img-top" alt="..." />
                   <div class="carousel-caption d-md-block">
                     <button class="btn">
                       More Detail
@@ -314,11 +278,7 @@
               </div>
               <div class="own-carousel__item">
                 <div class="card border-0">
-                  <img
-                    src="public/img/wi12.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
+                  <img src="../img/wi12.jpg" class="card-img-top" alt="..." />
                   <div class="carousel-caption d-md-block">
                     <button class="btn">
                       More Detail
@@ -333,20 +293,12 @@
               </div>
               <div class="own-carousel__item">
                 <div class="card border-0">
-                  <img
-                    src="public/img/wi13.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
+                  <img src="../img/wi13.jpg" class="card-img-top" alt="..." />
                 </div>
               </div>
               <div class="own-carousel__item">
                 <div class="card border-0">
-                  <img
-                    src="public/img/wi7.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
+                  <img src="../img/wi7.jpg" class="card-img-top" alt="..." />
                 </div>
               </div>
             </div>
@@ -362,7 +314,7 @@
         <div class="own-carousel__container own2 mb-3">
           <div class="title1 mb-2">
             <div class="d-flex justify-content-between align-items-center">
-              <h3>Wedding Templates</h3>
+              <h3>Free Wedding Templates</h3>
               <div class="tombol-arah own-carousel__control">
                 <i class="btn bi bi-arrow-left-square-fill control__prev"></i>
                 <i class="btn bi bi-arrow-right-square-fill control__next"></i>
@@ -376,13 +328,13 @@
                   <div class="kategori">
                     <span>Free</span>
                   </div>
-                  <img src="public/img/cwi1.jpg" class="img-fluid" alt="..." />
+                  <img src="../img/cwi1.jpg" class="img-fluid" alt="..." />
                   <div class="pemesanan carousel-caption my-0 d-md-block">
                     <a href="#" class="btn">
-                      Pesan
+                      <i class="bi bi-cart-plus"></i> Pesan
                     </a>
                     <a href="#" class="btn">
-                      Preview
+                      <i class="bi bi-eye"></i> Preview
                     </a>
                   </div>
                 </div>
@@ -392,13 +344,13 @@
                   <div class="kategori">
                     <span>Premium</span>
                   </div>
-                  <img src="public/img/cwi2.jpg" class="img-fluid" alt="..." />
+                  <img src="../img/cwi2.jpg" class="img-fluid" alt="..." />
                   <div class="pemesanan carousel-caption my-0 d-md-block">
                     <a href="#" class="btn">
-                      Pesan
+                      <i class="bi bi-cart-plus"></i> Pesan
                     </a>
                     <a href="#" class="btn">
-                      Preview
+                      <i class="bi bi-eye"></i> Preview
                     </a>
                   </div>
                 </div>
@@ -406,15 +358,15 @@
               <div class="own-carousel__item">
                 <div class="card">
                   <div class="kategori">
-                    <span>Spesial</span>
+                    <span>Premium</span>
                   </div>
-                  <img src="public/img/cwi3.jpg" class="img-fluid" alt="..." />
+                  <img src="../img/cwi3.jpg" class="img-fluid" alt="..." />
                   <div class="pemesanan carousel-caption my-0 d-md-block">
                     <a href="#" class="btn">
-                      Pesan
+                      <i class="bi bi-cart-plus"></i> Pesan
                     </a>
                     <a href="#" class="btn">
-                      Preview
+                      <i class="bi bi-eye"></i> Preview
                     </a>
                   </div>
                 </div>
@@ -481,134 +433,113 @@
         <div class="row">
           <!-- Card Utama -->
           <div class="col-lg-6 card-image-utama">
-            <a href="public/blog/blog.html">
-              <div class="card border-0">
-                <img class="card-img-top" src="public/img/wi5.jpg" alt="" />
-                <div class="card-body">
-                  <div class="card-title">
-                    <h6 class="fw-bold">Card title</h6>
+            <div class="card border-0">
+              <img class="card-img-top" src="../img/slide-1.jpg" alt="" />
+              <div class="card-body">
+                <div class="card-title">
+                  <h6 class="fw-bold">Card title</h6>
+                </div>
+                <div class="card-title">
+                  <h5 class="fw-bold">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo, consequatur.
+                  </h5>
+                  <div class="card-text">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Qui cumque minus deserunt esse veniam possimus,
+                      reprehenderit temporibus tempore consectetur voluptate vel
+                      adipisci quibusdam nobis fugit, amet soluta, nihil non
+                      atque!
+                    </p>
                   </div>
-                  <div class="card-title">
-                    <h5 class="fw-bold">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Explicabo, consequatur.
-                    </h5>
-                    <div class="card-text">
-                      <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Qui cumque minus deserunt esse veniam possimus,
-                        reprehenderit temporibus tempore consectetur voluptate
-                        vel adipisci quibusdam nobis fugit, amet soluta, nihil
-                        non atque!
-                      </p>
-                    </div>
+                  <p class="card-waktu">
+                    31 Desember 2021 oleh Elon Musk
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Lists -->
+          <div class="col-lg-6 card-image-lists">
+            <div class="card">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="col-md-4 col-sm-4">
+                  <img src="../img/slide-2.jpg" class="img-fluid" alt="..." />
+                </div>
+                <div class="col-md-8 col-sm-8">
+                  <div class="card-body py-0">
+                    <h6 class="card-title mb-2">Card title</h6>
+                    <p class="card-text mb-2">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Quas rerum fuga maxime amet molestias at tempora beatae
+                      sequi voluptates alias?
+                    </p>
                     <p class="card-waktu">
                       31 Desember 2021 oleh Elon Musk
                     </p>
                   </div>
                 </div>
               </div>
-            </a>
-          </div>
-
-          <!-- Card Lists -->
-          <div class="col-lg-6 card-image-lists">
-            <a href="#">
-              <div class="card">
-                <div class="d-flex justify-content-center align-items-center">
-                  <div class="col-md-4 col-sm-4">
-                    <img
-                      src="public/img/wi14.jpg"
-                      class="img-fluid"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col-md-8 col-sm-8">
-                    <div class="card-body py-0">
-                      <h6 class="card-title mb-2">Card title</h6>
-                      <p class="card-text mb-2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Quas rerum fuga maxime amet molestias at tempora
-                        beatae sequi voluptates alias?
-                      </p>
-                      <p class="card-waktu">
-                        31 Desember 2021 oleh Elon Musk
-                      </p>
-                    </div>
+            </div>
+            <div class="card">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="col-md-4 col-sm-4">
+                  <img src="../img/slide-3.jpg" class="img-fluid" alt="..." />
+                </div>
+                <div class="col-md-8 col-sm-8">
+                  <div class="card-body py-0">
+                    <h6 class="card-title mb-2">Card title</h6>
+                    <p class="card-text mb-2">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Quasi soluta culpa.
+                    </p>
+                    <p class="card-waktu">
+                      31 Desember 2021 oleh Elon Musk
+                    </p>
                   </div>
                 </div>
               </div>
-            </a>
-
-            <a href="#">
-              <div class="card">
-                <div class="d-flex justify-content-center align-items-center">
-                  <div class="col-md-4 col-sm-4">
-                    <img
-                      src="public/img/wi11.jpg"
-                      class="img-fluid"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col-md-8 col-sm-8">
-                    <div class="card-body py-0">
-                      <h6 class="card-title mb-2">Card title</h6>
-                      <p class="card-text mb-2">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Quasi soluta culpa.
-                      </p>
-                      <p class="card-waktu">
-                        31 Desember 2021 oleh Elon Musk
-                      </p>
-                    </div>
+            </div>
+            <div class="card">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="col-md-4 col-sm-4">
+                  <img src="../img/wi6.jpg" class="img-fluid" alt="..." />
+                </div>
+                <div class="col-md-8 col-sm-8">
+                  <div class="card-body py-0">
+                    <h6 class="card-title mb-2">Card title</h6>
+                    <p class="card-text mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestias, sapiente.
+                    </p>
+                    <p class="card-waktu">
+                      31 Desember 2021 oleh Elon Musk
+                    </p>
                   </div>
                 </div>
               </div>
-            </a>
-
-            <a href="#">
-              <div class="card">
-                <div class="d-flex justify-content-center align-items-center">
-                  <div class="col-md-4 col-sm-4">
-                    <img src="public/img/wi6.jpg" class="img-fluid" alt="..." />
-                  </div>
-                  <div class="col-md-8 col-sm-8">
-                    <div class="card-body py-0">
-                      <h6 class="card-title mb-2">Card title</h6>
-                      <p class="card-text mb-2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Molestias, sapiente.
-                      </p>
-                      <p class="card-waktu">
-                        31 Desember 2021 oleh Elon Musk
-                      </p>
-                    </div>
+            </div>
+            <div class="card">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="col-md-4 col-sm-4">
+                  <img src="../img/wi7.jpg" class="img-fluid" alt="..." />
+                </div>
+                <div class="col-md-8 col-sm-8">
+                  <div class="card-body py-0">
+                    <h6 class="card-title mb-2">Card title</h6>
+                    <p class="card-text mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis aut cumque dolorem ullam, cupiditate corrupti.
+                    </p>
+                    <p class="card-waktu">
+                      31 Desember 2021 oleh Elon Musk
+                    </p>
                   </div>
                 </div>
               </div>
-            </a>
-
-            <a href="#">
-              <div class="card">
-                <div class="d-flex justify-content-center align-items-center">
-                  <div class="col-md-4 col-sm-4">
-                    <img src="public/img/wi7.jpg" class="img-fluid" alt="..." />
-                  </div>
-                  <div class="col-md-8 col-sm-8">
-                    <div class="card-body py-0">
-                      <h6 class="card-title mb-2">Card title</h6>
-                      <p class="card-text mb-2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Officiis aut cumque dolorem ullam, cupiditate corrupti.
-                      </p>
-                      <p class="card-waktu">
-                        31 Desember 2021 oleh Elon Musk
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -634,7 +565,7 @@
                 <a href="#">
                   <div class="card">
                     <img
-                      src="public/img/wi4.jpg"
+                      src="../img/wi4.jpg"
                       class="card-img-top"
                       alt="..."
                     />
@@ -651,7 +582,7 @@
                 <a href="#">
                   <div class="card">
                     <img
-                      src="public/img/wi5.jpg"
+                      src="../img/wi5.jpg"
                       class="card-img-top"
                       alt="..."
                     />
@@ -667,7 +598,7 @@
                 <a href="#">
                   <div class="card">
                     <img
-                      src="public/img/wi6.jpg"
+                      src="../img/wi6.jpg"
                       class="card-img-top"
                       alt="..."
                     />
@@ -683,7 +614,7 @@
                 <a href="#">
                   <div class="card">
                     <img
-                      src="public/img/wi7.jpg"
+                      src="../img/wi7.jpg"
                       class="card-img-top"
                       alt="..."
                     />
@@ -699,7 +630,7 @@
                 <a href="#">
                   <div class="card">
                     <img
-                      src="public/img/wi8.jpg"
+                      src="../img/wi8.jpg"
                       class="card-img-top"
                       alt="..."
                     />
@@ -715,7 +646,7 @@
                 <a href="#">
                   <div class="card">
                     <img
-                      src="public/img/wi9.jpg"
+                      src="../img/wi9.jpg"
                       class="card-img-top"
                       alt="..."
                     />
@@ -788,7 +719,7 @@
             <div class="powered">
               <span>
                 POWERED BY
-                <img src="public/img/logo.png" />
+                <img src="../img/logo.png" />
               </span>
             </div>
           </div>
@@ -837,13 +768,13 @@
               class="list-style-none d-flex justify-content-evenly align-items-center mb-0"
             >
               <li>
-                <img src="public/img/ic-bank1.png" />
+                <img src="../img/ic-bank1.png" />
               </li>
               <li>
-                <img src="public/img/ic-bank2.png" />
+                <img src="../img/ic-bank2.png" />
               </li>
               <li>
-                <img src="public/img/ic-bank3.png" />
+                <img src="../img/ic-bank3.png" />
               </li>
             </ul>
           </div>
