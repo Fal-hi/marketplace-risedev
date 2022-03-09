@@ -50,6 +50,7 @@ section.undangan .card {
     rgba(255, 206, 115, 1) 41%,
     rgba(245, 139, 84, 1) 72%
   );
+  border: 1px solid var(--warna2);
   border-radius: var(--lengkung);
   -webkit-border-radius: var(--lengkung);
   -moz-border-radius: var(--lengkung);
@@ -106,10 +107,15 @@ section.undangan .isi .pas button.preview {
   font-weight: bold;
 }
 
-section.undangan .isi .pas button.sunting {
-  border: 1px solid var(--warna2);
-  color: var(--warna2);
+section.undangan .isi .pas button.preview:hover {
+  background-color: var(--warna2);
+  color: var(--warna1);
   font-weight: bold;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 section.undangan .isi .pas button:hover {
