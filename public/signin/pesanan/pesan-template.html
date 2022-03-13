@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/signin.css" />
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/own-carousel.min.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/pesanan.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/own-carousel.min.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
     />
-    <script src="../js/bootstrap.min.js" defer></script>
-    <script src="../js/popper.min.js" defer></script>
-    <script src="../js/script.js" defer></script>
-    <script src="../js/own-carousel.min.js" defer></script>
-    <title>Wedding | Homepage</title>
+    <script src="../../js/bootstrap.min.js" defer></script>
+    <script src="../../js/popper.min.js" defer></script>
+    <script src="../../js/script.js" defer></script>
+    <script src="../../js/pesanan.js" defer></script>
+    <script src="../../js/own-carousel.min.js" defer></script>
+    <title>Wedding | Pesan Template</title>
   </head>
 
   <body>
@@ -45,7 +46,7 @@
             <div class="row justify-content-center align-items-center">
               <div class="logo col-md-3">
                 <img
-                  src="../img/logo.png"
+                  src="../../img/logo.png"
                   width="40"
                   class="d-inline-block align-text-middle"
                 />
@@ -69,7 +70,7 @@
 
               <div class="col-md-3 user">
                 <img
-                  src="../img/spongebob__imagination.png"
+                  src="../../img/spongebob__imagination.png"
                   class="img-fluid"
                   alt="User Login"
                 />
@@ -86,7 +87,7 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
-                      <a class="dropdown-item" href="signin.html">Sign Out</a>
+                      <a class="dropdown-item" href="../../../index.html">Sign Out</a>
                     </li>
                   </ul>
                 </li>
@@ -103,7 +104,7 @@
             href="#"
           >
             <img
-              src="../img/logo.png"
+              src="../../img/logo.png"
               class="d-inline-block align-text-middle"
               alt="RiseDev logo"
               width="30px"
@@ -130,7 +131,7 @@
               >
                 <div class="user justify-content-start">
                   <img
-                    src="../img/spongebob__imagination.png"
+                    src="../../img/spongebob__imagination.png"
                     class="img-fluid"
                     alt="User Login"
                   />
@@ -147,14 +148,17 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li>
-                        <a class="dropdown-item" href="signin.html">Sign Out</a>
+                        <a class="dropdown-item" href="../../../index.html">Sign Out</a>
                       </li>
                     </ul>
                   </li>
                 </div>
               </div>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../../index.html"
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="../signin.html"
                   ><i class="bi bi-house"></i> Home</a
                 >
               </li>
@@ -179,8 +183,13 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pesanan/pesanan.html">
-                  <i class="bi bi-bag-plus"></i> Pesanan Saya</a
+                <a class="nav-link" href="pesan-template.html">
+                  <i class="bi bi-bag-plus"></i> Pesan Template</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pesan-video.html">
+                  <i class="bi bi-bag-plus"></i> Pesan Video</a
                 >
               </li>
             </ul>
@@ -204,49 +213,173 @@
     </header>
     <!-- End Header -->
 
-    <section class="pesanan">
+    <section class="pesan-template">
       <div class="container">
-        <div class="card">
-          <div class="card-header">
-            <a href="#semua">Semua</a>
-            <a href="#belum_bayar">Belum Bayar</a>
-            <a href="#diproses">Diproses</a>
-            <a href="#selesai">Selesai</a>
-            <div class="card-body" id="semua">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-            <div class="card-body" id="belum_bayar">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-            <div class="card-body" id="diproses">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-            <div class="card-body" id="selesai">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="kepala-card">
+          <button onclick="viewTemplate('semua')" class="btn" id="semua">
+            Semua
+          </button>
+          <button onclick="viewTemplate('belumBayar')" class="btn" id="belumBayar">
+            Belum Bayar
+          </button>
+          <button onclick="viewTemplate('diProses')" class="btn" id="diProses">
+            Sedang Diproses
+          </button>
+          <button onclick="viewTemplate('selesai')" class="btn" id="selesai">
+            Selesai
+          </button>
+        </div>
+        <div id="templateWedding">
+          <!-- Card Template Wedding Selesai -->
+          <div class="card" id="tSelesai">
+            <div class="row">
+              <!-- Image and Video -->
+              <div class="col-lg-3 template">
+                <img src="../../img/cwi1.jpg" class="img-fluid mx-auto" alt="" />
+              </div>
+              <!-- isi Card -->
+              <div class="col-lg-9 isi">
+                <!-- Kategori and Selesai -->
+                <div class="kas">
+                  <span>Kategori : <b>Template Spesial</b></span>
+                  <span>Template Selesai</span>
+                </div>
+                <!-- Nama Pengantin and Link Wedding -->
+                <div class="npalw">
+                  <h3 class="my-4">Joko Blackzycowskzy & Putri Rostchild</h3>
+                  <a href="#">https://www.weddingku.com/</a>
+                </div>
+                <!-- Bagikan -->
+                <div class="bagikan">
+                  <span>
+                    Bagikan : &nbsp;
+                    <a class="bi bi-whatsapp" href="#"></a>
+                    <a class="bi bi-telegram" href="#"></a>
+                  </span>
+                  <h4 class="harga">Harga : <b>Rp199.000</b></h4>
+                </div>
+                <!-- Daftar Button Preview and Sunting -->
+                <div class="daftar-button">
+                  <div class="bpas">
+                    <button class="btn">
+                      Preview
+                    </button>
+                    <button class="btn">
+                      Sunting
+                    </button>
+                  </div>
+                  <!-- Ulasan and Bayar-->
+                  <button class="btn uab">
+                    Ulasan
+                  </button>
+                </div>
+              </div>
+              <!-- End isi Card -->
             </div>
           </div>
+          <!-- End Card Template Wedding Selesai -->
+
+          <!-- Card Template Wedding Belum Bayar -->
+          <div class="card" id="tBelumBayar">
+            <div class="row">
+              <!-- Template Wedding -->
+              <div class="col-lg-3 template">
+                <img src="../../img/cwi1.jpg" class="img-fluid mx-auto" alt="" />
+              </div>
+              <!-- isi Card -->
+              <div class="col-lg-9 isi">
+                <!-- Kategori and Selesai -->
+                <div class="kas">
+                  <span>Kategori : <b>Template Spesial</b></span>
+                  <span>Belum Bayar</span>
+                </div>
+                <!-- Nama Pengantin and Link Wedding -->
+                <div class="npalw">
+                  <h3 class="my-4">Joko Blackzycowskzy & Putri Rostchild</h3>
+                  <p>Silahkan Melakukan Pembayaran paling lambat 1 X 24 jam</p>
+                </div>
+                <!-- Bagikan -->
+                <div class="bagikan">
+                  <span>
+                    Bagikan : &nbsp;
+                    <a class="bi bi-whatsapp" href="#"></a>
+                    <a class="bi bi-telegram" href="#"></a>
+                  </span>
+                  <h4 class="harga">Harga : <b>Rp199.000</b></h4>
+                </div>
+                <!-- Daftar Button -->
+                <div class="daftar-button">
+                  <div class="bpas">
+                    <button class="btn">
+                      Preview
+                    </button>
+                    <button class="btn">
+                      Sunting
+                    </button>
+                  </div>
+                  <!-- Ulasan and Bayar -->
+                  <button class="btn uab">
+                    Bayar
+                  </button>
+                </div>
+              </div>
+              <!-- End isi Card -->
+            </div>
+          </div>
+          <!-- End Card Template Wedding Belum Bayar -->
+
+          <!-- Card Video Wedding Sedang Diproses -->
+          <div class="card" id="tDiProses">
+            <div class="row">
+              <!-- Template Wedding -->
+            <div class="col-lg-3 template">
+              <img src="../../img/cwi1.jpg" class="img-fluid mx-auto" alt="" />
+            </div>
+              <!-- isi Card -->
+              <div class="col-lg-9 isi">
+                <!-- Kategori and Selesai -->
+              <div class="kas">
+                <span>Kategori : <b>Template Spesial</b></span>
+                <span>Sedang Diproses</span>
+              </div>
+                <!-- Nama Pengantin and Link Wedding -->
+                <div class="npalw">
+                  <h3 class="mt-4">Joko Blackzycowskzy & Putri Rostchild</h3>
+                  <p class="mt-4 mb-0">
+                    Estimasi Template Wedding selesai: 1 X 24 jam
+                  </p>
+                  <p>
+                    Setelah Template Wedding selesai Kami akan mengirimkan notifikasi ke
+                    nomor What's App Anda
+                  </p>
+                </div>
+                <!-- Bagikan -->
+                <div class="bagikan">
+                  <span>
+                    Bagikan : &nbsp;
+                    <a class="bi bi-whatsapp" href="#"></a>
+                    <a class="bi bi-telegram" href="#"></a>
+                  </span>
+                  <h4 class="harga">Harga : <b>Rp199.000</b></h4>
+                </div>
+                <!-- Daftar Button Preview and Sunting -->
+                <div class="daftar-button">
+                  <div class="bpas">
+                    <button class="btn">
+                      Preview
+                    </button>
+                  </div>
+                  <!-- Ulasan and Bayar -->
+                  <button class="btn uab">
+                    Ulasan
+                  </button>
+                </div>
+              </div>
+              <!-- End isi Card -->
+            </div>
+          </div>
+          <!-- End Card Video Wedding Sedang Diproses -->
         </div>
-      </div>
     </section>
 
     <!-- Footer -->
@@ -303,7 +436,7 @@
             <div class="powered">
               <span>
                 POWERED BY
-                <img src="../img/logo.png" />
+                <img src="../../img/logo.png" />
               </span>
             </div>
           </div>
@@ -352,13 +485,13 @@
               class="list-style-none d-flex justify-content-evenly align-items-center mb-0"
             >
               <li>
-                <img src="../img/ic-bank1.png" />
+                <img src="../../img/ic-bank1.png" />
               </li>
               <li>
-                <img src="../img/ic-bank2.png" />
+                <img src="../../img/ic-bank2.png" />
               </li>
               <li>
-                <img src="../img/ic-bank3.png" />
+                <img src="../../img/ic-bank3.png" />
               </li>
             </ul>
           </div>
