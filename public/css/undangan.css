@@ -66,6 +66,16 @@ section.harga-undangan .card ul li {
   align-items: flex-start;
 }
 
+/* section.harga-undangan .card ul li.coba {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* tanpa tag p */
+/* section.harga-undangan .card ul li.coba p {
+    white-space: pre-line;
+} */
+
 section.harga-undangan .card ul li i {
   color: var(--warna1);
   margin-right: 0.5rem;

@@ -39,6 +39,19 @@ header .user li.dropdown:hover .dropdown-content {
   display: block;
 }
 
+header .dropdown-item.active,
+header .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+header .dropdown-item:focus,
+header .dropdown-item:hover {
+  color: var(--warna2);
+  background-color: var(--warna1);
+}
+
 /* Undangan */
 section.undangan .card {
   padding: 0.5rem;
