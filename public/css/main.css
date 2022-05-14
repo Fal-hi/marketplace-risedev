@@ -43,6 +43,10 @@ a.btn:focus {
   box-shadow: none;
 }
 
+a.signin:hover {
+  color: var(--warna2) !important;
+}
+
 div.input-group select.form-select {
   font-size: var(--title);
   padding-top: 0.2rem;

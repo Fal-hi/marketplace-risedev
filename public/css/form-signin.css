@@ -82,8 +82,8 @@
   align-items: center;
 }
 
-.form .form-isi .bsi button,
-.form .form-isi .bsiwg button {
+.form .form-isi .bsi a.btn,
+.form .form-isi .bsiwg a.btn {
   background: var(--warna1);
   color: var(--warna2);
   padding: 0.5rem 0;

@@ -15,6 +15,7 @@
 .form img.image {
   max-width: 100%;
   height: auto;
+  box-shadow: 4px 5px 2px rgba(0, 0, 0, 0.25);
 }
 
 .form h3 {
@@ -126,10 +127,39 @@
   margin-bottom: 10rem;
 }
 
+.syarat .kartu-syarat .btn-close:focus {
+  box-shadow: none;
+}
+
+.syarat .kartu-syarat .modal-header {
+  border-bottom: none;
+}
+
+.syarat .kartu-syarat .modal-content {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px var(--warna1);
+  border-radius: var(--lengkung);
+  -webkit-border-radius: var(--lengkung);
+  -moz-border-radius: var(--lengkung);
+  -ms-border-radius: var(--lengkung);
+  -o-border-radius: var(--lengkung);
+}
+
+.syarat .kartu-syarat .modal-footer {
+  border-top: none;
+}
+
+.syarat .kartu-syarat .modal-footer button {
+  background-color: var(--warna1);
+  color: var(--warna2);
+  font-weight: bold;
+}
+
 .syarat .kartu-syarat .card {
   background-color: var(--warna1);
   color: var(--warna2);
-  height: 52vh;
+  height: 60vh;
   padding: 4rem 3rem 1rem 3rem;
   box-shadow: 4px 5px 2px rgba(0, 0, 0, 0.25);
   border-radius: var(--lengkung);
@@ -163,5 +193,20 @@
 
 .syarat .kartu-syarat .card p {
   font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* .syarat .kartu-syarat .card .card-footer {
+  padding: 0;
+  background-color: transparent;
+  border-top: 0;
+} */
+
+.syarat .kartu-syarat .card button {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  background-color: var(--warna2) !important;
+  color: var(--warna1) !important;
   font-weight: bold;
 }

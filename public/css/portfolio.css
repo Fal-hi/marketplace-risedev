@@ -180,6 +180,9 @@ section.video iframe {
 
 /* Media Breakpoints */
 @media (max-width: 576px) {
+  .pencarian-news .container .seleksi .tombol-seleksi {
+    max-width: 100% !important;
+  }
   section.paket .card .pemesanan {
     right: 0;
     left: 0;
