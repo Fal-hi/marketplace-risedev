@@ -48,8 +48,8 @@ header .dropdown-item:active {
 
 header .dropdown-item:focus,
 header .dropdown-item:hover {
-  color: var(--warna2);
-  background-color: var(--warna1);
+  color: var(--warna1) !important;
+  background-color: transparent;
 }
 
 /* Undangan */

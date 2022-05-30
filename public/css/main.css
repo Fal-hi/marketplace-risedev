@@ -61,63 +61,54 @@ div.input-group select.form-select {
   box-shadow: none;
 }
 
-/* Chat */
+/* Chat Dengan Lara */
 a#chatButton {
-  color: var(--warna2);
-  padding: 0.5rem 1rem;
-  border-radius: 50px 0px 0px 50px;
-  position: fixed;
-  top: 50%;
-  right: -148px;
-  font-size: 1rem;
-  background-color: var(--warna1);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  z-index: 10;
-  -webkit-border-radius: 50px 0px 0px 50px;
-  -moz-border-radius: 50px 0px 0px 50px;
-  -ms-border-radius: 50px 0px 0px 50px;
-  -o-border-radius: 50px 0px 0px 50px;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-}
-
-a#chatButton:hover {
-  right: 0px;
-}
-
-a#chatButton i {
-  /*color: #25D366;*/
-  color: var(--warna2);
-  text-shadow: 0 0 1px var(--warna2);
-}
-/* End Chat */
-
-/* Up Button */
-a#upButton {
   position: fixed;
   bottom: 20px;
   right: 30px;
   z-index: 10;
-  color: var(--warna1);
+  background-color: var(--warna1);
   cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 18px;
-  -webkit-transform: scale(2);
-  transform: scale(2);
-  -moz-transform: scale(2);
-  -ms-transform: scale(2);
-  -o-transform: scale(2);
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  padding: 12px 15px 5px 15px;
+  border-radius: var(--lengkungO);
+  -webkit-border-radius: var(--lengkungO);
+  -moz-border-radius: var(--lengkungO);
+  -ms-border-radius: var(--lengkungO);
+  -o-border-radius: var(--lengkungO);
 }
-/* End Up Button */
+
+a#chatButton i {
+  color: var(--warna2);
+  font-size: 1.5rem;
+}
+
+a#chatButton::after {
+  /* display: none; */
+  visibility: hidden;
+  content: attr(tip);
+  position: absolute;
+  bottom: 5px;
+  right: 65px;
+  background: var(--warna1);
+  color: var(--warna2);
+  padding: 0.5rem 1rem;
+  width: max-content;
+  border-radius: var(--lengkung);
+  -webkit-border-radius: var(--lengkung);
+  -moz-border-radius: var(--lengkung);
+  -ms-border-radius: var(--lengkung);
+  -o-border-radius: var(--lengkung);
+}
+
+a#chatButton:hover::after {
+  /* display: block; */
+  visibility: visible;
+  transition: 1;
+  -webkit-transition: 1;
+  -moz-transition: 1;
+  -ms-transition: 1;
+  -o-transition: 1;
+}
 
 /* Header */
 header div.logo span.nama-logo {
@@ -176,10 +167,6 @@ header nav ul li a {
   -o-transition: 0.01s;
 }
 
-/* header nav ul li a:active {
-  border-bottom: 2px solid var(--warna1);
-} */
-
 header nav ul li a i.bi {
   font-size: 1rem;
 }
@@ -216,8 +203,6 @@ footer .input-group input:-ms-input-placeholder {
 footer .input-group input[type="text"] {
   border: 1px solid var(--warna1);
   font-size: var(--title);
-  /*    border-top-right-radius: 0;
-        border-bottom-right-radius: 0;*/
 }
 
 footer .input-group input[type="text"]:focus {
@@ -282,18 +267,6 @@ footer .contact ul li i {
   color: var(--warna1);
 }
 
-/* footer .container .contact ul li p i.bi-whatsapp {
-  color: #43d854;
-}
-
-footer .container .contact ul li p i.bi-envelope {
-  color: #ea4335;
-}
-
-footer .container .contact ul li p i.bi-geo-alt {
-  color: #dd4b3e;
-} */
-
 /* For powered */
 footer .container .icon .powered span {
   color: var(--warna2);
@@ -330,11 +303,8 @@ div.copyright span {
   font-size: 1rem;
   font-weight: lighter;
 }
-
 /* End Footer */
 
-@media (max-width: 576px) {
-  a#chatButton {
-    right: -137px;
-  }
+@media (max-width: 575.98px) {
+  
 }

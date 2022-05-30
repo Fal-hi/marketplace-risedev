@@ -216,7 +216,8 @@ section.pesanan .card .isi .daftar-button .bpas button {
   -o-border-radius: var(--lengkungO);
 }
 
-section.pesanan .card .isi .daftar-button button.uab {
+section.pesanan .card .isi .daftar-button button.uab,
+section.pesanan .card .isi .daftar-button a.uab {
   background-color: var(--warna1);
   color: var(--warna2);
   padding: 0.5rem 1rem;

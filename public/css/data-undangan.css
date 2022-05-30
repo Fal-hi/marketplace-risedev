@@ -102,12 +102,13 @@ section.isi-data-undangan button.pesan-undangan {
 /* Modal Content */
 
 section.isi-data-undangan .modal .modal-content {
-  background: rgb(255, 206, 115);
+  /* background: rgb(255, 206, 115);
   background: linear-gradient(
     180deg,
     rgba(255, 206, 115, 1) 41%,
     rgba(245, 139, 84, 1) 72%
-  );
+  ); */
+  border: 2px solid var(--warna1);
   border-radius: var(--lengkung);
   -webkit-border-radius: var(--lengkung);
   -moz-border-radius: var(--lengkung);
@@ -119,13 +120,13 @@ section.isi-data-undangan .modal .modal-content h5.modal-title {
   /* color: var(--warna2); */
   border-bottom: none;
 }
-/* 
+
 section.isi-data-undangan .modal .modal-content .modal-body label {
   color: var(--warna2);
-} */
+}
 
 section.isi-data-undangan .modal .modal-content .modal-body input.form-control {
-  border: none;
+  border: 1px solid var(--warna1);
 }
 
 section.isi-data-undangan .modal .modal-content .modal-header,
@@ -134,8 +135,18 @@ section.isi-data-undangan .modal .modal-content .modal-footer {
 }
 
 section.isi-data-undangan .modal .modal-content .modal-footer button.btn {
-  background-color: var(--warna2);
-  color: var(--warna1);
+  background-color: var(--warna1);
+  color: var(--warna2);
+}
+
+.google-map {
+  height: 300px;
+  width: 100%;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
 }
 
 /* End Isi Data Undangan */

@@ -3,6 +3,10 @@
 }
 
 .form img {
+  object-fit: cover;
+  object-position: center;
+  -o-object-fit: cover;
+  -o-object-position: center;
   width: 55%;
   height: 100%;
   position: absolute;

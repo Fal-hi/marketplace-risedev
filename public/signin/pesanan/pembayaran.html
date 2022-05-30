@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/pembayaran.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
+    <script src="../../js/bootstrap.min.js" defer></script>
+    <script src="../../js/popper.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-wizard@0.0.5" defer></script>
+    <title>Wedding | Pembayaran</title>
+</head>
+<body>
+    <!-- Chat -->
+    <a
+      href="https://api.whatsapp.com/send?phone=6289514640148&text=Hallo%20kak%20Saya%20ingin%20memesan%20Template"
+      target="__blank"
+      id="chatButton"
+      tip="Chat dengan Lara"
+    >
+      <i class="bi bi-chat-right-text"></i>
+    </a>
+    <!-- End Chat -->
+    
+    <!-- Daftar Paket -->
+    <section class="paket">
+        <img src="../../img/daun3.png" class="daun-atas" alt="Daun Atas">
+        <div class="container">
+            <h5 class="tpp">Pilih Paket</h5>
+            <div class="row">
+                <!-- Harga -->
+                <div class="col-lg-5 col-md-5 mb-4 harga">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="" class="btn card basic" class="nav-item" data-target-form="#belumBayarPesanan">
+                            <span>Basic</span>
+                            <h2>Rp. 0,-</h2>
+                        </a>
+                        <img src="../../img/segitiga.png" class="segitiga" alt="Segitiga">
+                    </div>
+                    <br>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="" class="btn card premium">
+                            <span>Premium</span>
+                            <h2>Rp. 299.000,-</h1>
+                        </a>
+                        <img src="../../img/segitiga.png" class="segitiga" alt="Segitiga">
+                    </div>
+                </div>
+                <!-- Benefit -->
+                <div class="col-lg-7 col-md-7 benefit">
+                    <div class="card">
+                        <h5>Benefit :</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>
+                                        <span></span>
+                                        Semua Yang Ada Di Paket Free
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Tampilkan Gallery (Max 20)
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Tampilkan Tombol Live Streaming
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Share Personal - Nama Tamu (Unlimited)
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Background Music List Custom
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>
+                                        <span></span>
+                                        Custom Text
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Tampilkan Rekening Amplop Digital
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Bebas Memilih Tema Premium
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Protokol Kesehatan
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Masa Aktif 1 Tahun
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pembayaran Paket -->
+    <section class="bayar col-lg-6 col-md-6">
+        <div class="container">
+            <h5 class="tpyd">Paket Yang Dipilih : <span>Premium</span></h5>
+            <div class="card">
+                <h5 class="tmt">Manual Transfer</h5>
+                <div class="total">
+                    <h6>Total Pembayaran</h6>
+                    <h2>Rp. 299.000,-</h2>
+                </div>
+                <div class="data-pembayaran">
+                    <div class="accordion accordion-flush" id="accordionFlush">
+                        <!-- Bank BRI -->
+                        <div class="accordion-item bank-bri">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne"
+                                aria-expanded="true"
+                                aria-controls="flush-collapseOne"
+                                >
+                                <p>
+                                    <img src="../../img/BRI.png" class="bri w-50" alt="Bank BRI">
+                                </p>
+                                </button>
+                            </h2>
+                            <div
+                                id="flush-collapseOne"
+                                class="accordion-collapse collapse show"
+                                aria-labelledby="flush-headingOne"
+                                data-bs-parent="#accordionFlush"
+                            >
+                                <div class="accordion-body">
+                                    <span>Nomor Rekening</span>
+                                    <h5>0078965437869</h5>
+                                    <span>Nama Rekening</span>
+                                    <h5>Yoga Tri Wahyudi</h5>
+                                </div>
+                            </div>                  
+                        </div>
+                        <!-- Bank Nagari -->
+                        <div class="accordion-item bank-nagari">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseTwo"
+                                >
+                                <p>
+                                    <img src="../../img/Nagari.png" class="nagari w-25" alt="Bank Nagari">
+                                </p>
+                                </button>
+                            </h2>
+                            <div
+                                id="flush-collapseTwo"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo"
+                                data-bs-parent="#accordionFlush"
+                            >
+                                <div class="accordion-body">
+                                    <span>Nomor Rekening</span>
+                                    <h5>0078965437869</h5>
+                                    <span>Nama Rekening</span>
+                                    <h5>Yoga Tri Wahyudi</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn ubp">Upload Bukti Pembayaran</button>
+        <img src="../../img/daun3.png" class="daun-bawah" alt="Daun Bawah">
+    </section>
+</body>
+</html>
