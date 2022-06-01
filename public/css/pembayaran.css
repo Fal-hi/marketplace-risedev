@@ -20,7 +20,7 @@
 
 .paket h5.tpp {
   color: var(--warna1);
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
   font-weight: bold;
 }
@@ -39,7 +39,8 @@
   -o-border-radius: var(--lengkung);
 }
 
-.paket .harga img.segitiga {
+.paket .benefitbas img.segitigabas,
+.paket .benefitpre img.segitigapre {
   width: 15%;
 }
 
@@ -85,7 +86,15 @@
   background-color: var(--warna1);
 }
 
-.paket .benefit .card {
+.paket .benefitbas,
+.paket .benefitpre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paket .benefitbas .card, 
+.paket .benefitpre .card {
   box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
   padding: 0.85rem;
   border: 2px solid var(--warna1);
@@ -96,24 +105,28 @@
   -o-border-radius: var(--lengkung);
 }
 
-.paket .benefit .card h5 {
+.paket .benefitbas .card h5, 
+.paket .benefitpre .card h5 {
   color: var(--warna1);
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-.paket .benefit .card ul {
+.paket .benefitbas .card ul,
+.paket .benefitpre .card ul {
   padding-left: 0;
 }
 
-.paket .benefit .card ul li {
+.paket .benefitbas .card ul li, 
+.paket .benefitpre .card ul li {
   display: flex;
   align-items: center;
   font-weight: bold;
   margin-bottom: 0.2rem;
 }
 
-.paket .benefit .card ul li span {
+.paket .benefitbas .card ul li span, 
+.paket .benefitpre .card ul li span {
   width: 20px;
   height: 20px;
   padding-right: 1rem;

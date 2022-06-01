@@ -13,7 +13,6 @@
     />
     <script src="../../js/bootstrap.min.js" defer></script>
     <script src="../../js/popper.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-wizard@0.0.5" defer></script>
     <title>Wedding | Pembayaran</title>
 </head>
 <body>
@@ -33,29 +32,80 @@
         <img src="../../img/daun3.png" class="daun-atas" alt="Daun Atas">
         <div class="container">
             <h5 class="tpp">Pilih Paket</h5>
-            <div class="row">
+            <div class="row align-items-center">
                 <!-- Harga -->
-                <div class="col-lg-5 col-md-5 mb-4 harga">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <a href="" class="btn card basic" class="nav-item" data-target-form="#belumBayarPesanan">
-                            <span>Basic</span>
-                            <h2>Rp. 0,-</h2>
-                        </a>
-                        <img src="../../img/segitiga.png" class="segitiga" alt="Segitiga">
-                    </div>
-                    <br>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <a href="" class="btn card premium">
-                            <span>Premium</span>
-                            <h2>Rp. 299.000,-</h1>
-                        </a>
-                        <img src="../../img/segitiga.png" class="segitiga" alt="Segitiga">
+                <div class="col-lg-4 col-md-4 harga">
+                    <button class="btn card basic d-none">
+                        <span>Basic</span>
+                        <h2>Rp. 0,-</h1>
+                    </button>
+                    <button class="btn card premium">
+                        <span>Premium</span>
+                        <h2>Rp. 299.000,-</h1>
+                    </button>
+                </div>
+                <!-- Benefit Basic -->
+                <div class="col-lg-8 col-md-8 benefitbas d-none">
+                    <img src="../../img/segitigabas.png" class="segitigabas me-4" alt="Segitiga">
+                    <div class="card">
+                        <h5>Benefit Basic :</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>
+                                        <span></span>
+                                        Semua Yang Ada Di Paket Free
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Tampilkan Gallery (Max 20)
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Tampilkan Tombol Live Streaming
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Share Personal - Nama Tamu (Unlimited)
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Background Music List Custom
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>
+                                        <span></span>
+                                        Custom Text
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Tampilkan Rekening Amplop Digital
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Bebas Memilih Tema Premium
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Protokol Kesehatan
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Masa Aktif 1 Tahun
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Benefit -->
-                <div class="col-lg-7 col-md-7 benefit">
+                <!-- Benefit Premium -->
+                <div class="col-lg-8 col-md-8 benefitpre">
+                    <img src="../../img/segitigapre.png" class="segitigapre me-4" alt="Segitiga">
                     <div class="card">
-                        <h5>Benefit :</h5>
+                        <h5>Benefit Premium :</h5>
                         <div class="row">
                             <div class="col-md-6">
                                 <ul>
@@ -113,7 +163,7 @@
     </section>
 
     <!-- Pembayaran Paket -->
-    <section class="bayar col-lg-6 col-md-6">
+    <section class="bayar col-12">
         <div class="container">
             <h5 class="tpyd">Paket Yang Dipilih : <span>Premium</span></h5>
             <div class="card">
@@ -191,5 +241,24 @@
         <button class="btn ubp">Upload Bukti Pembayaran</button>
         <img src="../../img/daun3.png" class="daun-bawah" alt="Daun Bawah">
     </section>
+
+    <!-- <script>
+        function show(e) {
+            const cardBasic = document.getElementById("cardBasic");
+            const cardPremium = document.getElementById("cardPremium");
+            
+            if(e.id === "btnBasic") {
+                cardBasic.style.display = "block"
+            } else {
+                cardBasic.style.display = "none"
+            }
+
+            if(e.id === "btnPremium") {
+                cardPremium.style.display = "block"
+            } else {
+                cardPremium.style.display = "none"
+            }
+        }
+    </script> -->
 </body>
 </html>

@@ -53,6 +53,11 @@ section.isi-data-undangan .accordion-button:not(.collapsed) {
   border: 2px solid var(--warna1);
 }
 
+.form-control:focus {
+  border-color: var(--warna5) !important;
+  box-shadow: none !important;
+}
+
 section.isi-data-undangan .accordion-item button {
   color: var(--warna1);
 }
@@ -84,13 +89,24 @@ section.isi-data-undangan .accordion-body h5 {
   border-bottom: 2px solid var(--warna1);
 }
 
-section.isi-data-undangan .accordion-body input {
-  border: 1px solid var(--warna6);
+section.isi-data-undangan .accordion-body input,
+section.isi-data-undangan .accordion-body textarea {
+  border: 1px solid var(--warna5);
 }
 
-section.isi-data-undangan .accordion-body input:focus {
+section.isi-data-undangan .accordion-body input:focus,
+section.isi-data-undangan .accordion-body textarea:focus {
   box-shadow: none;
-  border: 2px dashed var(--warna6);
+  border: 2px dashed var(--warna5);
+}
+
+.form-floating textarea {
+  width: 100%;
+  height: 80px !important;
+}
+
+.form-floating label {
+  color: var(--warna5);
 }
 
 /* Button Modal */
@@ -154,5 +170,9 @@ section.isi-data-undangan .modal .modal-content .modal-footer button.btn {
 @media (max-width: 576px) {
   section.isi-data-undangan .img-du .card .card-img-overlay span {
     font-size: 1rem;
+  }
+.form-floating textarea {
+  width: 100%;
+  height: 100px !important;
   }
 }

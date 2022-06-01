@@ -83,7 +83,6 @@ a#chatButton i {
 }
 
 a#chatButton::after {
-  /* display: none; */
   visibility: hidden;
   content: attr(tip);
   position: absolute;
@@ -101,13 +100,7 @@ a#chatButton::after {
 }
 
 a#chatButton:hover::after {
-  /* display: block; */
   visibility: visible;
-  transition: 1;
-  -webkit-transition: 1;
-  -moz-transition: 1;
-  -ms-transition: 1;
-  -o-transition: 1;
 }
 
 /* Header */

@@ -438,11 +438,34 @@
               >
                 <div class="accordion-body">
                   <div class="mb-3">
-                    <label for="fml" class="form-label">Foto Pernikahan</label>
-                    <input type="file" class="form-control" />
-                    <small class="text-muted"
-                      >Masukkan Foto Pernikahan Maksimal 10 Foto</small
+                    <label for="fp" class="form-label"
+                      >Foto Pernikahan (Masukkan Foto Pernikahan Maksimal 10
+                      Foto)</label
                     >
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <input type="file" class="form-control" />
+                        <br />
+                        <input type="file" class="form-control" />
+                        <br />
+                        <input type="file" class="form-control" />
+                        <br />
+                        <input type="file" class="form-control" />
+                        <br />
+                        <input type="file" class="form-control" />
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <input type="file" class="form-control" />
+                        <br />
+                        <input type="file" class="form-control" />
+                        <br />
+                        <input type="file" class="form-control" />
+                        <br />
+                        <input type="file" class="form-control" />
+                        <br />
+                        <input type="file" class="form-control" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -492,10 +515,55 @@
                     </div>
                   </div>
                   <div class="col-12">
-                    <label for="man" class="form-label"
+                    <div class="mb-3">
+                      <label for="alamat" class="form-label">Alamat</label>
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control"
+                          id="floatingTextarea"
+                        ></textarea>
+                        <label for="floatingTextarea"
+                          >Masukkan Alamat Tempat Akad Nikah</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="pldp" class="form-label"
+                      >Pilih Lokasi di Peta (Untuk Ditampilkan di Undangan
+                      Online)</label
+                    >
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        id="floatingTextarea"
+                      ></textarea>
+                      <label for="floatingTextarea"
+                        >ex : Jl. Khatib Sulaiman Kel No.1,Lolong Belanti, Kec.
+                        Padang Utara, Kota Padang</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <label for="lan" class="form-label"
                       >Lokasi Akad Nikah</label
                     >
                     <div class="google-map" id="akadNikah"></div>
+                  </div>
+                  <br />
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <label for="ap" class="form-label">Alamat Peta</label>
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control"
+                          id="floatingTextarea"
+                        ></textarea>
+                        <label for="floatingTextarea"
+                          >Masukkan Alamat Tempat Akad Nikah</label
+                        >
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -545,8 +613,53 @@
                     </div>
                   </div>
                   <div class="col-12">
-                    <label for="mr1" class="form-label">Lokasi Resepsi 1</label>
+                    <div class="mb-3">
+                      <label for="alamat" class="form-label">Alamat</label>
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control"
+                          id="floatingTextarea"
+                        ></textarea>
+                        <label for="floatingTextarea"
+                          >Masukkan Alamat Tempat Resepsi 1</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="pldp" class="form-label"
+                      >Pilih Lokasi di Peta (Untuk Ditampilkan di Undangan
+                      Online)</label
+                    >
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        id="floatingTextarea"
+                      ></textarea>
+                      <label for="floatingTextarea"
+                        >ex : Jl. Khatib Sulaiman Kel No.1,Lolong Belanti, Kec.
+                        Padang Utara, Kota Padang</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <label for="lr1" class="form-label">Lokasi Resepsi 1</label>
                     <div class="google-map" id="resepsi1"></div>
+                  </div>
+                  <br />
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <label for="ap" class="form-label">Alamat Peta</label>
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control"
+                          id="floatingTextarea"
+                        ></textarea>
+                        <label for="floatingTextarea"
+                          >Masukkan Alamat Tempat Resepsi 1</label
+                        >
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -596,8 +709,53 @@
                     </div>
                   </div>
                   <div class="col-12">
-                    <label for="mr2" class="form-label">Lokasi Resepsi 2</label>
+                    <div class="mb-3">
+                      <label for="alamat" class="form-label">Alamat</label>
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control"
+                          id="floatingTextarea"
+                        ></textarea>
+                        <label for="floatingTextarea"
+                          >Masukkan Alamat Tempat Resepsi 2</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="pldp" class="form-label"
+                      >Pilih Lokasi di Peta (Untuk Ditampilkan di Undangan
+                      Online)</label
+                    >
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        id="floatingTextarea"
+                      ></textarea>
+                      <label for="floatingTextarea"
+                        >ex : Jl. Khatib Sulaiman Kel No.1,Lolong Belanti, Kec.
+                        Padang Utara, Kota Padang</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <label for="lr2" class="form-label">Lokasi Resepsi 2</label>
                     <div class="google-map" id="resepsi2"></div>
+                  </div>
+                  <br />
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <label for="ap" class="form-label">Alamat Peta</label>
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control"
+                          id="floatingTextarea"
+                        ></textarea>
+                        <label for="floatingTextarea"
+                          >Masukkan Alamat Tempat Resepsi 2</label
+                        >
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -898,6 +1056,7 @@
     </div>
     <!-- End Footer -->
     <script>
+      // Map
       function initMap() {
         const akadNikah = { lat: -0.9225054940582557, lng: 100.35991095174292 };
         const resepsi1 = { lat: -0.9225054940582557, lng: 100.35991095174292 };
