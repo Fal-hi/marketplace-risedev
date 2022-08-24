@@ -1,3 +1,5 @@
+/* @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"); */
+
 /* Harga Undangan */
 section.harga-undangan {
   margin: 1rem auto;
@@ -61,12 +63,12 @@ section.harga-undangan .card a.btn:focus {
   box-shadow: none;
 }
 
-section.harga-undangan .card ul li {
+/* section.harga-undangan .card ul li {
   display: flex;
   align-items: flex-start;
-}
+} */
 
-/* section.harga-undangan .card ul li.coba {
+/* section.harga-undangan .card ul li {
   display: flex;
   flex-direction: column;
 } */
@@ -76,16 +78,23 @@ section.harga-undangan .card ul li {
     white-space: pre-line;
 } */
 
-section.harga-undangan .card ul li i {
+/* section.harga-undangan .card ul li i {
   color: var(--warna1);
   margin-right: 0.5rem;
   font-weight: bold;
-}
+} */
 
 section.harga-undangan .card ul li p {
   color: var(--warna2);
   margin-bottom: 0;
   font-size: 0.95rem;
+}
+
+section.harga-undangan .card ul li p::before {
+  display: inline-block;
+  content: url("https://api.iconify.design/fa/check.svg?color=%23f58b54");
+  vertical-align: -0.125em;
+  margin-right: 2.5%;
 }
 /* End Harga Undangan */
 

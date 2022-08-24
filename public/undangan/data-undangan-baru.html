@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/data-undangan-baru.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
+    <script src="../js/bootstrap.min.js" defer></script>
+    <script src="../js/popper.min.js" defer></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2"
+      async
+      defer
+    ></script>
+    <title>Wedding | Data Undangan Premium</title>
+  </head>
+  <body>
+    <!-- Chat -->
+    <a
+      href="https://api.whatsapp.com/send?phone=6289514640148&text=Hallo%20kak%20Saya%20ingin%20memesan%20Template"
+      target="__blank"
+      id="chatButton"
+      tip="Chat dengan Lara"
+    >
+      <i class="bi bi-chat-right-text"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="sticky-lg-top bg-white">
+      <div class="container py-3 border-bottom d-none d-lg-block">
+        <div class="col-lg-12">
+          <div class="row justify-content-center align-items-center">
+            <div class="logo col-md-3">
+              <img
+                src="../img/logo.png"
+                width="40"
+                class="d-inline-block align-text-middle"
+              />
+              <span class="nama-logo">RiseDev</span>
+            </div>
+
+            <div class="col-md-6">
+              <form>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control rounded-1"
+                    placeholder="Temukan Pernikahan Impianmu"
+                  />
+                  <button class="btn" type="button">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-md-3 header-title">
+              <a href="../signin/signin.html" class="btn float-end">Sign In</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a
+            class="navbar-brand d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none"
+            href="#"
+          >
+            <img
+              src="../img/logo.png"
+              class="d-inline-block align-text-middle"
+              alt="RiseDev logo"
+              width="30px"
+              height="auto"
+            />
+            <span class="logo-name">RiseDev</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <div
+                class="siav d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none"
+                href="#"
+              >
+                <li class="nav-item">
+                  <a class="nav-link signin" href="../signin/signin.html">
+                    Sign In
+                  </a>
+                </li>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../../index.html"
+                  ><i class="bi bi-house"></i> Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="undangan.html">
+                  <i class="bi bi-calendar2-event"></i> Wedding Templates</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../video/video.html">
+                  <i class="bi bi-camera-reels"></i> Wedding Videos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../portfolio/portfolio.html">
+                  <i class="bi bi-journal-richtext"></i> Portfolios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../news/daftar-news.html">
+                  <i class="bi bi-newspaper"></i> News</a
+                >
+              </li>
+            </ul>
+            <form
+              class="d-flex d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none"
+            >
+              <div class="input-group me-2">
+                <input
+                  type="text"
+                  class="form-control rounded-1"
+                  placeholder="Temukan Pernikahan Impianmu..."
+                />
+                <button class="btn" type="button">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Invitation Card -->
+    <section class="isi-data-undangan">
+      <div class="container">
+        <h3>Dapatkan <span>Kartu Undangan</span> Kamu Sekarang Juga</h3>
+        <!-- Nav Tab -->
+        <!-- Kepala Undangan -->
+        <div class="col-lg-12 col-md-12 mx-auto kepala">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item col-md-3 mx-auto" role="presentation">
+              <button
+                class="nav-link active mx-auto"
+                id="pills-data-undangan"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-du"
+                type="button"
+                role="tab"
+                aria-controls="pills-du"
+                aria-selected="true"
+              >
+                Data Undangan
+              </button>
+            </li>
+            <li class="nav-item col-md-3 mx-auto" role="presentation">
+              <button
+                class="nav-link mx-auto"
+                id="pills-upload-gambar"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-ug"
+                type="button"
+                role="tab"
+                aria-controls="pills-ug"
+                aria-selected="false"
+              >
+                Upload Gambar
+              </button>
+            </li>
+          </ul>
+          <!-- Isi Undangan -->
+          <div class="tab-content isi" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-du"
+              role="tabpanel"
+              aria-labelledby="pills-data-undangan"
+              tabindex="0"
+            >
+              <div class="row">
+                <!-- Kiri -->
+                <div class="col-lg-8 col-md-8 kiri">
+                  <div class="accordion accordion-flush" id="accordionFlush">
+                    <!-- Homepage -->
+                    <div class="accordion-item profil-mempelai">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne"
+                          aria-expanded="true"
+                          aria-controls="flush-collapseOne"
+                        >
+                          <p>
+                            <i class="bi bi-person-badge pr-2"></i>
+                            Homepage
+                          </p>
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlush"
+                      >
+                        <div class="accordion-body">
+                          <form>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="mb-3">
+                                  <label for="ju" class="form-label"
+                                    >Judul Undangan</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="ex: Undangan Pernikahan"
+                                    autofocus
+                                  />
+                                </div>
+                                <div class="mb-3">
+                                  <label for="wa" class="form-label"
+                                    >Nomor What's App</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Nomor What's App"
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="mb-3">
+                                  <label for="npp" class="form-label"
+                                    >Nama Panggilan Pria</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Nama Panggilan Pria"
+                                  />
+                                </div>
+                                <div class="mb-3">
+                                  <label for="npw" class="form-label"
+                                    >Nama Panggilan Wanita</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Nama Panggilan Wanita"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="mb-3">
+                                <label for="kp" class="form-label"
+                                  >Kata Pembuka</label
+                                >
+                                <div class="form-floating">
+                                  <textarea
+                                    class="form-control"
+                                    placeholder="Kata Pembuka"
+                                    id="floatingTextarea"
+                                    style="height: 200px; width: 100%"
+                                  ></textarea>
+                                  <label for="floatingTextarea"
+                                    >Kata Pembuka</label
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Kutipan Ayat -->
+                    <div class="accordion-item galeri">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseTwo"
+                        >
+                          <p>
+                            <i class="bi bi-book pr-2"></i>
+                            Kutipan Ayat
+                          </p>
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlush"
+                      >
+                        <div class="accordion-body">
+                          <div class="col-12">
+                            <div class="mb-3">
+                              <label for="fm" class="form-label"
+                                >Kutipan Ayat</label
+                              >
+                              <div class="form-floating">
+                                <textarea
+                                  class="form-control"
+                                  placeholder="Kutipan Ayat"
+                                  id="floatingTextarea"
+                                  style="height: 200px; width: 100%"
+                                ></textarea>
+                                <label for="floatingTextarea"
+                                  >Kutipan Ayat</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Profil Mempelai -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseThree"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseThree"
+                        >
+                          <p>
+                            <i class="bi bi-people-fill pr-2"></i>
+                            Profil Mempelai
+                          </p>
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlush"
+                      >
+                        <div class="accordion-body">
+                          <div class="row">
+                            <div class="col-md-6 mempelai-pria">
+                              <div class="mb-3">
+                                <label for="nl" class="form-label"
+                                  >Nama Lengkap Pria</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Nama Lengkap Pria"
+                                />
+                              </div>
+                              <div class="mb-3">
+                                <label for="na" class="form-label"
+                                  >Nama Ayah</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Nama Ayah"
+                                />
+                              </div>
+                              <div class="mb-3">
+                                <label for="ni" class="form-label"
+                                  >Nama Ibu</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Nama Ibu"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6 mempelai-wanita">
+                              <div class="mb-3">
+                                <label for="nl" class="form-label"
+                                  >Nama Lengkap Wanita</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Nama Lengkap Wanita"
+                                />
+                              </div>
+                              <div class="mb-3">
+                                <label for="na" class="form-label"
+                                  >Nama Ayah</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Nama Ayah"
+                                />
+                              </div>
+                              <div class="mb-3">
+                                <label for="ni" class="form-label"
+                                  >Nama Ibu</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Nama Ibu"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Jadwal Akad Nikah -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingFive">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseFive"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseFive"
+                        >
+                          <p>
+                            <i class="bi bi-calendar-heart pr-2"></i>
+                            Jadwal Akad Nikah
+                          </p>
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseFive"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingFive"
+                        data-bs-parent="#accordionFlush"
+                      >
+                        <div class="accordion-body">
+                          <div class="col-12">
+                            <div class="mb-3">
+                              <label for="tanggal" class="form-label"
+                                >Tanggal</label
+                              >
+                              <input type="date" class="form-control" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="mb-3">
+                                <label for="jm" class="form-label"
+                                  >Jam Mulai</label
+                                >
+                                <input type="time" class="form-control" />
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="mb-3">
+                                <label for="js" class="form-label"
+                                  >Jam Selesai</label
+                                >
+                                <input type="time" class="form-control" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="mb-3">
+                              <label for="alamat" class="form-label"
+                                >Alamat</label
+                              >
+                              <div class="form-floating">
+                                <textarea
+                                  class="form-control"
+                                  id="floatingTextarea"
+                                ></textarea>
+                                <label for="floatingTextarea"
+                                  >Masukkan Alamat Tempat Akad Nikah</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <label for="pldp" class="form-label"
+                              >Silahkan Isi Alamat Lengkap Anda</label
+                            >
+                            <div class="form-floating">
+                              <textarea
+                                class="form-control"
+                                id="floatingTextarea"
+                              ></textarea>
+                              <label for="floatingTextarea"
+                                >ex : Jl. Khatib Sulaiman Kel No.1,Lolong
+                                Belanti, Kec. Padang Utara, Kota Padang</label
+                              >
+                            </div>
+                          </div>
+                          <div class="col-12 mt-3">
+                            <label for="lan" class="form-label"
+                              >Lokasi Akad Nikah</label
+                            >
+                            <!-- <div class="google-map" id="akadNikah"></div> -->
+                            <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.3011018568754!2d100.35772231432364!3d-0.9225773355967161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b8b50f84e2df%3A0x6b663fb549733102!2sSTMIK%20Indonesia%20Padang!5e0!3m2!1sid!2sid!4v1661334569001!5m2!1sid!2sid"
+                              class="google-map"
+                              allowfullscreen="true"
+                              loading="lazy"
+                              referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                          </div>
+                          <br />
+                          <div class="col-12">
+                            <div class="mb-3">
+                              <label for="ap" class="form-label"
+                                >Alamat Peta</label
+                              >
+                              <div class="form-floating">
+                                <textarea
+                                  class="form-control"
+                                  id="floatingTextarea"
+                                ></textarea>
+                                <label for="floatingTextarea"
+                                  >Masukkan Alamat Tempat Akad Nikah</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Jadwal Resepsi 1 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingSix">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseSix"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseSix"
+                        >
+                          <p>
+                            <i class="bi bi-calendar-heart pr-2"></i>
+                            Jadwal Resepsi 1 (Optional)
+                          </p>
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseSix"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingSix"
+                        data-bs-parent="#accordionFlush"
+                      >
+                        <div class="accordion-body">
+                          <div class="col-12">
+                            <div class="mb-3">
+                              <label for="tanggal" class="form-label"
+                                >Tanggal</label
+                              >
+                              <input type="date" class="form-control" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="mb-3">
+                                <label for="jm" class="form-label"
+                                  >Jam Mulai</label
+                                >
+                                <input type="time" class="form-control" />
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="mb-3">
+                                <label for="js" class="form-label"
+                                  >Jam Selesai</label
+                                >
+                                <input type="time" class="form-control" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="mb-3">
+                              <label for="alamat" class="form-label"
+                                >Alamat</label
+                              >
+                              <div class="form-floating">
+                                <textarea
+                                  class="form-control"
+                                  id="floatingTextarea"
+                                ></textarea>
+                                <label for="floatingTextarea"
+                                  >Masukkan Alamat Tempat Resepsi 1</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <label for="pldp" class="form-label"
+                              >Silahkan Isi Alamat Lengkap Anda</label
+                            >
+                            <div class="form-floating">
+                              <textarea
+                                class="form-control"
+                                id="floatingTextarea"
+                              ></textarea>
+                              <label for="floatingTextarea"
+                                >ex : Jl. Khatib Sulaiman Kel No.1,Lolong
+                                Belanti, Kec. Padang Utara, Kota Padang</label
+                              >
+                            </div>
+                          </div>
+                          <div class="col-12 mt-3">
+                            <label for="lr1" class="form-label"
+                              >Lokasi Resepsi 1</label
+                            >
+                            <!-- <div class="google-map" id="resepsi1"></div> -->
+                            <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.3011018568754!2d100.35772231432364!3d-0.9225773355967161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b8b50f84e2df%3A0x6b663fb549733102!2sSTMIK%20Indonesia%20Padang!5e0!3m2!1sid!2sid!4v1661334569001!5m2!1sid!2sid"
+                              class="google-map"
+                              allowfullscreen="true"
+                              loading="lazy"
+                              referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                          </div>
+                          <br />
+                          <div class="col-12">
+                            <div class="mb-3">
+                              <label for="ap" class="form-label"
+                                >Alamat Peta</label
+                              >
+                              <div class="form-floating">
+                                <textarea
+                                  class="form-control"
+                                  id="floatingTextarea"
+                                ></textarea>
+                                <label for="floatingTextarea"
+                                  >Masukkan Alamat Tempat Resepsi 1</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Jadwal Resepsi 2 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingSeven">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseSeven"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseSeven"
+                        >
+                          <p>
+                            <i class="bi bi-calendar-heart pr-2"></i>
+                            Jadwal Resepsi 2 (Optional)
+                          </p>
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseSeven"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingSeven"
+                        data-bs-parent="#accordionFlush"
+                      >
+                        <div class="accordion-body">
+                          <div class="col-12">
+                            <div class="mb-3">
+                              <label for="tanggal" class="form-label"
+                                >Tanggal</label
+                              >
+                              <input type="date" class="form-control" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="mb-3">
+                                <label for="jm" class="form-label"
+                                  >Jam Mulai</label
+                                >
+                                <input type="time" class="form-control" />
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="mb-3">
+                                <label for="js" class="form-label"
+                                  >Jam Selesai</label
+                                >
+                                <input type="time" class="form-control" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="mb-3">
+                              <label for="alamat" class="form-label"
+                                >Alamat</label
+                              >
+                              <div class="form-floating">
+                                <textarea
+                                  class="form-control"
+                                  id="floatingTextarea"
+                                ></textarea>
+                                <label for="floatingTextarea"
+                                  >Masukkan Alamat Tempat Resepsi 2</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <label for="pldp" class="form-label"
+                              >Silahkan Isi Alamat Lengkap Anda</label
+                            >
+                            <div class="form-floating">
+                              <textarea
+                                class="form-control"
+                                id="floatingTextarea"
+                              ></textarea>
+                              <label for="floatingTextarea"
+                                >ex : Jl. Khatib Sulaiman Kel No.1,Lolong
+                                Belanti, Kec. Padang Utara, Kota Padang</label
+                              >
+                            </div>
+                          </div>
+                          <div class="col-12 mt-3">
+                            <label for="lr2" class="form-label"
+                              >Lokasi Resepsi 2</label
+                            >
+                            <!-- <div class="google-map" id="resepsi2"></div> -->
+                            <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.3011018568754!2d100.35772231432364!3d-0.9225773355967161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b8b50f84e2df%3A0x6b663fb549733102!2sSTMIK%20Indonesia%20Padang!5e0!3m2!1sid!2sid!4v1661334569001!5m2!1sid!2sid"
+                              class="google-map"
+                              allowfullscreen="true"
+                              loading="lazy"
+                              referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                          </div>
+                          <br />
+                          <div class="col-12">
+                            <div class="mb-3">
+                              <label for="ap" class="form-label"
+                                >Alamat Peta</label
+                              >
+                              <div class="form-floating">
+                                <textarea
+                                  class="form-control"
+                                  id="floatingTextarea"
+                                ></textarea>
+                                <label for="floatingTextarea"
+                                  >Masukkan Alamat Tempat Resepsi 2</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Undangan Keluarga Besar Mempelai Pria -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingEight">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseEight"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseEight"
+                        >
+                          <p>
+                            <i class="bi bi-envelope pr-2"></i>
+                            Undangan Keluarga Besar Mempelai Pria
+                          </p>
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseEight"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingEight"
+                        data-bs-parent="#accordionFlush"
+                      >
+                        <div class="accordion-body">
+                          <div class="mb-3">
+                            <label for="kpm" class="form-label"
+                              >Kata Pembuka</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="ex : Mengundang"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-floating">
+                              <label for="dnkbp"></label>
+                              <textarea
+                                class="form-control"
+                                placeholder="Daftar Nama Keluarga Besar Mempelai Pria"
+                                id="floatingTextarea"
+                                style="height: 200px; width: 100%"
+                              ></textarea>
+                              <label for="floatingTextarea"
+                                >Daftar Nama Keluarga Besar Mempelai Pria</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Undangan Keluarga Besar Mempelai Wanita -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingNine">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseNine"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseNine"
+                        >
+                          <p>
+                            <i class="bi bi-envelope pr-2"></i>
+                            Undangan Keluarga Besar Mempelai Wanita
+                          </p>
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseNine"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingNine"
+                        data-bs-parent="#accordionFlush"
+                      >
+                        <div class="accordion-body">
+                          <div class="mb-3">
+                            <label for="kpm" class="form-label"
+                              >Kata Pembuka</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="ex : Mengundang"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-floating">
+                              <label for="dnkbw"></label>
+                              <textarea
+                                class="form-control"
+                                placeholder="Daftar Nama Keluarga Besar Mempelai Wanita"
+                                id="floatingTextarea"
+                                style="height: 200px; width: 100%"
+                              ></textarea>
+                              <label for="floatingTextarea"
+                                >Daftar Nama Keluarga Besar Mempelai
+                                Wanita</label
+                              >
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="mb-3">
+                                <label for="lagu" class="form-label"
+                                  >Masukkan Lagu Pernikahan</label
+                                >
+                                <input type="file" class="form-control" />
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="mb-3">
+                                <!-- Button trigger modal -->
+                                <button
+                                  type="button"
+                                  class="pesan-undangan btn float-end"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#staticBackdrop"
+                                >
+                                  Pesan
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="staticBackdrop"
+                          data-bs-backdrop="static"
+                          data-bs-keyboard="false"
+                          tabindex="-1"
+                          aria-labelledby="staticBackdropLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5
+                                  class="modal-title"
+                                  id="staticBackdropLabel"
+                                >
+                                  Silahkan Follow Instagram Kami
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="col-md-5 mx-auto">
+                                  <label for="fotoPria" class="form-label"
+                                    >Bukti Screenshot</label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="file"
+                                    id="fotoPria"
+                                  />
+                                  <img
+                                    src="../img/img.png"
+                                    class="img-fluid mt-1"
+                                    alt="background image"
+                                  />
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn">Pesan</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Modal -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Kiri -->
+
+                <!-- Kanan -->
+                <div class="col-lg-4 col-md-4 kanan">
+                  <div class="daftar-gambar">
+                    <img
+                      src="../img/premium- cover bianca.png"
+                      alt="pcb"
+                      class="img-fluid"
+                    />
+                    <img
+                      src="../img/premium-cover anne.png"
+                      alt="pca"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <!-- End Kanan -->
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-ug"
+              role="tabpanel"
+              aria-labelledby="pills-upload-gambar"
+              tabindex="0"
+            >
+              <div class="col-lg-10 col-md-10 mx-auto">
+                <div class="accordion accordion-flush" id="accordionFlush">
+                  <!-- Foto kedua Mempelai -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        <p>
+                          <i class="bi bi-people-fill pr-2"></i>
+                          Foto Kedua Mempelai
+                        </p>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlush"
+                    >
+                      <div class="accordion-body">
+                        <div class="kedua-mempelai">
+                          <div class="mb-3">
+                            <label for="fml" class="form-label"
+                              >Foto Kedua Mempelai</label
+                            >
+                            <input type="file" class="form-control" />
+                            <img
+                              src="../img/img.png"
+                              class="img-fluid mt-1"
+                              alt="background image"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Foto Mempelai Pria dan Wanita -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        <p>
+                          <i class="bi bi-people-fill pr-2"></i>
+                          Foto Mempelai Pria dan Wanita
+                        </p>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlush"
+                    >
+                      <div class="accordion-body">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label for="fml" class="form-label"
+                                >Foto Mempelai Pria</label
+                              >
+                              <input type="file" class="form-control" />
+                              <img
+                                src="../img/img.png"
+                                class="img-fluid mt-1"
+                                alt="background image"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label for="fml" class="form-label"
+                                >Foto Mempelai Wanita</label
+                              >
+                              <input type="file" class="form-control" />
+                              <img
+                                src="../img/img.png"
+                                class="img-fluid mt-1"
+                                alt="background image"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Gallery -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        <p>
+                          <i class="bi bi-images pr-2"></i>
+                          Gallery
+                        </p>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingThree"
+                      data-bs-parent="#accordionFlush"
+                    >
+                      <div class="accordion-body">
+                        <div class="mb-3">
+                          <label for="fp" class="form-label"
+                            >Foto Pernikahan (Masukkan Foto Pernikahan Maksimal
+                            10 Foto)</label
+                          >
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                              <input type="file" class="form-control" />
+                              <br />
+                              <input type="file" class="form-control" />
+                              <br />
+                              <input type="file" class="form-control" />
+                              <br />
+                              <input type="file" class="form-control" />
+                              <br />
+                              <input type="file" class="form-control" />
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                              <input type="file" class="form-control" />
+                              <br />
+                              <input type="file" class="form-control" />
+                              <br />
+                              <input type="file" class="form-control" />
+                              <br />
+                              <input type="file" class="form-control" />
+                              <br />
+                              <input type="file" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Nav Tab -->
+      </div>
+    </section>
+    <!-- End Invitation Card -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 icon">
+            <span class="sign-up pb-2">SIGN UP & GET 10% OFF</span>
+            <form class="col-md-11 mx-2">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control rounded-1"
+                  placeholder="E-Mail"
+                />
+                <button class="btn" type="button">Sign</button>
+              </div>
+            </form>
+            <small class="text-muted mx-2">
+              *New Customer only. Offer last 30 days. <a href="#">See terms.</a>
+            </small>
+
+            <ul class="list-style-none">
+              <li>
+                <span class="follow">FOLLOW US ON</span>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-tiktok"></i>
+                </a>
+              </li>
+            </ul>
+
+            <div class="powered">
+              <span>
+                POWERED BY
+                <img src="../img/logo.png" />
+              </span>
+            </div>
+          </div>
+
+          <div class="col-lg-4 explore">
+            <ul class="list-style-none">
+              <li class="pb-4">
+                <span>EXPLORE</span>
+              </li>
+              <li><p>Tentang Kami</p></li>
+              <li><p>Cara Bayar</p></li>
+              <li><p>Pricelist</p></li>
+              <li><p>Custom Template</p></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 contact">
+            <ul class="list-style-none">
+              <li class="pb-4">
+                <span>CONTACT US</span>
+              </li>
+              <li>
+                <i class="bi bi-whatsapp"></i>
+                <p>08100200300</p>
+              </li>
+              <li>
+                <i class="bi bi-envelope"></i>
+                <p>risedev@gmail.com</p>
+              </li>
+              <li>
+                <i class="bi bi-geo-alt"></i>
+                <p>Jl. Belanti 1, Khatib Sulaiman, Padang, Sumatera Barat.</p>
+              </li>
+            </ul>
+          </div>
+
+          <span class="text-center text-white">Pilih Pembayaran</span>
+          <div class="pembayaran w-50 mx-auto">
+            <ul
+              class="list-style-none d-flex justify-content-evenly align-items-center mb-0"
+            >
+              <li>
+                <img src="../img/ic-bank1.png" />
+              </li>
+              <li>
+                <img src="../img/ic-bank2.png" />
+              </li>
+              <li>
+                <img src="../img/ic-bank3.png" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright container-fluid text-center p-2">
+      <span>
+        &copy; Copyright by <b>RiseDev</b>
+        <script type="text/javascript">
+          document.write(new Date().getFullYear());
+        </script>
+        . All Right Reserved.
+      </span>
+    </div>
+    <!-- End Footer -->
+    <!-- <script>
+      function initMap() {
+        const akadNikah = { lat: -0.9225054940582557, lng: 100.35991095174292 };
+        const resepsi1 = { lat: -0.9225054940582557, lng: 100.35991095174292 };
+        const resepsi2 = { lat: -0.9225054940582557, lng: 100.35991095174292 };
+        const map1 = new google.maps.Map(document.getElementById("akadNikah"), {
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          center: akadNikah,
+        });
+        const map2 = new google.maps.Map(document.getElementById("resepsi1"), {
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          center: resepsi1,
+        });
+        const map3 = new google.maps.Map(document.getElementById("resepsi2"), {
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          center: resepsi2,
+        });
+        const markerAkadNikah = new google.maps.Marker({
+          position: akadNikah,
+          map: map1,
+        });
+        const markerResepsi = new google.maps.Marker({
+          position: resepsi1,
+          map: map2,
+        });
+        const markerUnduhMantu = new google.maps.Marker({
+          position: resepsi2,
+          map: map3,
+        });
+      }
+    </script> -->
+  </body>
+</html>
