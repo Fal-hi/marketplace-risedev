@@ -790,7 +790,10 @@
                     />
                   </div>
                   <div class="mb-3">
-                    <div class="form-floating">
+                    <label for="kpm" class="form-label"
+                      >Daftar Nama Keluarga Besar Mempelai Pria</label
+                    >
+                    <!-- <div class="form-floating">
                       <label for="dnkbp"></label>
                       <textarea
                         class="form-control"
@@ -801,7 +804,8 @@
                       <label for="floatingTextarea"
                         >Daftar Nama Keluarga Besar Mempelai Pria</label
                       >
-                    </div>
+                    </div> -->
+                    <div id="editor"></div>
                   </div>
                 </div>
               </div>
@@ -839,8 +843,10 @@
                     />
                   </div>
                   <div class="mb-3">
-                    <div class="form-floating">
-                      <label for="dnkbw"></label>
+                    <label for="dnkbw"
+                      >Daftar Nama Keluarga Besar Mempelai Wanita</label
+                    >
+                    <!-- <div class="form-floating">
                       <textarea
                         class="form-control"
                         placeholder="Daftar Nama Keluarga Besar Mempelai Wanita"
@@ -850,7 +856,8 @@
                       <label for="floatingTextarea"
                         >Daftar Nama Keluarga Besar Mempelai Wanita</label
                       >
-                    </div>
+                    </div> -->
+                    <div id="editor2"></div>
                   </div>
                   <div class="row">
                     <div class="col-12">
@@ -1051,6 +1058,18 @@
         . All Right Reserved.
       </span>
     </div>
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
+    <script>
+      ClassicEditor.create(document.querySelector("#editor")).catch((error) => {
+        console.error(error);
+      });
+      ClassicEditor.create(document.querySelector("#editor2")).catch(
+        (error) => {
+          console.error(error);
+        }
+      );
+    </script>
+
     <!-- End Footer -->
     <script>
       // Map
