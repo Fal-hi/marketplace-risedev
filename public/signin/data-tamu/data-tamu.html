@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/signin.css" />
+    <link rel="stylesheet" href="../../css/data-tamu.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
+      rel="stylesheet"
+    />
+    <script src="../../js/bootstrap.min.js" defer></script>
+    <script src="../../js/popper.min.js" defer></script>
+    <title>Data Tamu Pernikahan</title>
+  </head>
+  <body>
+    <!-- Chat -->
+    <a
+      href="https://api.whatsapp.com/send?phone=6289514640148&text=Hallo%20kak%20Saya%20ingin%20memesan%20Template"
+      target="__blank"
+      id="chatButton"
+      tip="Chat dengan Lara"
+    >
+      <i class="bi bi-chat-right-text"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="sticky-lg-top bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light py-0">
+        <div class="container py-3 border-bottom d-none d-lg-block">
+          <div class="col-lg-12">
+            <div class="row justify-content-center align-items-center">
+              <div class="logo col-md-3">
+                <img
+                  src="../../img/logo.png"
+                  width="40"
+                  class="d-inline-block align-text-middle"
+                />
+                <span class="nama-logo">RiseDev</span>
+              </div>
+
+              <div class="col-md-6">
+                <form>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control rounded-1"
+                      placeholder="Temukan Pernikahan Impianmu"
+                    />
+                    <button class="btn" type="button">
+                      <i class="bi bi-search"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-md-3 user">
+                <img
+                  src="../../img/spongebob__imagination.png"
+                  class="img-fluid"
+                  alt="User Login"
+                />
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Yoga Tri Wahyudi
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a
+                        class="dropdown-item text-center fw-bold"
+                        href="../../../index.html"
+                      >
+                        Sign Out <i class="bi bi-box-arrow-right fw-bold"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a
+            class="navbar-brand d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none"
+            href="#"
+          >
+            <img
+              src="../../img/logo.png"
+              class="d-inline-block align-text-middle"
+              alt="RiseDev logo"
+              width="30px"
+              height="auto"
+            />
+            <span class="logo-name">RiseDev</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <div
+                class="siav d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none"
+                href="#"
+              >
+                <div class="user justify-content-start">
+                  <img
+                    src="../../img/spongebob__imagination.png"
+                    class="img-fluid"
+                    alt="User Login"
+                  />
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Yoga Tri Wahyudi
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="../../../index.html"
+                          >Sign Out</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </div>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../signin.html"
+                  ><i class="bi bi-house"></i> Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-calendar2-event"></i> Wedding Templates</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-camera-reels"></i> Wedding Videos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-journal-richtext"></i> Portfolios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-newspaper"></i> News</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data-tamu.html">
+                  <i class="bi bi-list-check"></i> Data Tamu</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pesanan/pesanan.html">
+                  <i class="bi bi-bag-plus"></i> Pesanan Saya</a
+                >
+              </li>
+            </ul>
+            <form
+              class="d-flex d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none"
+            >
+              <div class="input-group me-2">
+                <input
+                  type="text"
+                  class="form-control rounded-1"
+                  placeholder="Temukan Pernikahan Impianmu..."
+                />
+                <button class="btn" type="button">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+    <div class="data-tamu">
+      <div class="container">
+        <!-- Kepala -->
+        <div
+          class="kepala my-3 d-flex justify-content-between align-items-baseline"
+        >
+          <h5 class="fw-bold">Kelola Data Tamu</h5>
+          <a href="#" class="btn">
+            <i class="bi bi-send"></i>
+            Lihat Website
+          </a>
+        </div>
+        <!-- Card Isi Data Tamu -->
+        <div class="isi">
+          <div class="card">
+            <!-- Header -->
+            <div class="card-header">
+              <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    Daftar Tamu
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    Riwayat Pesan
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <!-- * Content -->
+            <div class="container isi-tamu">
+              <!-- ? Daftar Tamu -->
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                  tabindex="0"
+                >
+                  <!-- TODO Kepala Isi Tamu -->
+                  <div class="kepala-isi-tamu mt-3">
+                    <div class="row">
+                      <!-- row 1 -->
+                      <div
+                        class="baris1 col-lg-8 col-md-8 d-flex align-items-lg-baseline"
+                      >
+                        <button
+                          class="btn btn-tambah me-3"
+                          data-bs-toggle="modal"
+                          data-bs-target="#staticBackdrop1"
+                        >
+                          <i class="bi bi-plus-lg"></i>
+                          Tambah
+                        </button>
+                        <!-- Modal Tambah -->
+                        <div
+                          class="modal fade"
+                          id="staticBackdrop1"
+                          data-bs-backdrop="static"
+                          data-bs-keyboard="false"
+                          tabindex="-1"
+                          aria-labelledby="staticBackdropLabel"
+                          aria-hidden="true"
+                        >
+                          <div
+                            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                          >
+                            <div class="modal-content">
+                              <div class="modal-header text-center d-block">
+                                <h4
+                                  class="modal-title fw-bold"
+                                  id="staticBackdropLabel"
+                                >
+                                  Tambah Tamu
+                                </h4>
+                              </div>
+                              <div class="modal-body">
+                                <div class="mb-2">
+                                  <label for="nale" class="form-label"
+                                    >Nama Lengkap</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Nama Lengkap..."
+                                    autofocus
+                                  />
+                                </div>
+                                <div class="mb-2">
+                                  <label for="napa" class="form-label"
+                                    >Nama Panggilan</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Nama Panggilan..."
+                                  />
+                                </div>
+                                <div class="mb-2">
+                                  <label for="email" class="form-label"
+                                    >Email</label
+                                  >
+                                  <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="Email..."
+                                  />
+                                </div>
+                                <div class="mb-2">
+                                  <label for="nowa" class="form-label"
+                                    >No Whatsapp</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="No Whatsapp..."
+                                  />
+                                </div>
+                                <div class="mb-2">
+                                  <label for="alamat" class="form-label"
+                                    >Alamat</label
+                                  >
+                                  <div class="form-floating">
+                                    <textarea
+                                      class="form-control"
+                                      id="floatingTextarea"
+                                      style="height: 100px; width: 100%"
+                                    ></textarea>
+                                    <label for="floatingTextarea"
+                                      >Alamat...</label
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn batal"
+                                  data-bs-dismiss="modal"
+                                >
+                                  Batal
+                                </button>
+                                <button type="button" class="btn simpan">
+                                  Simpan
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Modal Tambah -->
+                        <button class="btn btn-impor me-3">
+                          <i class="bi bi-box-arrow-in-down"></i>
+                          Impor
+                        </button>
+                        <button class="btn btn-ekspor me-3">
+                          <i class="bi bi-box-arrow-up"></i>
+                          Ekspor
+                        </button>
+                        <a href="#" class="link-dt">
+                          <i class="bi bi-download"></i>
+                          Download Template (.xlsx)
+                        </a>
+                      </div>
+                      <!-- row 2 -->
+                      <div class="col-lg-4">
+                        <!-- Searching -->
+                        <div class="input-group mb-2">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Recipient's username"
+                            aria-label="Recipient's username"
+                            aria-describedby="button-addon2"
+                          />
+                          <button
+                            class="btn btn-outline-secondary"
+                            type="button"
+                            id="button-addon2"
+                          >
+                            <i class="bi bi-search"></i>
+                          </button>
+                        </div>
+                        <!-- Sesi Acara -->
+                        <div class="input-group">
+                          <label
+                            class="input-group-text"
+                            for="inputGroupSelect01"
+                            >Filter Sesi Acara</label
+                          >
+                          <select class="form-select" id="inputGroupSelect01">
+                            <option selected>= Pilih Sesi Acara =</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- TODO Badan Isi Tamu -->
+                  <div class="card-body">
+                    <!-- table -->
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Nama Lengkap</th>
+                          <th scope="col">Grup</th>
+                          <th scope="col">Email</th>
+                          <th scope="col">No. WA</th>
+                          <th scope="col">Kode</th>
+                          <th scope="col">Bagikan</th>
+                          <th scope="col">Aksi</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td scope="row">Mamank Racing</td>
+                          <td>Kafe Koding</td>
+                          <td>kafekoding@gmail.com</td>
+                          <td>08967989719</td>
+                          <td class="link">
+                            <a href="#" class="link-website">AHGahgauX</a>
+                            <div class="copy">
+                              <a href="#" class="btn p-1 kode">
+                                <i class="bi bi-clipboard-check"></i>
+                                Copy Kode
+                              </a>
+                              <a href="#" class="btn p-1 link">
+                                <i class="bi bi-clipboard-check"></i>
+                                Copy Link
+                              </a>
+                            </div>
+                          </td>
+                          <td class="share">
+                            <a
+                              href="#"
+                              class="btn"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop2"
+                            >
+                              <i class="bi bi-whatsapp"></i>
+                              whatsapp
+                            </a>
+                          </td>
+                          <!-- Modal Share -->
+                          <div
+                            class="modal fade"
+                            id="staticBackdrop2"
+                            data-bs-backdrop="static"
+                            data-bs-keyboard="false"
+                            tabindex="-1"
+                            aria-labelledby="staticBackdropLabel"
+                            aria-hidden="true"
+                          >
+                            <div
+                              class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                            >
+                              <div class="modal-content">
+                                <div class="modal-header text-center d-block">
+                                  <h4
+                                    class="modal-title fw-bold"
+                                    id="staticBackdropLabel"
+                                  >
+                                    Share Ke Whatsapp (Manual)
+                                  </h4>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="mb-3">
+                                    <label for="kike" class="form-label"
+                                      >Kirim Kepada</label
+                                    >
+                                    <div class="kirim-kepada p-2">
+                                      <span>Mamank Racing (08976818219)</span>
+                                    </div>
+                                  </div>
+                                  <div class="mb-2">
+                                    <label for="tamu" class="form-label"
+                                      >Tamu</label
+                                    >
+                                    <input
+                                      class="form-control"
+                                      type="text"
+                                      value="Mamank Racing (08976818219)"
+                                      aria-label="Disabled input example"
+                                      disabled
+                                      readonly
+                                    />
+                                  </div>
+                                  <div class="mb-2">
+                                    <label for="email" class="form-label"
+                                      >Template</label
+                                    >
+                                    <div class="tombol-seleksi">
+                                      <div class="input-group">
+                                        <select
+                                          class="form-select py-2"
+                                          id="inputGroupSelect"
+                                        >
+                                          <option selected>Pernikahan</option>
+                                          <option value="1">Penyunatan</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="mb-2">
+                                    <label for="nowa" class="form-label"
+                                      >No Whatsapp</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="No Whatsapp..."
+                                    />
+                                  </div>
+                                  <div class="mb-2">
+                                    <label for="alamat" class="form-label"
+                                      >Alamat</label
+                                    >
+                                    <div class="form-floating">
+                                      <textarea
+                                        class="form-control"
+                                        id="floatingTextarea"
+                                        style="height: 100px; width: 100%"
+                                      ></textarea>
+                                      <label for="floatingTextarea"
+                                        >Alamat...</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <label for="pretem" class="form-label"
+                                    >Preview Template</label
+                                  >
+                                  <div
+                                    class="preview-template mb-2"
+                                    id="previewTemplate"
+                                  >
+                                    <p>
+                                      Lorem ipsum dolor sit amet consectetur
+                                      adipisicing elit. Amet fugiat sit,
+                                      perferendis animi, rem tempore illo
+                                      repellendus quaerat ducimus aliquid
+                                      doloremque? Fugit deserunt dolorem
+                                      deleniti quae, fugiat quo adipisci libero
+                                      quaerat nihil, nam earum est officia
+                                      explicabo! Et quod placeat dicta
+                                      obcaecati, error hic consequatur,
+                                      temporibus illum enim omnis voluptatem
+                                      fugiat vitae voluptates laborum iste
+                                      aliquam eveniet asperiores ipsa ducimus
+                                      quisquam explicabo aut est. Numquam
+                                      corrupti aliquam natus sunt magnam
+                                      repellendus mollitia delectus, repudiandae
+                                      harum sit molestias incidunt enim. Tempore
+                                      molestias veritatis laboriosam cum maxime
+                                      incidunt, repellat quis similique ratione
+                                      eum earum praesentium blanditiis placeat
+                                      cumque, ullam tenetur itaque doloremque.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Batal
+                                  </button>
+                                  <button type="button" class="btn">
+                                    Kirim
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Modal Share -->
+                          <td class="aksi">
+                            <button class="hapus p-1 btn">
+                              <i class="bi bi-trash"></i>
+                            </button>
+                            <a
+                              href="#"
+                              class="edit p-1 btn"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop3"
+                            >
+                              <i class="bi bi-pencil-square"></i>
+                            </a>
+                            <!-- Modal Edit -->
+                            <div
+                              class="modal fade"
+                              id="staticBackdrop3"
+                              data-bs-backdrop="static"
+                              data-bs-keyboard="false"
+                              tabindex="-1"
+                              aria-labelledby="staticBackdropLabel"
+                              aria-hidden="true"
+                            >
+                              <div
+                                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                              >
+                                <div class="modal-content">
+                                  <div class="modal-header text-center d-block">
+                                    <h4
+                                      class="modal-title fw-bold"
+                                      id="staticBackdropLabel"
+                                    >
+                                      Edit Tamu
+                                    </h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="mb-2">
+                                      <label for="nale" class="form-label"
+                                        >Nama Lengkap</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Nama Lengkap..."
+                                        autofocus
+                                      />
+                                    </div>
+                                    <div class="mb-2">
+                                      <label for="napa" class="form-label"
+                                        >Nama Panggilan</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Nama Panggilan..."
+                                      />
+                                    </div>
+                                    <div class="mb-2">
+                                      <label for="email" class="form-label"
+                                        >Email</label
+                                      >
+                                      <input
+                                        type="email"
+                                        class="form-control"
+                                        placeholder="Email..."
+                                      />
+                                    </div>
+                                    <div class="mb-2">
+                                      <label for="nowa" class="form-label"
+                                        >No Whatsapp</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="No Whatsapp..."
+                                      />
+                                    </div>
+                                    <div class="mb-2">
+                                      <label for="alamat" class="form-label"
+                                        >Alamat</label
+                                      >
+                                      <div class="form-floating">
+                                        <textarea
+                                          class="form-control"
+                                          id="floatingTextarea"
+                                          style="height: 100px; width: 100%"
+                                        ></textarea>
+                                        <label for="floatingTextarea"
+                                          >Alamat...</label
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button
+                                      type="button"
+                                      class="btn"
+                                      data-bs-dismiss="modal"
+                                    >
+                                      Batal
+                                    </button>
+                                    <button type="button" class="btn">
+                                      Simpan
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Modal Edit -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- ? Riwayat Pesan -->
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                  tabindex="0"
+                >
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  qui?
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script>
+      const quill = new Quill("#previewTemplate", {
+        theme: "snow",
+      });
+    </script>
+  </body>
+</html>

@@ -12,7 +12,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
     />
     <!--Import vanilla wizard here-->
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-wizard@0.0.5" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/vanilla-wizard@0.0.5"
+      defer
+    ></script>
     <script src="../../js/bootstrap.min.js" defer></script>
     <script src="../../js/popper.min.js" defer></script>
     <script src="../../js/pesanansaya.js" defer></script>
@@ -80,7 +83,9 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
-                      <a class="dropdown-item" href="../../../index.html">Sign Out</a>
+                      <a class="dropdown-item" href="../../../index.html"
+                        >Sign Out</a
+                      >
                     </li>
                   </ul>
                 </li>
@@ -141,17 +146,16 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li>
-                        <a class="dropdown-item" href="../../../index.html">Sign Out</a>
+                        <a class="dropdown-item" href="../../../index.html"
+                          >Sign Out</a
+                        >
                       </li>
                     </ul>
                   </li>
                 </div>
               </div>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="../signin.html"
+                <a class="nav-link" aria-current="page" href="../signin.html"
                   ><i class="bi bi-house"></i> Home</a
                 >
               </li>
@@ -173,6 +177,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <i class="bi bi-newspaper"></i> News</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../data-tamu/data-tamu.html">
+                  <i class="bi bi-list-check"></i> Data Tamu</a
                 >
               </li>
               <li class="nav-item">
@@ -263,7 +272,11 @@
             <div class="card" id="tSelesai">
               <div class="row">
                 <div class="col-lg-3 template">
-                  <img src="../../img/cwi1.jpg" class="img-fluid mx-auto" alt="" />
+                  <img
+                    src="../../img/cwi1.jpg"
+                    class="img-fluid mx-auto"
+                    alt=""
+                  />
                 </div>
                 <div class="col-lg-9 isi">
                   <div class="kas">
@@ -284,17 +297,65 @@
                   </div>
                   <div class="daftar-button">
                     <div class="bpas">
-                      <button class="btn">
-                        Preview
-                      </button>
-                      <button class="btn">
-                        Sunting
-                      </button>
+                      <button class="btn">Preview</button>
+                      <button class="btn">Sunting</button>
                     </div>
-                    <button class="btn uab">
+                    <button
+                      class="btn uab"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
                       Ulasan
                     </button>
                   </div>
+                  <!-- Modal Tambah -->
+                  <div
+                    class="modal fade"
+                    id="staticBackdrop"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header text-center d-block">
+                          <h4
+                            class="modal-title fw-bold"
+                            id="staticBackdropLabel"
+                          >
+                            Ulasan
+                          </h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mb-2">
+                            <div class="form-floating">
+                              <textarea
+                                class="form-control"
+                                id="floatingTextarea"
+                                aria-label="Disabled Textarea"
+                                disabled
+                                style="height: auto; width: 100%"
+                              ></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn"
+                            data-bs-dismiss="modal"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Modal Tambah -->
                 </div>
               </div>
             </div>
@@ -302,7 +363,11 @@
             <div class="card" id="tBelumBayar">
               <div class="row">
                 <div class="col-lg-3 template">
-                  <img src="../../img/cwi1.jpg" class="img-fluid mx-auto" alt="" />
+                  <img
+                    src="../../img/cwi1.jpg"
+                    class="img-fluid mx-auto"
+                    alt=""
+                  />
                 </div>
                 <div class="col-lg-9 isi">
                   <div class="kas">
@@ -311,7 +376,9 @@
                   </div>
                   <div class="npalw">
                     <h3 class="my-4">Joko Blackzycowskzy & Putri Rostchild</h3>
-                    <p>Silahkan Melakukan Pembayaran paling lambat 1 X 24 jam</p>
+                    <p>
+                      Silahkan Melakukan Pembayaran paling lambat 1 X 24 jam
+                    </p>
                   </div>
                   <div class="bagikan">
                     <span>
@@ -323,16 +390,10 @@
                   </div>
                   <div class="daftar-button">
                     <div class="bpas">
-                      <button class="btn">
-                        Preview
-                      </button>
-                      <button class="btn">
-                        Sunting
-                      </button>
+                      <button class="btn">Preview</button>
+                      <button class="btn">Sunting</button>
                     </div>
-                    <a href="pembayaran.html" class="btn uab">
-                      Bayar
-                    </a>
+                    <a href="pembayaran.html" class="btn uab"> Bayar </a>
                   </div>
                 </div>
               </div>
@@ -340,42 +401,43 @@
             <!-- Template Sedang Diproses -->
             <div class="card" id="tDiProses">
               <div class="row">
-              <div class="col-lg-3 template">
-                <img src="../../img/cwi1.jpg" class="img-fluid mx-auto" alt="" />
-              </div>
-              <div class="col-lg-9 isi">
-                <div class="kas">
-                  <span>Kategori : <b>Template Spesial</b></span>
-                  <span>Sedang Diproses</span>
+                <div class="col-lg-3 template">
+                  <img
+                    src="../../img/cwi1.jpg"
+                    class="img-fluid mx-auto"
+                    alt=""
+                  />
                 </div>
-                <div class="npalw">
-                  <h3 class="mt-4">Joko Blackzycowskzy & Putri Rostchild</h3>
-                  <p class="mt-4 mb-0">
-                    Estimasi Template Wedding selesai: 1 X 24 jam
-                  </p>
-                  <p>
-                    Setelah Template Wedding selesai Kami akan mengirimkan notifikasi ke nomor What's App Anda
-                  </p>
-                </div>
-                <div class="bagikan">
-                  <span>
-                    Bagikan : &nbsp;
-                    <a class="bi bi-whatsapp" href="#"></a>
-                    <a class="bi bi-telegram" href="#"></a>
-                  </span>
-                  <h4 class="harga">Harga : <b>Rp199.000</b></h4>
-                </div>
-                <div class="daftar-button">
-                  <div class="bpas">
-                    <button class="btn">
-                      Preview
-                    </button>
+                <div class="col-lg-9 isi">
+                  <div class="kas">
+                    <span>Kategori : <b>Template Spesial</b></span>
+                    <span>Sedang Diproses</span>
                   </div>
-                  <button class="btn uab">
-                    Ulasan
-                  </button>
+                  <div class="npalw">
+                    <h3 class="mt-4">Joko Blackzycowskzy & Putri Rostchild</h3>
+                    <p class="mt-4 mb-0">
+                      Estimasi Template Wedding selesai: 1 X 24 jam
+                    </p>
+                    <p>
+                      Setelah Template Wedding selesai Kami akan mengirimkan
+                      notifikasi ke nomor What's App Anda
+                    </p>
+                  </div>
+                  <div class="bagikan">
+                    <span>
+                      Bagikan : &nbsp;
+                      <a class="bi bi-whatsapp" href="#"></a>
+                      <a class="bi bi-telegram" href="#"></a>
+                    </span>
+                    <h4 class="harga">Harga : <b>Rp199.000</b></h4>
+                  </div>
+                  <div class="daftar-button">
+                    <div class="bpas">
+                      <button class="btn">Preview</button>
+                    </div>
+                    <button class="btn uab">Ulasan</button>
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
             <!-- ? Video Wedding -->
@@ -405,9 +467,7 @@
                     <h3 class="mt-4 mb-4">
                       Joko Blackzycowskzy & Putri Rostchild
                     </h3>
-                    <button class="btn">
-                      Download
-                    </button>
+                    <button class="btn">Download</button>
                   </div>
                   <!-- Bagikan -->
                   <div class="bagikan">
@@ -421,17 +481,11 @@
                   <!-- Daftar Button Preview and Sunting -->
                   <div class="daftar-button">
                     <div class="bpas">
-                      <button class="btn">
-                        Preview
-                      </button>
-                      <button class="btn">
-                        Sunting
-                      </button>
+                      <button class="btn">Preview</button>
+                      <button class="btn">Sunting</button>
                     </div>
                     <!-- Ulasan -->
-                    <button class="btn uab">
-                      Ulasan
-                    </button>
+                    <button class="btn uab">Ulasan</button>
                   </div>
                 </div>
                 <!-- End isi Card -->
@@ -463,7 +517,9 @@
                     <h3 class="mt-4 mb-4">
                       Joko Blackzycowskzy & Putri Rostchild
                     </h3>
-                    <p>Silahkan Melakukan Pembayaran paling lambat 1 X 24 jam</p>
+                    <p>
+                      Silahkan Melakukan Pembayaran paling lambat 1 X 24 jam
+                    </p>
                   </div>
                   <!-- Bagikan -->
                   <div class="bagikan">
@@ -477,14 +533,10 @@
                   <!-- Daftar Button Preview and Sunting -->
                   <div class="daftar-button">
                     <div class="bpas">
-                      <button class="btn">
-                        Preview
-                      </button>
+                      <button class="btn">Preview</button>
                     </div>
                     <!-- Ulasan and Bayar -->
-                    <a href="pembayaran.html" class="btn uab">
-                      Bayar
-                    </a>
+                    <a href="pembayaran.html" class="btn uab"> Bayar </a>
                   </div>
                 </div>
                 <!-- End isi Card -->
@@ -534,21 +586,17 @@
                   <!-- Daftar Button Preview and Sunting -->
                   <div class="daftar-button">
                     <div class="bpas">
-                      <button class="btn">
-                        Preview
-                      </button>
+                      <button class="btn">Preview</button>
                     </div>
                     <!-- Ulasan and Bayar -->
-                    <button class="btn uab">
-                      Ulasan
-                    </button>
+                    <button class="btn uab">Ulasan</button>
                   </div>
                 </div>
                 <!-- End isi Card -->
               </div>
             </div>
           </div>
-            
+
           <!-- ? Belum Bayar -->
           <div class="tab-pane" id="belumBayar">
             <!-- ? Template Belum Bayar -->
@@ -556,7 +604,11 @@
               <div class="row">
                 <!-- Template Wedding -->
                 <div class="col-lg-3 template">
-                  <img src="../../img/cwi1.jpg" class="img-fluid mx-auto" alt="" />
+                  <img
+                    src="../../img/cwi1.jpg"
+                    class="img-fluid mx-auto"
+                    alt=""
+                  />
                 </div>
                 <!-- isi Card -->
                 <div class="col-lg-9 isi">
@@ -568,7 +620,9 @@
                   <!-- Nama Pengantin and Link Wedding -->
                   <div class="npalw">
                     <h3 class="my-4">Joko Blackzycowskzy & Putri Rostchild</h3>
-                    <p>Silahkan Melakukan Pembayaran paling lambat 1 X 24 jam</p>
+                    <p>
+                      Silahkan Melakukan Pembayaran paling lambat 1 X 24 jam
+                    </p>
                   </div>
                   <!-- Bagikan -->
                   <div class="bagikan">
@@ -582,17 +636,11 @@
                   <!-- Daftar Button -->
                   <div class="daftar-button">
                     <div class="bpas">
-                      <button class="btn">
-                        Preview
-                      </button>
-                      <button class="btn">
-                        Sunting
-                      </button>
+                      <button class="btn">Preview</button>
+                      <button class="btn">Sunting</button>
                     </div>
                     <!-- Ulasan and Bayar -->
-                    <a href="pembayaran.html" class="btn uab">
-                      Bayar
-                    </a>
+                    <a href="pembayaran.html" class="btn uab"> Bayar </a>
                   </div>
                 </div>
                 <!-- End isi Card -->
@@ -624,7 +672,9 @@
                     <h3 class="mt-4 mb-4">
                       Joko Blackzycowskzy & Putri Rostchild
                     </h3>
-                    <p>Silahkan Melakukan Pembayaran paling lambat 1 X 24 jam</p>
+                    <p>
+                      Silahkan Melakukan Pembayaran paling lambat 1 X 24 jam
+                    </p>
                   </div>
                   <!-- Bagikan -->
                   <div class="bagikan">
@@ -638,14 +688,10 @@
                   <!-- Daftar Button Preview and Sunting -->
                   <div class="daftar-button">
                     <div class="bpas">
-                      <button class="btn">
-                        Preview
-                      </button>
+                      <button class="btn">Preview</button>
                     </div>
                     <!-- Ulasan and Bayar -->
-                    <a href="pembayaran.html" class="btn uab">
-                      Bayar
-                    </a>
+                    <a href="pembayaran.html" class="btn uab"> Bayar </a>
                   </div>
                 </div>
                 <!-- End isi Card -->
@@ -657,110 +703,106 @@
           <div class="tab-pane" id="diProses">
             <!-- ? Template Sedang diproses -->
             <div class="card" id="tDiProses">
-                <div class="row">
-                  <!-- Template Wedding -->
+              <div class="row">
+                <!-- Template Wedding -->
                 <div class="col-lg-3 template">
-                  <img src="../../img/cwi1.jpg" class="img-fluid mx-auto" alt="" />
+                  <img
+                    src="../../img/cwi1.jpg"
+                    class="img-fluid mx-auto"
+                    alt=""
+                  />
                 </div>
-                  <!-- isi Card -->
-                  <div class="col-lg-9 isi">
-                    <!-- Kategori and Selesai -->
+                <!-- isi Card -->
+                <div class="col-lg-9 isi">
+                  <!-- Kategori and Selesai -->
                   <div class="kas">
                     <span>Kategori : <b>Template Spesial</b></span>
                     <span>Sedang Diproses</span>
                   </div>
-                    <!-- Nama Pengantin and Link Wedding -->
-                    <div class="npalw">
-                      <h3 class="mt-4">Joko Blackzycowskzy & Putri Rostchild</h3>
-                      <p class="mt-4 mb-0">
-                        Estimasi Template Wedding selesai: 1 X 24 jam
-                      </p>
-                      <p>
-                        Setelah Template Wedding selesai Kami akan mengirimkan notifikasi ke
-                        nomor What's App Anda
-                      </p>
-                    </div>
-                    <!-- Bagikan -->
-                    <div class="bagikan">
-                      <span>
-                        Bagikan : &nbsp;
-                        <a class="bi bi-whatsapp" href="#"></a>
-                        <a class="bi bi-telegram" href="#"></a>
-                      </span>
-                      <h4 class="harga">Harga : <b>Rp199.000</b></h4>
-                    </div>
-                    <!-- Daftar Button Preview and Sunting -->
-                    <div class="daftar-button">
-                      <div class="bpas">
-                        <button class="btn">
-                          Preview
-                        </button>
-                      </div>
-                      <!-- Ulasan and Bayar -->
-                      <button class="btn uab">
-                        Ulasan
-                      </button>
-                    </div>
+                  <!-- Nama Pengantin and Link Wedding -->
+                  <div class="npalw">
+                    <h3 class="mt-4">Joko Blackzycowskzy & Putri Rostchild</h3>
+                    <p class="mt-4 mb-0">
+                      Estimasi Template Wedding selesai: 1 X 24 jam
+                    </p>
+                    <p>
+                      Setelah Template Wedding selesai Kami akan mengirimkan
+                      notifikasi ke nomor What's App Anda
+                    </p>
                   </div>
-                  <!-- End isi Card -->
+                  <!-- Bagikan -->
+                  <div class="bagikan">
+                    <span>
+                      Bagikan : &nbsp;
+                      <a class="bi bi-whatsapp" href="#"></a>
+                      <a class="bi bi-telegram" href="#"></a>
+                    </span>
+                    <h4 class="harga">Harga : <b>Rp199.000</b></h4>
+                  </div>
+                  <!-- Daftar Button Preview and Sunting -->
+                  <div class="daftar-button">
+                    <div class="bpas">
+                      <button class="btn">Preview</button>
+                    </div>
+                    <!-- Ulasan and Bayar -->
+                    <button class="btn uab">Ulasan</button>
+                  </div>
                 </div>
+                <!-- End isi Card -->
+              </div>
             </div>
             <!-- ? Video Sedang diproses -->
             <div class="card" id="tDiProses">
-                <div class="row">
-                  <!-- Video Wedding -->
-                  <div class="col-lg-3 video">
-                    <div class="ratio ratio-16x9">
-                      <iframe
-                        src="https://www.youtube.com/embed/Vq2uDHYXdN8"
-                        title="YouTube video"
-                        frameborder="0"
-                        allowfullscreen
-                      ></iframe>
-                    </div>
+              <div class="row">
+                <!-- Video Wedding -->
+                <div class="col-lg-3 video">
+                  <div class="ratio ratio-16x9">
+                    <iframe
+                      src="https://www.youtube.com/embed/Vq2uDHYXdN8"
+                      title="YouTube video"
+                      frameborder="0"
+                      allowfullscreen
+                    ></iframe>
                   </div>
-                  <!-- isi Card -->
-                  <div class="col-lg-9 isi">
-                    <!-- Kategori and Selesai -->
-                    <div class="kas">
-                      <span>Kategori : <b>Video Spesial</b></span>
-                      <span>Sedang Diproses</span>
-                    </div>
-                    <!-- Nama Pengantin and Link Wedding -->
-                    <div class="npalw">
-                      <h3 class="mt-4">Joko Blackzycowskzy & Putri Rostchild</h3>
-                      <p class="mt-4 mb-0">
-                        Estimasi Video Wedding selesai: 1 X 24 jam
-                      </p>
-                      <p>
-                        Setelah Video selesai Kami akan mengirimkan notifikasi ke
-                        nomor What's App Anda
-                      </p>
-                    </div>
-                    <!-- Bagikan -->
-                    <div class="bagikan">
-                      <span>
-                        Bagikan : &nbsp;
-                        <a class="bi bi-whatsapp" href="#"></a>
-                        <a class="bi bi-telegram" href="#"></a>
-                      </span>
-                      <h4 class="harga">Harga : <b>Rp199.000</b></h4>
-                    </div>
-                    <!-- Daftar Button Preview and Sunting -->
-                    <div class="daftar-button">
-                      <div class="bpas">
-                        <button class="btn">
-                          Preview
-                        </button>
-                      </div>
-                      <!-- Ulasan and Bayar -->
-                      <button class="btn uab">
-                        Ulasan
-                      </button>
-                    </div>
-                  </div>
-                  <!-- End isi Card -->
                 </div>
+                <!-- isi Card -->
+                <div class="col-lg-9 isi">
+                  <!-- Kategori and Selesai -->
+                  <div class="kas">
+                    <span>Kategori : <b>Video Spesial</b></span>
+                    <span>Sedang Diproses</span>
+                  </div>
+                  <!-- Nama Pengantin and Link Wedding -->
+                  <div class="npalw">
+                    <h3 class="mt-4">Joko Blackzycowskzy & Putri Rostchild</h3>
+                    <p class="mt-4 mb-0">
+                      Estimasi Video Wedding selesai: 1 X 24 jam
+                    </p>
+                    <p>
+                      Setelah Video selesai Kami akan mengirimkan notifikasi ke
+                      nomor What's App Anda
+                    </p>
+                  </div>
+                  <!-- Bagikan -->
+                  <div class="bagikan">
+                    <span>
+                      Bagikan : &nbsp;
+                      <a class="bi bi-whatsapp" href="#"></a>
+                      <a class="bi bi-telegram" href="#"></a>
+                    </span>
+                    <h4 class="harga">Harga : <b>Rp199.000</b></h4>
+                  </div>
+                  <!-- Daftar Button Preview and Sunting -->
+                  <div class="daftar-button">
+                    <div class="bpas">
+                      <button class="btn">Preview</button>
+                    </div>
+                    <!-- Ulasan and Bayar -->
+                    <button class="btn uab">Ulasan</button>
+                  </div>
+                </div>
+                <!-- End isi Card -->
+              </div>
             </div>
           </div>
 
@@ -771,7 +813,11 @@
               <div class="row">
                 <!-- Image and Video -->
                 <div class="col-lg-3 template">
-                  <img src="../../img/cwi1.jpg" class="img-fluid mx-auto" alt="" />
+                  <img
+                    src="../../img/cwi1.jpg"
+                    class="img-fluid mx-auto"
+                    alt=""
+                  />
                 </div>
                 <!-- isi Card -->
                 <div class="col-lg-9 isi">
@@ -797,17 +843,11 @@
                   <!-- Daftar Button Preview and Sunting -->
                   <div class="daftar-button">
                     <div class="bpas">
-                      <button class="btn">
-                        Preview
-                      </button>
-                      <button class="btn">
-                        Sunting
-                      </button>
+                      <button class="btn">Preview</button>
+                      <button class="btn">Sunting</button>
                     </div>
                     <!-- Ulasan and Bayar-->
-                    <button class="btn uab">
-                      Ulasan
-                    </button>
+                    <button class="btn uab">Ulasan</button>
                   </div>
                 </div>
                 <!-- End isi Card -->
@@ -839,9 +879,7 @@
                     <h3 class="mt-4 mb-4">
                       Joko Blackzycowskzy & Putri Rostchild
                     </h3>
-                    <button class="btn">
-                      Download
-                    </button>
+                    <button class="btn">Download</button>
                   </div>
                   <!-- Bagikan -->
                   <div class="bagikan">
@@ -855,24 +893,18 @@
                   <!-- Daftar Button Preview and Sunting -->
                   <div class="daftar-button">
                     <div class="bpas">
-                      <button class="btn">
-                        Preview
-                      </button>
-                      <button class="btn">
-                        Sunting
-                      </button>
+                      <button class="btn">Preview</button>
+                      <button class="btn">Sunting</button>
                     </div>
                     <!-- Ulasan -->
-                    <button class="btn uab">
-                      Ulasan
-                    </button>
+                    <button class="btn uab">Ulasan</button>
                   </div>
                 </div>
                 <!-- End isi Card -->
               </div>
             </div>
           </div>
-        <!-- END: Define your tab pans here -->
+          <!-- END: Define your tab pans here -->
         </div>
       </div>
     </section>
@@ -955,21 +987,15 @@
               </li>
               <li>
                 <i class="bi bi-whatsapp"></i>
-                <p>
-                  08100200300
-                </p>
+                <p>08100200300</p>
               </li>
               <li>
                 <i class="bi bi-envelope"></i>
-                <p>
-                  risedev@gmail.com
-                </p>
+                <p>risedev@gmail.com</p>
               </li>
               <li>
                 <i class="bi bi-geo-alt"></i>
-                <p>
-                  Jl. Belanti 1, Khatib Sulaiman, Padang, Sumatera Barat.
-                </p>
+                <p>Jl. Belanti 1, Khatib Sulaiman, Padang, Sumatera Barat.</p>
               </li>
             </ul>
           </div>

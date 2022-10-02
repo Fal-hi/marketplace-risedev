@@ -65,10 +65,37 @@ a.signin:hover {
   color: var(--warna2) !important;
 }
 
+.modal .modal-content .modal-body .form-control {
+  border: 2px solid var(--warna1);
+}
+
+.form-control:focus {
+  border-color: var(--warna5) !important;
+  box-shadow: none !important;
+}
+
+.ql-container.ql-snow,
+.ql-toolbar.ql-snow {
+  border: 2px solid var(--warna1) !important;
+}
+
+.form-select:focus {
+  border-color: none !important;
+  box-shadow: none !important;
+}
+
 div.input-group select.form-select {
   font-size: var(--title);
-  padding-top: 0.2rem;
   color: var(--warna6);
+  border: 2px solid var(--warna1);
+}
+
+label.input-group-text {
+  padding: 0 0.5rem;
+  font-size: var(--title);
+  color: var(--warna2);
+  background-color: var(--warna1);
+  border: 2px solid var(--warna1);
 }
 
 .navbar-light .navbar-toggler {
@@ -126,30 +153,30 @@ header div.logo span.nama-logo {
   font-weight: bolder;
 }
 
-header .input-group input[type="text"] {
+.input-group input[type="text"] {
   border: 2px solid var(--warna1);
   font-size: 0.8rem;
 }
 
-header .input-group input[type="text"]::placeholder {
+.input-group input[type="text"]::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #aaa;
   opacity: 1; /* Firefox */
 }
-header .input-group input[type="text"]:-ms-input-placeholder {
+.input-group input[type="text"]:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #aaa;
 }
-header .input-group input[type="text"]::-ms-input-placeholder {
+.input-group input[type="text"]::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #aaa;
 }
 
-header .input-group input[type="text"]:focus {
+.input-group input[type="text"]:focus {
   box-shadow: none;
 }
 
-header .input-group button {
+.input-group button {
   background-color: var(--warna1);
   color: var(--warna2);
   text-shadow: 0 0 5px var(--warna2);
@@ -317,5 +344,4 @@ div.copyright span {
 /* End Footer */
 
 @media (max-width: 575.98px) {
-  
 }

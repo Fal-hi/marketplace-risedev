@@ -170,16 +170,11 @@ section.isi-data-undangan .modal .modal-content {
 }
 
 section.isi-data-undangan .modal .modal-content h5.modal-title {
-  /* color: var(--warna2); */
   border-bottom: none;
 }
 
 section.isi-data-undangan .modal .modal-content .modal-body label {
   color: var(--warna2);
-}
-
-section.isi-data-undangan .modal .modal-content .modal-body input.form-control {
-  border: 1px solid var(--warna1);
 }
 
 section.isi-data-undangan .modal .modal-content .modal-header,

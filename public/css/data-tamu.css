@@ -1,0 +1,128 @@
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--warna2) !important;
+  color: var(--warna1) !important;
+}
+
+.nav-pills .nav-link {
+  color: var(--warna2) !important;
+}
+
+.data-tamu .kepala h5 {
+  color: var(--warna1);
+}
+
+.data-tamu .modal-title {
+  color: var(--warna1);
+}
+
+.data-tamu .modal-body .kirim-kepada {
+  background-color: var(--warna1);
+  color: var(--warna2);
+}
+
+.modal-footer .btn:nth-child(1) {
+  border: 2px solid var(--warna1);
+  color: var(--warna1);
+}
+
+.modal-footer .btn:nth-child(2) {
+  background-color: var(--warna1);
+  color: var(--warna2);
+}
+
+.kepala a {
+  background-color: var(--warna1);
+  color: var(--warna2);
+}
+
+.card-header {
+  background-color: var(--warna1) !important;
+}
+
+.card-header .nav {
+  justify-content: center;
+  align-items: center;
+}
+
+.isi-tamu .card-body {
+  overflow-x: scroll;
+}
+
+.isi-tamu .kepala-isi-tamu .btn-tambah {
+  background-color: var(--warna1);
+  color: var(--warna2);
+}
+
+.isi-tamu .kepala-isi-tamu .btn-impor,
+.isi-tamu .kepala-isi-tamu .btn-ekspor {
+  border: 2px solid var(--warna1);
+  color: var(--warna1);
+}
+.isi-tamu .kepala-isi-tamu .link-dt {
+  color: var(--warna1);
+}
+
+.isi-tamu .card-body tr {
+  border-color: var(--warna1);
+}
+
+.isi-tamu .card-body td.link a.link-website {
+  color: var(--warna1);
+  text-align: center;
+}
+
+.isi-tamu .card-body td.link .copy {
+  margin-top: 0.5rem;
+}
+
+.isi-tamu .card-body td.link .copy a.btn {
+  background-color: var(--warna1);
+  color: var(--warna2);
+}
+
+.isi-tamu .card-body td.share a.btn {
+  background-color: var(--warna1);
+  color: var(--warna2);
+}
+
+.isi-tamu .card-body td.aksi button.hapus,
+.isi-tamu .card-body td.aksi a.edit {
+  background-color: var(--warna1);
+  color: var(--warna2);
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .baris1 {
+    align-items: center;
+    margin-bottom: 0.7rem;
+  }
+  .baris1 .btn,
+  td.link .copy a.btn,
+  td.share a.btn,
+  td.aksi .btn {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+  td.link .copy a.btn:nth-child(1),
+  td.aksi .btn:nth-child(1) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .baris1 {
+    margin-bottom: 0.7rem;
+  }
+  .baris1 .btn,
+  td.link .copy a.btn,
+  td.share a.btn,
+  td.aksi .btn {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+  td.link .copy a.btn:nth-child(1),
+  td.aksi .btn:nth-child(1) {
+    margin-bottom: 0.5rem;
+  }
+}
