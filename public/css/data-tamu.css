@@ -1,11 +1,20 @@
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  background-color: var(--warna2) !important;
+  /*background-color: var(--warna2) !important;
+  */
+  background-color: transparent !important;
   color: var(--warna1) !important;
+  font-weight: bold;
+  border-bottom: 2px solid var(--warna1);
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 
 .nav-pills .nav-link {
-  color: var(--warna2) !important;
+  color: var(--warna1) !important;
 }
 
 .data-tamu .kepala h5 {
@@ -36,17 +45,19 @@
   color: var(--warna2);
 }
 
+.card {
+  background-color: var(--warna2);
+  border: 1px solid var(--warna2);
+  box-shadow: 3px 3px 3px var(--warna5);
+}
+
 .card-header {
-  background-color: var(--warna1) !important;
+  background-color: var(--warna2) !important;
 }
 
 .card-header .nav {
   justify-content: center;
   align-items: center;
-}
-
-.isi-tamu .card-body {
-  overflow-x: scroll;
 }
 
 .isi-tamu .kepala-isi-tamu .btn-tambah {
@@ -76,14 +87,12 @@
   margin-top: 0.5rem;
 }
 
-.isi-tamu .card-body td.link .copy a.btn {
-  background-color: var(--warna1);
-  color: var(--warna2);
+.isi-tamu .card-body td.link .copy a {
+  color: var(--warna1);
 }
 
-.isi-tamu .card-body td.share a.btn {
-  background-color: var(--warna1);
-  color: var(--warna2);
+.isi-tamu .card-body td.share a {
+  color: var(--warna1);
 }
 
 .isi-tamu .card-body td.aksi button.hapus,
@@ -111,6 +120,9 @@
 }
 
 @media (max-width: 575.98px) {
+  .isi-tamu .card-body {
+    overflow-x: scroll;
+  }
   .baris1 {
     margin-bottom: 0.7rem;
   }
